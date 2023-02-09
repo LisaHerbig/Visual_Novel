@@ -1,0 +1,613 @@
+/**REX*/
+@font-face {
+  font-family: "SchoolTeacher";
+  src: url("./Fonts/Rex/SchoolTeacher-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/**ELENA*/
+@font-face {
+  font-family: "DeutscheNormalschrift";
+  src: url(./Fonts/Elena/Deutsche\ Normalschrift\ a.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+/**LENNY*/
+@font-face {
+  font-family: "Pompiere";
+  src: url(./Fonts/Lenny/Pompiere-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+/**LENNYS DAD*/
+@font-face {
+  font-family: "Daniel";
+  src: url(./Fonts/LennysDad/daniel.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+/**TILLY*/
+@font-face {
+  font-family: "Meybi";
+  src: url(./Fonts/Tilly/Meybi\ Demo.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+/**ARCHIE*/
+@font-face {
+  font-family: "BITCSN";
+  src: url(./Fonts/Archie/BITCSN__.TTF);
+  font-weight: normal;
+  font-style: normal;
+}
+/**LUCY*/
+/*@font-face {
+  font-family: "TodayOldAndYoung";
+  src: url(./Fonts/Lucy/Today\ is\ the\ Oldest\ and\ Youngest\ You\ Will\ Ever\ Be.ttf);
+  font-weight: normal;
+  font-style: normal;
+}*/
+@font-face {
+  font-family: "YummyCupcakes";
+  src: url(./Fonts/Lucy/YummyCupcakes.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+/**VELO*/
+@font-face {
+  font-family: "DeathRattlebb";
+  src: url(./Fonts/Velo/deathrattlebb_reg.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+/**REX MOM*/
+@font-face {
+  font-family: "SeptemberMornings";
+  src: url(./Fonts/Mom/September\ Mornings.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  background-color: #ffffff;
+  overflow: hidden;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: bold;
+  font-size: 124%;
+  /*-ms-user-select: None;
+  -moz-user-select: None;
+  -webkit-user-select: None;
+  user-select: None;*/
+}
+
+scene {
+  width: 1280px;
+  height: 720px;
+  display: inline-block;
+  position: absolute;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  
+}
+
+/** TEXTBOX STYLE **/
+
+speech{
+  background-image: url("./Images/GUI/TextBox.png");
+  /*background-attachment: fixed;*/
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  bottom: 0px;
+  left: 0%;
+  transform: translate(50% -50%);
+  /*font-family: "SchoolTeacher";*/
+  color: antiquewhite;
+  /*width: 100vw;*/
+  /*width: 100vw;
+  height: 100%;*/
+  width: 1280px;
+  height: 720px;
+}
+
+name {
+  font-weight: bolder;
+  /*line-height: 100%;*/
+  font-size: 220%;
+  /*text-align: center;*/
+  position: relative;
+  bottom: -70%;
+  left: -5%;
+  padding: 10px;
+  padding-left: 10%;
+  padding-right: 10px;
+  text-shadow: 3px 3px 3px black;
+
+}
+
+content {
+  top: 80%;
+  /*bottom: 1%;*/
+  left: 11%;
+  right: 20%;
+  position: absolute;
+  font-size: 100%;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
+}
+
+/** SPLASH SCREEN STYLE **/
+
+dialog[type=splash] {
+  margin: 0px;
+  padding: 0px;
+  /*width: 100vw !important;*/
+  height: 100vh !important;
+  width: 100%;
+  /*background-color: rgb(0, 0, 0);*/
+  background-image: url("Images/Backgrounds/Home_Eggs.jpg");
+  background-size:cover;
+  background-attachment:fixed;
+  /*color: white;*/
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  padding: 0%;
+  margin: 0%;
+}
+dialog[type=splash]>img#FudgeStoryLogo {
+  width: 40%;
+  height: auto;
+  border-radius: 40px;
+  margin-top: 5%;
+}
+
+/** MENÜ STYLE & CHOICES**/
+.gameMenuCssClass {
+  left: 81%;
+  position: absolute;
+  height: auto;
+  width: 10%;
+  background-color: rgba(113, 156, 143, 0);
+  opacity: 100%;
+  text-align:right ;
+  border-style: none;
+  bottom: -1%;
+  margin: 0%;
+  /*width: 18%;*/
+}
+
+#iSayYes, #iSayNo, #iSayMaybe, #iSayIDontTell, #iSaySorry, #iDontApologize, #iHelp, #iDontHelp, #iSayImNotSure, #iSayJustPlay, #iSaySteps, #iSayDirt, #iSayAskAgain, #iSayGetAngry, #iSayDoNotGetAngry, #iSayScare, #iSayAskForHelp, #iSayStay, #iSayGo, #iSayHunt, #iSaySteal, #iSayTasty, #iSayBah, #iSayIGo {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-bottom: 10px;
+  position:relative;
+  background-color: #eac351;
+  border: none;
+  color: #d55d47;
+  border-radius: 5px;
+  box-shadow: 0 3px #ae913c;
+  font-size: 100%;
+}
+
+#iSayYes:hover, #iSayNo:hover, #iSayMaybe:hover, #iSayIDontTell:hover, #iSaySorry:hover, #iDontApologize:hover, #iHelp:hover, #iDontHelp:hover, #iSayImNotSure:hover, #iSayJustPlay:hover, #iSaySteps:hover, #iSayDirt:hover, #iSayAskAgain:hover, #iSayGetAngry:hover, #iSayDoNotGetAngry:hover, #iSayScare:hover, #iSayAskForHelp:hover, #iSayStay:hover, #iSayGo:hover, #iSayHunt:hover, #iSaySteal:hover, #iSayTasty:hover, #iSayBah:hover, #iSayIGo:hover {
+  color: #df4b31;
+  background-color: #ffce3a;
+  box-shadow: 0px 3px 3px #ffbf00;
+}
+
+#save, #load, #close, #inventory{
+  position: relative;
+  background-color: #fdd766;
+  border: none;
+  color: #d55d47;
+  border-radius: 5px;
+  box-shadow: 0 3px #ae913c;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 1%;
+  margin-bottom: 0%;
+  font-size: 70%;
+  padding-bottom: 0%;
+  right: 0%;
+}
+
+#save:hover, #load:hover, #close:hover, #inventory:hover {
+  color: #df4b31;
+  background-color: #ffce3a;
+  box-shadow: 0px 3px 3px #ffbf00;
+}
+.choicesCssClassS1D1{
+  text-align: center;
+  width: 30%;
+  /*width:15%;*/
+  background-color: #719c8f;
+  border-style: none;
+  border-radius: 5%;
+  top: 10%;
+}
+.choicesCssClass{
+  /*width:15%;*/
+  text-align: center;
+  width: 30%;
+  /*background-color: #719c8f;*/
+  background-color: rgba(113, 156, 143, 0.8);
+
+  border-style: none;
+  border-radius: 5%;
+  /*top: 10%;*/
+}
+
+.hide{
+  display: none;
+}
+
+/* MINI GAMES */
+/* GAME 2 CATCH */
+.Sibling1 {
+  background-image: url(./Images/Characters/Elena/Siblings/Sibling1.png);
+  background-repeat: no-repeat;
+  width: 359px;
+  height: 405px;
+  position: relative;
+  z-index: 1;
+}  
+.Sibling2 {
+  background-image: url(./Images/Characters/Elena/Siblings/Sibling2.png);
+  background-repeat: no-repeat;
+  width: 203px;
+  height: 216px;
+  position:relative;
+  z-index: 1;
+}
+.Sibling3 {
+  background-image: url(./Images/Characters/Elena/Siblings/Sibling3.png);
+  background-repeat: no-repeat;
+  width: 165px;
+  height: 190px;
+  position:relative;
+  z-index: 1;
+}
+/*NOVEL PAGES*/
+
+.novelPageRex {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  left: 7%;
+  background-image: url(./Images/Items/Rex.png);
+  position: relative;
+  height: 100% !important;
+  width: auto;
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+
+.novelPageElena {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  left: 7%;
+  background-image: url(./Images/Items/Elena.png);
+  position: relative;
+  height: 100% !important;
+  width: auto;
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+
+.novelPageLenny {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  left: 7%;
+  background-image: url(./Images/Items/Lenny.png);
+  position: relative;
+  height: 100% !important;
+  width: auto;
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+.novelPageTilly {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  left: 7%;
+  background-image: url(./Images/Items/Tilly.png);
+  position: relative;
+  height: 100% !important;
+  width: auto;
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+.novelPageArchie {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  left: 7%;
+  background-image: url(./Images/Items/Archie.png);
+  position: relative;
+  height: 100% !important;
+  width: auto;
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+.novelPageVelo {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  left: 7%;
+  background-image: url(./Images/Items/Velo.png);
+  position: relative;
+  height: 100% !important;
+  width: auto;
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+.novelPageLucy {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  left: 7%;
+  background-image: url(./Images/Items/Lucy.png);
+  position: relative;
+  height: 100% !important;
+  width: auto;
+  background-size:contain;
+  background-repeat: no-repeat;
+}
+/* FONT FOR CHARACTERS */
+
+.Rex, #Rex {
+  font-family: "SchoolTeacher" !important;
+}
+
+.Elena, #Elena {
+  font-family: "DeutscheNormalschrift" !important;
+  font-size: 90%;
+}
+
+.Lenny, #Lenny {
+  font-family: "Pompiere";
+}
+
+.LennysPapa, #LennysPapa {
+  font-family: "Daniel";
+  font-size: smaller;
+}
+
+.Archie, #Archie {
+  font-family: "BITCSN";
+  font-size: smaller;
+  letter-spacing: 0.15em;
+}
+
+.Tilly, #Tilly {
+  font-family:  "Meybi";
+  font-size: 94%;
+}
+
+.Lucy, #Lucy {
+  font-family: "YummyCupcakes";
+}
+
+.Velo, #Velo {
+  font-family: "DeathRattlebb";
+}
+
+.Mama, #Mama {
+  font-family: "SeptemberMornings";
+  font-size: 200%;
+}
+
+/*Game2*/
+#gameField {
+  height: 100vh !important;
+  width: 100%;
+  background-image: url("Images/Locations/L_TillyEmpty.jpg");
+  z-index: 2 !important;
+  background-size:cover;
+  background-attachment:fixed;
+  border: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+#character{
+  width: 70px;
+  height: 70px;
+  background-image: url("Images/GameAssets/RexGame.png");
+  position: absolute;
+  bottom: 5px;
+  right: calc(100% - 100px);
+}
+
+.stone{
+  width: 112px;
+  height: 157px;
+  background-image: url("Images/GameAssets/StonesSmall.png");
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+}
+
+/* GAME 3 */
+.fireplace{
+  width: 168px;
+  height: 416px;
+  background-image: url("./Images/GameAssets/Fireplace.png");
+  position: relative;
+  z-index: 1;
+  left: 50%;
+  top: 10%;
+}
+
+.carrot{
+  width: 145px;
+  height: 70px;
+  background-image: url("./Images/GameAssets/carrot.png");
+  position: absolute;
+  left: 65%;
+  bottom: 5%;
+  transition: transform .2s;
+}
+
+.carrot:hover {
+  transform: scale(1.4);
+}
+
+.leek{
+  width: 145px;
+  height: 70px;
+  background-image: url("./Images/GameAssets/leek.png");
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transition: transform .2s;
+}
+.leek:hover {
+  transform: scale(1.4);
+}
+
+.potato{
+  width: 145px;
+  height: 70px;
+  background-image: url("./Images/GameAssets/potato.png");
+  position: absolute;
+  left: 35%;
+  bottom: 5%;
+  transition: transform .2s;
+}
+.potato:hover {
+  transform: scale(1.4);
+}
+
+.leaf{
+  width: 145px;
+  height: 70px;
+  background-image: url("./Images/GameAssets/leaf.png");
+  position: absolute;
+  left: 20%;
+  bottom: 5%;
+  transition: transform .2s;
+}
+.leaf:hover {
+  transform: scale(1.4);
+}
+
+.book{
+  width: 807px;
+  height: 412px;
+  top: 15%;
+  background-image: url("./Images/GameAssets/rezept.png");
+  position: absolute;
+  left: 0%;
+}
+
+.bgGame2{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-image: url("Images/Locations/L_Lucy.png");
+  background-size:cover;
+  background-attachment:fixed;
+  top: 0%;
+  border: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+input {
+  background-color: #eac351;
+  border: none;
+  color: #d55d47;
+  border-radius: 5px;
+  box-shadow: 0 3px #ae913c;
+  margin-top: 1%;
+}
+
+.game2BG{
+  background-image: url(./Images/Locations/L_Dilo.jpg);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+}
+
+dialog[type=inventory] {
+  background-color: rgba(113, 156, 143, 0.8);
+  color: white;
+}
+
+/** Meter Bar **/
+meter::-webkit-meter-bar {
+  background-color:rgba(113, 156, 143, 0.8);
+}
+
+meter[id="RexMeter"] {
+  position: absolute;
+  transform: rotate(-90deg);
+  bottom: 57%;
+  left: -15%;
+  width: 35%;
+  height: 10%;
+}
+
+/**Gestaltet Füllung**/
+meter[id="RexMeter"]::-webkit-meter-optimum-value {
+  background-image: linear-gradient(
+    90deg,
+    #d55d47 50%,
+    #eac351 100%
+    );
+}
+
+input[id="scoreForFriendshipRex"] {
+  color:white;
+  font-family:'Times New Roman', Times, serif;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
+  background-color:rgba(113, 156, 143, 0);
+  box-shadow: none;
+  font-size: 11pt;
+  position:absolute;
+  left: 1.2%;
+  top: 1%;
+  width: 25%;
+}
+
+button[type=button] {
+  position: relative;
+  background-color: #fdd766;
+  border: none;
+  color: #d55d47;
+  border-radius: 5px;
+  box-shadow: 0 3px #ae913c;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 1%;
+  margin-bottom: 0%;
+  font-size: 70%;
+  padding-bottom: 0;
+}
+
+button[type=button]:hover {
+  color: #df4b31;
+  background-color: #ffce3a;
+  box-shadow: 0px 3px 3px #ffbf00;
+}
+
+dialog[type = "text"].credits {
+  background-color: rgba(113, 156, 143, 0);
+  color:white;
+  text-shadow: 1px 1px 1px black;
+  text-align: center;
+  border: none;
+  /*top: 0%;*/
+  /*bottom: 35%;*/
+
+}

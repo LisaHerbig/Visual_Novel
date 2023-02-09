@@ -2,8 +2,24 @@
   "bundle": {
     "commonSourceDirectory": "..",
     "sourceFiles": [
+      "../Source/Audio.ts",
       "../Source/Main.ts",
-      "../Source/Scene.ts"
+      "../Source/Scene.ts",
+      "../Source/Scenes/Empty.ts",
+      "../Source/Scenes/End.ts",
+      "../Source/Scenes/FirstScene.ts",
+      "../Source/Scenes/MiniGame1.ts",
+      "../Source/Scenes/SceneEight.ts",
+      "../Source/Scenes/SceneFive1.ts",
+      "../Source/Scenes/SceneFiveA.ts",
+      "../Source/Scenes/SceneFiveB.ts",
+      "../Source/Scenes/SceneFour.ts",
+      "../Source/Scenes/SceneOne.ts",
+      "../Source/Scenes/SceneSeven.ts",
+      "../Source/Scenes/SceneSix.ts",
+      "../Source/Scenes/SceneThree.ts",
+      "../Source/Scenes/SceneTwo.ts",
+      "../Source/Scenes/SpecialScene.ts"
     ],
     "js": {
       "sections": [
@@ -15,7 +31,7 @@
         },
         {
           "pos": 15,
-          "end": 2040,
+          "end": 157437,
           "kind": "text"
         }
       ],
@@ -43,7 +59,7 @@
       "sections": [
         {
           "pos": 0,
-          "end": 934,
+          "end": 13101,
           "kind": "text"
         }
       ]

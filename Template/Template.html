@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="Template.css">
+  <link rel="stylesheet" href="TheSearchStyle.css">
   <script src="Fudge/FudgeCore.js"></script>
   <script src="FudgeStory/FudgeStory.js"></script>
   <script src="./Build/Template.js"></script>
-  <title>Fudge Story Template</title>
-  <splash src="Images/Splash.png" />
+  <title>Fudge Story: Die Suche</title>
+  <splash src="Images/Backgrounds/Home_Eggs.png" />
 </head>
 
 <body>
@@ -18,23 +18,45 @@
     <dialog type="splash" open>
       <img id="FudgeStoryLogo" theme="light" /> <!-- use "light" or "dark" -->
       <p>
-        Design your splash screen here. Reposition and rescale the logo above, but do not remove.
+        Die Suche - Lisa's Visual Novel. Um die Novel zu starten, klicke auf den Screen.
       </p>
     </dialog>
 
     <canvas></canvas>
 
+    <div class="gameInstructions">
+      <button class="hide">x</button>
+    </div>
 
     <speech>
-      <name>The name of the character speaking</name>
-      <content>The text the character says</content>
+      <name><!-- The name of the character speaking --></name>
+    </br>
+      <content><!--The text the character says --></content>
     </speech>
 
     <dialog type="text">
       The content of a page of text for reading
     </dialog>
+    <!--Inventory-->
+    <dialog type ="inventory">
+      <button type="button">Schließen</button>
+
+      <ul>
+        <!-- <li> a description could be written in here </li>
+        <li>b</li>
+        <li>c</li>-->
+      </ul>
+    </dialog>
+
+    <!--Meterbar Rex-->
+    <div type="interface">
+      <input id="scoreForFriendshipRex" type="text" value="Freundschaftspunkte" disabled>
+      <!--für value der Skala; Füllung-->
+      <meter id="RexMeter" name="friendshipScore" min="-16" max="16" disabled></meter>
+    </div>
 
   </scene>
 </body>
+
 
 </html>
