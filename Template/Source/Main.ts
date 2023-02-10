@@ -337,6 +337,9 @@ namespace TheSearch {
   };
 
  /**LOCATIONS */
+ //TEST
+ console.log("bla");
+ 
 
   export let locations = {
   
@@ -357,7 +360,7 @@ namespace TheSearch {
 
   L_Ptero: {
     name: "LocationLenny",
-    background: "./Images/Locations/L_lenny.jpg"
+    background: "./Images/Locations/L_Lenny.jpg"
   },
 
   L_Archae: {
