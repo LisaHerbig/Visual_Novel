@@ -70,8 +70,8 @@ namespace TheSearch {
             ƒS.Speech.clear();
             ƒS.update();
 
-            let sceneFiveA: ƒS.SceneReturn = SceneFiveA();
-            return sceneFiveA;
+            //let sceneFiveA: ƒS.SceneReturn = SceneFiveA();
+            return SceneFiveA();
             break;
         
         case sceneFourDecision1WhatIsThat.iSayDirt:
@@ -89,8 +89,8 @@ namespace TheSearch {
             ƒS.Speech.clear();
             ƒS.update();
 
-            let sceneFive1: ƒS.SceneReturn = SceneFive1();
-            return sceneFive1;
+            //let sceneFive1: ƒS.SceneReturn = SceneFive1();
+            return SceneFive1();
             break;
       }
     }
