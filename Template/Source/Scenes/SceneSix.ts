@@ -1,4 +1,4 @@
-namespace TheSearch {
+namespace Template {
     export async function SceneSix(): ƒS.SceneReturn {
       console.log("SceneSix starting");
 
@@ -346,7 +346,7 @@ namespace TheSearch {
                     close.classList.remove("hide");
                     inventory.classList.remove("hide");
                     speech.classList.remove("hide");
-                    document.body.removeChild(fireplace);
+                    //document.body.removeChild(fireplace);
 
                     document.getElementsByName("friendshipScore").forEach(meterStuff => meterStuff.hidden = false);
                     document.getElementById("scoreForFriendshipRex").classList.remove("hide");

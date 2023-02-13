@@ -1,7 +1,7 @@
 /* Sound Effekte für die Mini-Games: https://www.epidemicsound.com/de/music/featured/
   Sound Effekt Magenknurren: https://elements.envato.com/de/dinosaur-growl-M4X6N23?_ga=2.62807788.1932411130.1675942328-1714739041.1669640489&utm_campaign=elements_mixkit_cs_sfx_search_no_results&utm_medium=referral&utm_source=mixkit
 */
-namespace TheSearch {
+namespace Template {
   export import ƒ = FudgeCore;
   export import ƒS = FudgeStory;
 

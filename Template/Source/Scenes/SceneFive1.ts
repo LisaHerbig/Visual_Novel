@@ -1,6 +1,6 @@
-namespace TheSearch {
+namespace Template {
     export async function SceneFive1(): ƒS.SceneReturn {
-      console.log("SceneThree starting");
+      console.log("SceneFive1 starting");
 
       let text = {
         Narrator: {

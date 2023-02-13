@@ -1,6 +1,6 @@
-namespace TheSearch {
+namespace Template {
     export async function SceneFiveA(): ƒS.SceneReturn {
-      console.log("SceneOne starting");
+      console.log("SceneFiveA starting");
 
       let text = {
         Narrator: {
@@ -270,10 +270,10 @@ namespace TheSearch {
             ƒS.Character.hide(characters.lenny);
 
             ƒS.update();
-
+         
             await ƒS.Character.animate(characters.lennysDad, characters.lennysDad.pose.happy, getAnimationFlyTowards());
 
-            await ƒS.Character.hide(characters.lennysDad);
+            //await ƒS.Character.hide(characters.lennysDad);
 
             await ƒS.Character.show(characters.lennysDad, characters.lennysDad.pose.angry, ƒS.positions.bottomleft);
 
@@ -295,7 +295,7 @@ namespace TheSearch {
 
             ƒS.Character.hide(characters.lennysDad);
 
-            ƒS.Character.show(characters.lennysDad, characters.lennysDad.pose.happyRight, ƒS.positions.bottomleft);
+            await ƒS.Character.show(characters.lennysDad, characters.lennysDad.pose.happyRight, ƒS.positions.bottomleft);
 
             ƒS.update();
 
@@ -330,13 +330,13 @@ namespace TheSearch {
       
             await ƒS.Character.animate(characters.lennysDad, characters.lennysDad.pose.happyRight, getAnimationFlyAway());
 
-            ƒS.Character.hide(characters.lennysDad);
+            //ƒS.Character.hide(characters.lennysDad);
 
             ƒS.update();
 
             ƒS.Speech.hide();
             ƒS.Character.hide(characters.rex);
-            ƒS.Character.hide(characters.lennysDad);
+            //ƒS.Character.hide(characters.lennysDad);
             ƒS.Speech.clear();
             ƒS.update();
             

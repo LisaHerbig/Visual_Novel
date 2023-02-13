@@ -1,4 +1,4 @@
-namespace TheSearch {
+namespace Template {
     export async function SceneFour(): ƒS.SceneReturn {
       console.log("SceneThree starting");
 
@@ -85,7 +85,7 @@ namespace TheSearch {
 
             ƒS.Speech.hide();
             ƒS.Character.hide(characters.rex);
-            ƒS.Character.hide(characters.elena);
+            //ƒS.Character.hide(characters.elena);
             ƒS.Speech.clear();
             ƒS.update();
 
