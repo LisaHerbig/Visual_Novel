@@ -66,7 +66,7 @@ namespace Template {
 
             ƒS.Speech.hide();
             ƒS.Character.hide(characters.rex);
-            ƒS.Character.hide(characters.elena);
+            //ƒS.Character.hide(characters.elena);
             ƒS.Speech.clear();
             ƒS.update();
 

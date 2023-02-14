@@ -1,7 +1,7 @@
 declare namespace Template {
     function playSounds(): void;
 }
-declare namespace TheSearch {
+declare namespace Template {
     export import ƒ = FudgeCore;
     export import ƒS = FudgeStory;
     /** TRANSITIONS **/
@@ -255,7 +255,6 @@ declare namespace TheSearch {
         catchCook: string;
         jump: string;
     };
-    /**LOCATIONS */
     let locations: {
         Home_Hatched: {
             name: string;
@@ -475,47 +474,47 @@ declare namespace TheSearch {
     function getRandom(_min: number, _max: number): number;
     function start(_event: Event): void;
 }
-declare namespace TheSearch {
+declare namespace Template {
     function Empty(): ƒS.SceneReturn;
 }
-declare namespace TheSearch {
+declare namespace Template {
     function End(): ƒS.SceneReturn;
 }
-declare namespace TheSearch {
+declare namespace Template {
     function FirstScene(): ƒS.SceneReturn;
 }
 declare namespace TheSearch {
 }
-declare namespace TheSearch {
+declare namespace Template {
     function SceneEight(): ƒS.SceneReturn;
 }
-declare namespace TheSearch {
+declare namespace Template {
     function SceneFive1(): ƒS.SceneReturn;
 }
-declare namespace TheSearch {
+declare namespace Template {
     function SceneFiveA(): ƒS.SceneReturn;
 }
-declare namespace TheSearch {
+declare namespace Template {
     function SceneFiveB(): ƒS.SceneReturn;
 }
-declare namespace TheSearch {
+declare namespace Template {
     function SceneFour(): ƒS.SceneReturn;
 }
-declare namespace TheSearch {
+declare namespace Template {
     function SceneOne(): ƒS.SceneReturn;
 }
-declare namespace TheSearch {
+declare namespace Template {
     function SceneSeven(): ƒS.SceneReturn;
 }
-declare namespace TheSearch {
+declare namespace Template {
     function SceneSix(): ƒS.SceneReturn;
 }
-declare namespace TheSearch {
+declare namespace Template {
     function SceneThree(): ƒS.SceneReturn;
 }
-declare namespace TheSearch {
+declare namespace Template {
     function SceneTwo(): ƒS.SceneReturn;
 }
-declare namespace TheSearch {
+declare namespace Template {
     function SpecialScene(): ƒS.SceneReturn;
 }

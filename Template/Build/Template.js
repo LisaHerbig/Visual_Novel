@@ -18,16 +18,16 @@ var Template;
 /* Sound Effekte für die Mini-Games: https://www.epidemicsound.com/de/music/featured/
   Sound Effekt Magenknurren: https://elements.envato.com/de/dinosaur-growl-M4X6N23?_ga=2.62807788.1932411130.1675942328-1714739041.1669640489&utm_campaign=elements_mixkit_cs_sfx_search_no_results&utm_medium=referral&utm_source=mixkit
 */
-var TheSearch;
+var Template;
 /* Sound Effekte für die Mini-Games: https://www.epidemicsound.com/de/music/featured/
   Sound Effekt Magenknurren: https://elements.envato.com/de/dinosaur-growl-M4X6N23?_ga=2.62807788.1932411130.1675942328-1714739041.1669640489&utm_campaign=elements_mixkit_cs_sfx_search_no_results&utm_medium=referral&utm_source=mixkit
 */
-(function (TheSearch) {
-    TheSearch.ƒ = FudgeCore;
-    TheSearch.ƒS = FudgeStory;
+(function (Template) {
+    Template.ƒ = FudgeCore;
+    Template.ƒS = FudgeStory;
     console.log("FudgeStory template starting");
     /** TRANSITIONS **/
-    TheSearch.transition = {
+    Template.transition = {
         start: {
             duration: 1,
             alpha: "./Images/Transitions/start.jpg",
@@ -75,7 +75,7 @@ var TheSearch;
         }
     };
     /** SOUND **/
-    TheSearch.soundRex = {
+    Template.soundRex = {
         t0001Rex: "./Audio/Rex/1_1Rex.mp4",
         t0001_1Rex: "./Audio/Rex/T0001_1.mp4",
         t0002Rex: "./Audio/Rex/T0002_Rex.mp4",
@@ -148,7 +148,7 @@ var TheSearch;
         specialT0003: "./Audio/Rex/SpecialT3.mp4",
         hungry: "./Audio/SFX/Hungry_envatoElements.mp4"
     };
-    TheSearch.soundNarrator = {
+    Template.soundNarrator = {
         //Sound Narrator
         s1t0001: "./Audio/Narrator/S1T1.m4a",
         s1t0002: "./Audio/Narrator/S1T2.m4a",
@@ -194,7 +194,7 @@ var TheSearch;
         s8t0001: "./Audio/Narrator/S8T1.m4a",
         s8t0002: "./Audio/Narrator/WasDennRex.m4a"
     };
-    TheSearch.soundElena = {
+    Template.soundElena = {
         s3t0001: "./Audio/Elena/S3T1.m4a",
         s3t0002: "./Audio/Elena/S3T2.m4a",
         s3t0003: "./Audio/Elena/S3T3.m4a",
@@ -205,12 +205,12 @@ var TheSearch;
         s3t0008: "./Audio/Elena/S3T8.m4a",
         s3t0009: "./Audio/Elena/S3T9.m4a"
     };
-    TheSearch.soundLenny = {
+    Template.soundLenny = {
         s5At0001: "./Audio/Lenny/S5AT1.m4a",
         s5At0002: "./Audio/Lenny/S5AT2.m4a",
         s5At0003: "./Audio/Lenny/S5AT3.mp4"
     };
-    TheSearch.soundArchie = {
+    Template.soundArchie = {
         s5At0001: "./Audio/Archie/S5AT1.mp4",
         s5At0002: "./Audio/Archie/S5AT2.mp4",
         s5At0003: "./Audio/Archie/S5AT3.mp4",
@@ -223,24 +223,24 @@ var TheSearch;
         s5Bt0004: "./Audio/Archie/S5BT4.mp4",
         s5Bt0005: "./Audio/Archie/S5BT5.mp4"
     };
-    TheSearch.soundLennysDad = {
+    Template.soundLennysDad = {
         s5At0001: "./Audio/LennysPapa/S5AT1.m4a",
         s5At0002: "./Audio/LennysPapa/S5AT2.m4a",
         s5At0003: "./Audio/LennysPapa/S5AT3.m4a",
         s5At0004: "./Audio/LennysPapa/S5AT4.m4a"
     };
-    TheSearch.soundTilly = {
+    Template.soundTilly = {
         s51t0001: "./Audio/Tilly/S51T1.mp4",
         s51t0002: "./Audio/Tilly/S51T2.mp4",
         s51t0003: "./Audio/Tilly/S51T3.mp4"
     };
-    TheSearch.soundTillysDad = {
+    Template.soundTillysDad = {
         s51t0001: "./Audio/TillysPapa/TillysPapaT0001.mp4"
     };
-    TheSearch.soundElenasMom = {
+    Template.soundElenasMom = {
         s3t0001: "./Audio/ElenasMama/ElenasMomT0001.m4a"
     };
-    TheSearch.soundVelo = {
+    Template.soundVelo = {
         s6t0001: "./Audio/Velo/S6T1.mp4",
         s6t0002: "./Audio/Velo/S6T2.mp4",
         s6t0003: "./Audio/Velo/S6T3.mp4",
@@ -248,7 +248,7 @@ var TheSearch;
         s6t0005: "./Audio/Velo/S6T5.m4a",
         s6t0006: "./Audio/Velo/S6T6.mp4"
     };
-    TheSearch.soundLucy = {
+    Template.soundLucy = {
         s6t0001: "./Audio/Lucy/S6T1.m4a",
         s6t0002: "./Audio/Lucy/S6T2.m4a",
         s6t0003: "./Audio/Lucy/S6T3.m4a",
@@ -267,20 +267,22 @@ var TheSearch;
         s8t0002: "./Audio/Lucy/S8T2.m4a",
         s8t0003: "./Audio/Lucy/S8T3.m4a"
     };
-    TheSearch.soundRexMom = {
+    Template.soundRexMom = {
         s8t0001: "./Audio/Mama/S8T1.m4a",
         s8t0002: "./Audio/Mama/S8T2.m4a",
         s8t0003: "./Audio/Mama/S8T3.m4a",
         s8schluchz: "./Audio/Mama/S8TSchluchz.m4a",
         s8wein: "./Audio/Mama/S8TWein.m4a"
     };
-    TheSearch.soundSFX = {
+    Template.soundSFX = {
         eggs: "./Audio/SFX/BubbleBlips_Eggs_Epidemicsound.mp4",
         catchCook: "./Audio/SFX/BubbleBlip_CookCatch_Epidemicsound.mp4",
         jump: "./Audio/SFX/SuctionPop_Epidemicsound_jump.mp3"
     };
     /**LOCATIONS */
-    TheSearch.locations = {
+    //TEST
+    console.log("bla");
+    Template.locations = {
         Home_Hatched: {
             name: "Home_Hatched",
             background: "./Images/Locations/Home_Hatched.png"
@@ -295,7 +297,7 @@ var TheSearch;
         },
         L_Ptero: {
             name: "LocationLenny",
-            background: "./Images/Locations/L_lenny.jpg"
+            background: "./Images/Locations/L_Lenny.jpg"
         },
         L_Archae: {
             name: "LocationArchie",
@@ -331,7 +333,7 @@ var TheSearch;
         }
     };
     /** CHARACTERS */
-    TheSearch.characters = {
+    Template.characters = {
         narrator: {
             name: ""
         },
@@ -340,7 +342,7 @@ var TheSearch;
         },
         rex: {
             name: "Rex",
-            origin: TheSearch.ƒS.ORIGIN.BOTTOMCENTER,
+            origin: Template.ƒS.ORIGIN.BOTTOMCENTER,
             pose: {
                 angry: "./Images/Characters/Rex/RexAngry.png",
                 happy: "./Images/Characters/Rex/RexHappy.png",
@@ -352,7 +354,7 @@ var TheSearch;
         },
         elena: {
             name: "Elena",
-            origin: TheSearch.ƒS.ORIGIN.BOTTOMCENTER,
+            origin: Template.ƒS.ORIGIN.BOTTOMCENTER,
             pose: {
                 scared: "./Images/Characters/Elena/ElenaScared.png",
                 happy: "./Images/Characters/Elena/ElenaHappy.png"
@@ -360,7 +362,7 @@ var TheSearch;
         },
         lenny: {
             name: "Lenny",
-            origin: TheSearch.ƒS.ORIGIN.BOTTOMCENTER,
+            origin: Template.ƒS.ORIGIN.BOTTOMCENTER,
             pose: {
                 scared: "./Images/Characters/Lenny/LennyScared.png",
                 happy: "./Images/Characters/Lenny/LennyHappy.png",
@@ -369,7 +371,7 @@ var TheSearch;
         },
         lennysDad: {
             name: "LennysPapa",
-            origin: TheSearch.ƒS.ORIGIN.BOTTOMCENTER,
+            origin: Template.ƒS.ORIGIN.BOTTOMCENTER,
             pose: {
                 angry: "./Images/Characters/LennysDad/LennysDadAngry.png",
                 happy: "./Images/Characters/LennysDad/LennysDadHappy.png",
@@ -378,7 +380,7 @@ var TheSearch;
         },
         archie: {
             name: "Archie",
-            origin: TheSearch.ƒS.ORIGIN.BOTTOMCENTER,
+            origin: Template.ƒS.ORIGIN.BOTTOMCENTER,
             pose: {
                 angry: "./Images/Characters/Archie/ArchieAngry.png",
                 happy: "./Images/Characters/Archie/ArchieHappy.png"
@@ -386,7 +388,7 @@ var TheSearch;
         },
         tilly: {
             name: "Tilly",
-            origin: TheSearch.ƒS.ORIGIN.BOTTOMCENTER,
+            origin: Template.ƒS.ORIGIN.BOTTOMCENTER,
             pose: {
                 angry: "./Images/Characters/Tilly/TillyAngry.png",
                 happy: "./Images/Characters/Tilly/TillyHappy.png"
@@ -394,7 +396,7 @@ var TheSearch;
         },
         velo: {
             name: "Velo",
-            origin: TheSearch.ƒS.ORIGIN.BOTTOMCENTER,
+            origin: Template.ƒS.ORIGIN.BOTTOMCENTER,
             pose: {
                 happy: "./Images/Characters/Velo/VeloHappy.png",
                 scared: "./Images/Characters/Velo/VeloScared.png",
@@ -403,7 +405,7 @@ var TheSearch;
         },
         lucy: {
             name: "Lucy",
-            origin: TheSearch.ƒS.ORIGIN.BOTTOMCENTER,
+            origin: Template.ƒS.ORIGIN.BOTTOMCENTER,
             pose: {
                 happy: "./Images/Characters/Lucy/LucyHappy.png",
                 angry: "./Images/Characters/Lucy/LucyAngry.png",
@@ -412,21 +414,21 @@ var TheSearch;
         },
         mama: {
             name: "Mama",
-            origin: TheSearch.ƒS.ORIGIN.BOTTOMCENTER,
+            origin: Template.ƒS.ORIGIN.BOTTOMCENTER,
             pose: {
                 happy: "./Images/Characters/RexMom/Mom.png"
             }
         },
         end: {
             name: "END",
-            origin: TheSearch.ƒS.ORIGIN.BOTTOMCENTER,
+            origin: Template.ƒS.ORIGIN.BOTTOMCENTER,
             pose: {
                 end: "./Images/GUI/End.png"
             }
         }
     };
     //** DATA THAT WILL BE SAVED (GAME PROGRESS) */
-    TheSearch.dataForSave = {
+    Template.dataForSave = {
         nameProtagonist: "",
         friendshipScore: 0,
         count: 0,
@@ -440,16 +442,16 @@ var TheSearch;
     };
     //** Credits */
     function showCredits() {
-        TheSearch.ƒS.Text.setClass("credits");
-        TheSearch.ƒS.Text.print("CREDITS <br> Vielen Dank an alle, die den Dinosauriern durch ihre Stimmen Leben eingehaucht haben: <br> <br> Archie: Simon von Bartschikowski <br> Elenas Mama: Angelika Herbig <br> Lenny: Florian Herbig <br> Lennys Papa: Adrian von Bartschikowski <br> Lucy: Alexandra von Barschikowski <br> Rex: Simon von Barschikowski <br> Rex Mama: Sandra von Bartschikowski <br> Tilly: Julia Herbig <br> Tillys Papa: Lukas Dirlmeier <br> Velo: Christopher Szesny <br> <br> Und auch vielen Dank an Riem für die Einführung in die Welt der Visual Novels.");
+        Template.ƒS.Text.setClass("credits");
+        Template.ƒS.Text.print("CREDITS <br> Vielen Dank an alle, die den Dinosauriern durch ihre Stimmen Leben eingehaucht haben: <br> <br> Archie: Simon von Bartschikowski <br> Elenas Mama: Angelika Herbig <br> Lenny: Florian Herbig <br> Lennys Papa: Adrian von Bartschikowski <br> Lucy: Alexandra von Barschikowski <br> Rex: Simon von Barschikowski <br> Rex Mama: Sandra von Bartschikowski <br> Tilly: Julia Herbig <br> Tillys Papa: Lukas Dirlmeier <br> Velo: Christopher Szesny <br> <br> Und auch vielen Dank an Riem für die Einführung in die Welt der Visual Novels.");
     }
-    TheSearch.showCredits = showCredits;
+    Template.showCredits = showCredits;
     function showStart() {
-        TheSearch.ƒS.Text.setClass("credits");
+        Template.ƒS.Text.setClass("credits");
         //ƒS.Sound.play("soundNarrator.start");
-        TheSearch.ƒS.Text.print("Wilkommen bei 'Die Suche'. <br> <br> Deine Aufgabe ist es, den kleinen Dinosuarier Rex bei der Suche nach seiner Mama zu unterstüzten. <br> Mit 'm' kannst du das Menü anzeigen und verschwinden lassen. <br> Die Steckbriefe der gefundenen Dinos findest du unter 'Meine Dinos'. <br> Viel Spaß!");
+        Template.ƒS.Text.print("Wilkommen bei 'Die Suche'. <br> <br> Deine Aufgabe ist es, den kleinen Dinosuarier Rex bei der Suche nach seiner Mama zu unterstüzten. <br> Mit 'm' kannst du das Menü anzeigen und verschwinden lassen. <br> Die Steckbriefe der gefundenen Dinos findest du unter 'Meine Dinos'. <br> Viel Spaß!");
     }
-    TheSearch.showStart = showStart;
+    Template.showStart = showStart;
     /** Animations */
     /*export function animation(): ƒS.AnimationDefinition {
       return {
@@ -462,77 +464,77 @@ var TheSearch;
     }*/
     function getAnimation() {
         return {
-            start: { translation: TheSearch.ƒS.positions.bottomcenter },
-            end: { translation: TheSearch.ƒS.positions.bottomleft },
+            start: { translation: Template.ƒS.positions.bottomcenter },
+            end: { translation: Template.ƒS.positions.bottomleft },
             duration: 1,
-            playmode: TheSearch.ƒS.ANIMATION_PLAYMODE.PLAYONCE
+            playmode: Template.ƒS.ANIMATION_PLAYMODE.PLAYONCE
         };
     }
-    TheSearch.getAnimation = getAnimation;
+    Template.getAnimation = getAnimation;
     function getAnimationRexRun() {
         return {
-            start: { translation: TheSearch.ƒS.positions.bottomright },
-            end: { translation: TheSearch.ƒS.positionPercent(30, 160) },
+            start: { translation: Template.ƒS.positions.bottomright },
+            end: { translation: Template.ƒS.positionPercent(30, 160) },
             duration: 1,
-            playmode: TheSearch.ƒS.ANIMATION_PLAYMODE.PLAYONCE
+            playmode: Template.ƒS.ANIMATION_PLAYMODE.PLAYONCE
         };
     }
-    TheSearch.getAnimationRexRun = getAnimationRexRun;
+    Template.getAnimationRexRun = getAnimationRexRun;
     function getAnimationElena() {
         return {
-            start: { translation: TheSearch.ƒS.positions.bottomleft },
-            end: { translation: TheSearch.ƒS.positionPercent(50, 150) },
+            start: { translation: Template.ƒS.positions.bottomleft },
+            end: { translation: Template.ƒS.positionPercent(50, 150) },
             duration: 1,
-            playmode: TheSearch.ƒS.ANIMATION_PLAYMODE.PLAYONCE
+            playmode: Template.ƒS.ANIMATION_PLAYMODE.PLAYONCE
         };
     }
-    TheSearch.getAnimationElena = getAnimationElena;
+    Template.getAnimationElena = getAnimationElena;
     //Fly away
     function getAnimationFlyAway() {
         return {
-            start: { translation: TheSearch.ƒS.positions.bottomleft },
-            end: { translation: TheSearch.ƒS.positions.topright },
+            start: { translation: Template.ƒS.positions.bottomleft },
+            end: { translation: Template.ƒS.positions.topright },
             duration: 3,
-            playmode: TheSearch.ƒS.ANIMATION_PLAYMODE.PLAYONCE
+            playmode: Template.ƒS.ANIMATION_PLAYMODE.PLAYONCE
         };
     }
-    TheSearch.getAnimationFlyAway = getAnimationFlyAway;
+    Template.getAnimationFlyAway = getAnimationFlyAway;
     function getAnimationFlyTowards() {
         return {
-            start: { translation: TheSearch.ƒS.positions.topright },
-            end: { translation: TheSearch.ƒS.positions.bottomleft },
+            start: { translation: Template.ƒS.positions.topright },
+            end: { translation: Template.ƒS.positions.bottomleft },
             duration: 3,
-            playmode: TheSearch.ƒS.ANIMATION_PLAYMODE.PLAYONCE
+            playmode: Template.ƒS.ANIMATION_PLAYMODE.PLAYONCE
         };
     }
-    TheSearch.getAnimationFlyTowards = getAnimationFlyTowards;
+    Template.getAnimationFlyTowards = getAnimationFlyTowards;
     function special() {
         return {
-            start: { translation: TheSearch.ƒS.positions.bottomleft },
-            end: { translation: TheSearch.ƒS.positions.bottomcenter },
+            start: { translation: Template.ƒS.positions.bottomleft },
+            end: { translation: Template.ƒS.positions.bottomcenter },
             duration: 3,
-            playmode: TheSearch.ƒS.ANIMATION_PLAYMODE.PLAYONCE
+            playmode: Template.ƒS.ANIMATION_PLAYMODE.PLAYONCE
         };
     }
-    TheSearch.special = special;
+    Template.special = special;
     function getAnimationRightMiddle() {
         return {
-            start: { translation: TheSearch.ƒS.positions.bottomright },
-            end: { translation: TheSearch.ƒS.positions.bottomcenter },
+            start: { translation: Template.ƒS.positions.bottomright },
+            end: { translation: Template.ƒS.positions.bottomcenter },
             duration: 3,
-            playmode: TheSearch.ƒS.ANIMATION_PLAYMODE.PLAYONCE
+            playmode: Template.ƒS.ANIMATION_PLAYMODE.PLAYONCE
         };
     }
-    TheSearch.getAnimationRightMiddle = getAnimationRightMiddle;
+    Template.getAnimationRightMiddle = getAnimationRightMiddle;
     function getAnimationLucy() {
         return {
-            start: { translation: TheSearch.ƒS.positions.bottomright },
-            end: { translation: TheSearch.ƒS.positionPercent(80, 102) },
+            start: { translation: Template.ƒS.positions.bottomright },
+            end: { translation: Template.ƒS.positionPercent(80, 102) },
             duration: 3,
-            playmode: TheSearch.ƒS.ANIMATION_PLAYMODE.PLAYONCE
+            playmode: Template.ƒS.ANIMATION_PLAYMODE.PLAYONCE
         };
     }
-    TheSearch.getAnimationLucy = getAnimationLucy;
+    Template.getAnimationLucy = getAnimationLucy;
     /** Menu shortcuts */
     let inGameMenuButtons = {
         save: "Speichern",
@@ -548,32 +550,32 @@ var TheSearch;
         console.log(_option);
         switch (_option) {
             case inGameMenuButtons.save:
-                await TheSearch.ƒS.Progress.save();
+                await Template.ƒS.Progress.save();
                 break;
             case inGameMenuButtons.load:
-                await TheSearch.ƒS.Progress.load();
+                await Template.ƒS.Progress.load();
                 break;
             case inGameMenuButtons.close:
                 gameMenu.close();
                 menuIsOpen = false;
                 break;
             case inGameMenuButtons.inventory:
-                await TheSearch.ƒS.Inventory.open();
+                await Template.ƒS.Inventory.open();
                 break;
         }
     }
     document.addEventListener("keydown", hndKeyPress);
     async function hndKeyPress(_event) {
         switch (_event.code) {
-            case TheSearch.ƒ.KEYBOARD_CODE.F8:
+            case Template.ƒ.KEYBOARD_CODE.F8:
                 console.log("Save");
-                await TheSearch.ƒS.Progress.save();
+                await Template.ƒS.Progress.save();
                 break;
-            case TheSearch.ƒ.KEYBOARD_CODE.F9:
+            case Template.ƒ.KEYBOARD_CODE.F9:
                 console.log("Load");
-                await TheSearch.ƒS.Progress.load();
+                await Template.ƒS.Progress.load();
                 break;
-            case TheSearch.ƒ.KEYBOARD_CODE.M:
+            case Template.ƒ.KEYBOARD_CODE.M:
                 if (menuIsOpen) {
                     console.log("Close");
                     gameMenu.close();
@@ -602,7 +604,7 @@ var TheSearch;
         }
         scene.style.transform = `translateX(0px)`;
     }
-    TheSearch.jitter = jitter;
+    Template.jitter = jitter;
     //let graph: ƒ.Node = ƒS.Base.getGraph();
     //ƒ.Debug.branch(graph);
     //let home: ƒ.Node = graph.getChildrenByName("Back") [0].getChildren() [0];
@@ -611,7 +613,7 @@ var TheSearch;
     //ƒS.update();
     //}
     /**ITEMS */
-    TheSearch.items = {
+    Template.items = {
         rex: {
             name: "Rex",
             description: "<br>" + "<br>" + "- Spezies: Tyrannosaurus Rex " + "<br>" + "- Alter: 0" + "<br>" + "- Vorkommen: Oberkreide" + "<br>" + "- Gewicht: ca. 9 Tonnen" + "<br>" + "- Größe: Höhe: 6 m. Länge: 13 m." + "<br>" + "- Lieblingsessen: Fleisch" + "<br>" + "- Sonstiges: Bis zu 23 cm. lange Zähne und bei einem Biss bis zu 9 Tonnen Druck auf einem Zahn" + "<br>" + "<br>" + "Rex ist ein neugieriger kleiner Dinosaurier der nicht lange bei einer Sache bleiben kann. Er liebt Abenteuer und hat ein gutes Herz.",
@@ -660,14 +662,14 @@ var TheSearch;
         let random = Math.floor(Math.random() * (_max - _min + 1)) + _min;
         return random;
     }
-    TheSearch.getRandom = getRandom;
+    Template.getRandom = getRandom;
     /** SCENES */
     window.addEventListener("load", start);
     function start(_event) {
-        TheSearch.ƒS.Speech.hide();
+        Template.ƒS.Speech.hide();
         document.getElementById("scoreForFriendshipRex").setAttribute("class", "hide");
         document.getElementsByName("friendshipScore").forEach(meterStuff => meterStuff.hidden = true);
-        gameMenu = TheSearch.ƒS.Menu.create(inGameMenuButtons, buttonFunctionalities, "gameMenuCssClass");
+        gameMenu = Template.ƒS.Menu.create(inGameMenuButtons, buttonFunctionalities, "gameMenuCssClass");
         buttonFunctionalities("Close");
         document.getElementById("save").setAttribute("class", "hide");
         document.getElementById("load").setAttribute("class", "hide");
@@ -675,59 +677,59 @@ var TheSearch;
         document.getElementById("inventory").setAttribute("class", "hide");
         //Scene Hierarchy
         let scenes = [
-            { id: "SceneOne", scene: TheSearch.SceneOne, name: "Scene One Scene", next: "EmptyScene" },
-            { id: "SceneTwo", scene: TheSearch.SceneTwo, name: "Scene Two Scene" },
-            { id: "SceneThree", scene: TheSearch.SceneThree, name: "Scene Three Scene" },
-            { id: "SceneFour", scene: TheSearch.SceneFour, name: "Scene Four Scene" },
-            { id: "SceneFive1", scene: TheSearch.SceneFive1, name: "SceneFive1 Scene" },
-            { id: "SceneFiveA", scene: TheSearch.SceneFiveA, name: "Scene FiveA Scene" },
-            { id: "SceneFiveB", scene: TheSearch.SceneFiveB, name: "Scene FiveB Scene" },
-            { id: "SceneSix", scene: TheSearch.SceneSix, name: "SceneSix Scene" },
-            { id: "SceneSeven", scene: TheSearch.SceneSeven, name: "SceneSeven Scene" },
-            { id: "SceneEight", scene: TheSearch.SceneEight, name: "SceneEight Scene" },
-            { id: "SpecialScene", scene: TheSearch.SpecialScene, name: "SpecialScene, Freunde?" },
-            { id: "EndScene", scene: TheSearch.End, name: "End Scene" },
-            { id: "EmptyScene", scene: TheSearch.Empty, name: "Empty" }
+            { id: "SceneOne", scene: Template.SceneOne, name: "Scene One Scene", next: "EmptyScene" },
+            { id: "SceneTwo", scene: Template.SceneTwo, name: "Scene Two Scene" },
+            { id: "SceneThree", scene: Template.SceneThree, name: "Scene Three Scene" },
+            { id: "SceneFour", scene: Template.SceneFour, name: "Scene Four Scene" },
+            { id: "SceneFive1", scene: Template.SceneFive1, name: "SceneFive1 Scene" },
+            { id: "SceneFiveA", scene: Template.SceneFiveA, name: "Scene FiveA Scene" },
+            { id: "SceneFiveB", scene: Template.SceneFiveB, name: "Scene FiveB Scene" },
+            { id: "SceneSix", scene: Template.SceneSix, name: "SceneSix Scene" },
+            { id: "SceneSeven", scene: Template.SceneSeven, name: "SceneSeven Scene" },
+            { id: "SceneEight", scene: Template.SceneEight, name: "SceneEight Scene" },
+            { id: "SpecialScene", scene: Template.SpecialScene, name: "SpecialScene, Freunde?" },
+            { id: "EndScene", scene: Template.End, name: "End Scene" },
+            { id: "EmptyScene", scene: Template.Empty, name: "Empty" }
         ];
         let uiElement = document.querySelector("[type=interface]");
-        TheSearch.dataForSave = TheSearch.ƒS.Progress.setData(TheSearch.dataForSave, uiElement);
+        Template.dataForSave = Template.ƒS.Progress.setData(Template.dataForSave, uiElement);
         // start the sequence
-        TheSearch.ƒS.Progress.go(scenes);
+        Template.ƒS.Progress.go(scenes);
     }
-    TheSearch.start = start;
-})(TheSearch || (TheSearch = {}));
+    Template.start = start;
+})(Template || (Template = {}));
 /*namespace Template {
   export async function Scene(): ƒS.SceneReturn {
     console.log("FudgeStory Template Scene starting");
   }
 }*/ 
-var TheSearch;
-(function (TheSearch) {
+var Template;
+(function (Template) {
     async function Empty() {
         //
     }
-    TheSearch.Empty = Empty;
-})(TheSearch || (TheSearch = {}));
-var TheSearch;
-(function (TheSearch) {
+    Template.Empty = Empty;
+})(Template || (Template = {}));
+var Template;
+(function (Template) {
     async function End() {
         console.log("FudgeStory Template End starting");
         //await ƒS.Location.show(locations.Home_Hatched);
-        TheSearch.ƒS.Speech.hide();
+        Template.ƒS.Speech.hide();
         document.getElementsByName("friendshipScore").forEach(meterStuff => meterStuff.hidden = true);
         document.getElementById("scoreForFriendshipRex").setAttribute("class", "hide");
         document.getElementById("save").setAttribute("class", "hide");
         document.getElementById("load").setAttribute("class", "hide");
         document.getElementById("close").setAttribute("class", "hide");
         document.getElementById("inventory").setAttribute("class", "hide");
-        await TheSearch.ƒS.Character.show(TheSearch.characters.end, TheSearch.characters.end.pose.end, TheSearch.ƒS.positions.bottomcenter);
-        TheSearch.ƒS.update();
-        TheSearch.showCredits();
+        await Template.ƒS.Character.show(Template.characters.end, Template.characters.end.pose.end, Template.ƒS.positions.bottomcenter);
+        Template.ƒS.update();
+        Template.showCredits();
     }
-    TheSearch.End = End;
-})(TheSearch || (TheSearch = {}));
-var TheSearch;
-(function (TheSearch) {
+    Template.End = End;
+})(Template || (Template = {}));
+var Template;
+(function (Template) {
     async function FirstScene() {
         console.log("SceneOne starting");
         let text = {
@@ -738,14 +740,14 @@ var TheSearch;
             }
         };
         //Textbox soll verschwinden
-        await TheSearch.ƒS.Location.show(TheSearch.locations.Home_Hatched);
+        await Template.ƒS.Location.show(Template.locations.Home_Hatched);
         //await ƒS.update();
-        await TheSearch.ƒS.Character.show(TheSearch.characters.rex, TheSearch.characters.rex.pose.happy, TheSearch.ƒS.positionPercent(68, 129)); //Prozentual angegeben!
+        await Template.ƒS.Character.show(Template.characters.rex, Template.characters.rex.pose.happy, Template.ƒS.positionPercent(68, 129)); //Prozentual angegeben!
         //await ƒS.Character.show(characters.rex, characters.rex.pose.happy, ƒS.positions.bottomcener)
-        await TheSearch.ƒS.update(TheSearch.transition.start.duration, TheSearch.transition.start.alpha, TheSearch.transition.start.edge);
+        await Template.ƒS.update(Template.transition.start.duration, Template.transition.start.alpha, Template.transition.start.edge);
         //ƒS.Speech.show();
-        await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0001);
-        await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0002);
+        await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0001);
+        await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0002);
         //Nach jeder Location und nach jedem Character updaten!!
         //Entscheidungsmöglichkeiten anlegen
         let sceneOne1decision = {
@@ -754,7 +756,7 @@ var TheSearch;
             iSayNo: "No",
             iSayThanks: "Thank you"
         };
-        let dialogueElementS1D1 = await TheSearch.ƒS.Menu.getInput(sceneOne1decision, "choicesCssClass");
+        let dialogueElementS1D1 = await Template.ƒS.Menu.getInput(sceneOne1decision, "choicesCssClass");
         switch (dialogueElementS1D1) {
             case sceneOne1decision.iSayYes:
                 console.log("S1D1 Yes");
@@ -770,10 +772,10 @@ var TheSearch;
                 break;
         }
     }
-    TheSearch.FirstScene = FirstScene;
-})(TheSearch || (TheSearch = {}));
-var TheSearch;
-(function (TheSearch) {
+    Template.FirstScene = FirstScene;
+})(Template || (Template = {}));
+var Template;
+(function (Template) {
     async function SceneEight() {
         console.log("SceneSeven starting");
         let text = {
@@ -796,57 +798,57 @@ var TheSearch;
                 T0003: "Ich danke dir!"
             }
         };
-        await TheSearch.ƒS.Location.show(TheSearch.locations.HomeNight);
-        await TheSearch.ƒS.update(TheSearch.transition.stepsTogether.duration, TheSearch.transition.stepsTogether.alpha, TheSearch.transition.stepsTogether.edge);
-        TheSearch.ƒS.Sound.play(TheSearch.soundLucy.s8t0001, 1);
-        await TheSearch.ƒS.Speech.tell(TheSearch.characters.lucy, text.Lucy.T0001);
-        TheSearch.ƒS.Sound.play(TheSearch.soundRexMom.s8schluchz, 1);
-        TheSearch.ƒS.Sound.play(TheSearch.soundRexMom.s8wein, 1);
-        await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Narrator.T0003);
-        TheSearch.ƒS.Sound.play(TheSearch.soundRex.s8t0001, 1);
-        await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0001);
-        await TheSearch.ƒS.Character.show(TheSearch.characters.mama, TheSearch.characters.mama.pose.happy, TheSearch.ƒS.positions.bottomleft);
-        TheSearch.ƒS.update();
-        TheSearch.ƒS.Sound.play(TheSearch.soundRexMom.s8t0001, 1);
-        await TheSearch.ƒS.Speech.tell(TheSearch.characters.mama, text.Mama.T0001);
-        await TheSearch.ƒS.Character.show(TheSearch.characters.rex, TheSearch.characters.rex.pose.happy, TheSearch.ƒS.positions.bottomright);
-        await TheSearch.ƒS.Character.hide(TheSearch.characters.mama);
-        await TheSearch.ƒS.Character.show(TheSearch.characters.lucy, TheSearch.characters.lucy.pose.sad, TheSearch.ƒS.positions.bottomleft);
-        await TheSearch.ƒS.Character.show(TheSearch.characters.mama, TheSearch.characters.mama.pose.happy, TheSearch.ƒS.positions.bottomcenter);
-        TheSearch.ƒS.update();
-        TheSearch.ƒS.Sound.play(TheSearch.soundLucy.s8t0002, 1);
-        await TheSearch.ƒS.Speech.tell(TheSearch.characters.lucy, text.Lucy.T0002);
-        TheSearch.ƒS.Sound.play(TheSearch.soundRexMom.s8t0002, 1);
-        await TheSearch.ƒS.Speech.tell(TheSearch.characters.mama, text.Mama.T0002);
-        await TheSearch.ƒS.Character.hide(TheSearch.characters.lucy);
-        await TheSearch.ƒS.Character.show(TheSearch.characters.lucy, TheSearch.characters.lucy.pose.happy, TheSearch.ƒS.positions.bottomleft);
-        TheSearch.ƒS.update();
-        TheSearch.ƒS.Sound.play(TheSearch.soundLucy.s8t0003, 1);
-        await TheSearch.ƒS.Speech.tell(TheSearch.characters.lucy, text.Lucy.T0003);
-        TheSearch.ƒS.Sound.play(TheSearch.soundRexMom.s8t0003, 1);
-        await TheSearch.ƒS.Speech.tell(TheSearch.characters.mama, text.Mama.T0003);
-        await TheSearch.ƒS.Character.hide(TheSearch.characters.mama);
-        await TheSearch.ƒS.Character.hide(TheSearch.characters.lucy);
-        await TheSearch.ƒS.Location.show(TheSearch.locations.Home_Hatched);
-        await TheSearch.ƒS.update(TheSearch.transition.dayNight.duration, TheSearch.transition.dayNight.alpha, TheSearch.transition.dayNight.edge);
-        TheSearch.ƒS.Sound.play(TheSearch.soundNarrator.s8t0001, 1);
-        await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Narrator.T0001);
-        if (TheSearch.dataForSave.friendshipScore >= 1) {
-            await TheSearch.ƒS.Character.animate(TheSearch.characters.rex, TheSearch.characters.rex.pose.happy, TheSearch.special());
-            TheSearch.ƒS.Sound.play(TheSearch.soundNarrator.s8t0002, 1);
-            await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Narrator.T0002);
-            return TheSearch.SpecialScene();
+        await Template.ƒS.Location.show(Template.locations.HomeNight);
+        await Template.ƒS.update(Template.transition.stepsTogether.duration, Template.transition.stepsTogether.alpha, Template.transition.stepsTogether.edge);
+        Template.ƒS.Sound.play(Template.soundLucy.s8t0001, 1);
+        await Template.ƒS.Speech.tell(Template.characters.lucy, text.Lucy.T0001);
+        Template.ƒS.Sound.play(Template.soundRexMom.s8schluchz, 1);
+        Template.ƒS.Sound.play(Template.soundRexMom.s8wein, 1);
+        await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0003);
+        Template.ƒS.Sound.play(Template.soundRex.s8t0001, 1);
+        await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0001);
+        await Template.ƒS.Character.show(Template.characters.mama, Template.characters.mama.pose.happy, Template.ƒS.positions.bottomleft);
+        Template.ƒS.update();
+        Template.ƒS.Sound.play(Template.soundRexMom.s8t0001, 1);
+        await Template.ƒS.Speech.tell(Template.characters.mama, text.Mama.T0001);
+        await Template.ƒS.Character.show(Template.characters.rex, Template.characters.rex.pose.happy, Template.ƒS.positions.bottomright);
+        await Template.ƒS.Character.hide(Template.characters.mama);
+        await Template.ƒS.Character.show(Template.characters.lucy, Template.characters.lucy.pose.sad, Template.ƒS.positions.bottomleft);
+        await Template.ƒS.Character.show(Template.characters.mama, Template.characters.mama.pose.happy, Template.ƒS.positions.bottomcenter);
+        Template.ƒS.update();
+        Template.ƒS.Sound.play(Template.soundLucy.s8t0002, 1);
+        await Template.ƒS.Speech.tell(Template.characters.lucy, text.Lucy.T0002);
+        Template.ƒS.Sound.play(Template.soundRexMom.s8t0002, 1);
+        await Template.ƒS.Speech.tell(Template.characters.mama, text.Mama.T0002);
+        await Template.ƒS.Character.hide(Template.characters.lucy);
+        await Template.ƒS.Character.show(Template.characters.lucy, Template.characters.lucy.pose.happy, Template.ƒS.positions.bottomleft);
+        Template.ƒS.update();
+        Template.ƒS.Sound.play(Template.soundLucy.s8t0003, 1);
+        await Template.ƒS.Speech.tell(Template.characters.lucy, text.Lucy.T0003);
+        Template.ƒS.Sound.play(Template.soundRexMom.s8t0003, 1);
+        await Template.ƒS.Speech.tell(Template.characters.mama, text.Mama.T0003);
+        await Template.ƒS.Character.hide(Template.characters.mama);
+        await Template.ƒS.Character.hide(Template.characters.lucy);
+        await Template.ƒS.Location.show(Template.locations.Home_Hatched);
+        await Template.ƒS.update(Template.transition.dayNight.duration, Template.transition.dayNight.alpha, Template.transition.dayNight.edge);
+        Template.ƒS.Sound.play(Template.soundNarrator.s8t0001, 1);
+        await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0001);
+        if (Template.dataForSave.friendshipScore >= 1) {
+            await Template.ƒS.Character.animate(Template.characters.rex, Template.characters.rex.pose.happy, Template.special());
+            Template.ƒS.Sound.play(Template.soundNarrator.s8t0002, 1);
+            await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0002);
+            return Template.SpecialScene();
         }
         else {
-            return TheSearch.End();
+            return Template.End();
         }
     }
-    TheSearch.SceneEight = SceneEight;
-})(TheSearch || (TheSearch = {}));
-var TheSearch;
-(function (TheSearch) {
+    Template.SceneEight = SceneEight;
+})(Template || (Template = {}));
+var Template;
+(function (Template) {
     async function SceneFive1() {
-        console.log("SceneThree starting");
+        console.log("SceneFive1 starting");
         let text = {
             Narrator: {
                 T0001: "Nachdem Rex an der Schlucht vorbei gelaufen ist, hat er jetzt eine Lichtung mit aufeinander gestapelten Steinen erreicht. Oh, er ist ja gar nicht alleine. Wer ist denn das?",
@@ -870,14 +872,14 @@ var TheSearch;
                 T0003: "Achja? Papaaa, der T-Rex ärgert mich!"
             }
         };
-        await TheSearch.ƒS.Location.show(TheSearch.locations.L_Tricera);
-        await TheSearch.ƒS.Character.show(TheSearch.characters.rex, TheSearch.characters.rex.pose.happy, TheSearch.ƒS.positions.bottomright);
-        await TheSearch.ƒS.Character.show(TheSearch.characters.tilly, TheSearch.characters.tilly.pose.happy, TheSearch.ƒS.positions.bottomleft);
-        await TheSearch.ƒS.update(TheSearch.transition.steps.duration, TheSearch.transition.steps.alpha, TheSearch.transition.steps.edge);
-        TheSearch.ƒS.Sound.play(TheSearch.soundNarrator.s51t0001, 1);
-        await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Narrator.T0001);
-        TheSearch.ƒS.Sound.play(TheSearch.soundRex.s51t0001, 1);
-        await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0001);
+        await Template.ƒS.Location.show(Template.locations.L_Tricera);
+        await Template.ƒS.Character.show(Template.characters.rex, Template.characters.rex.pose.happy, Template.ƒS.positions.bottomright);
+        await Template.ƒS.Character.show(Template.characters.tilly, Template.characters.tilly.pose.happy, Template.ƒS.positions.bottomleft);
+        await Template.ƒS.update(Template.transition.steps.duration, Template.transition.steps.alpha, Template.transition.steps.edge);
+        Template.ƒS.Sound.play(Template.soundNarrator.s51t0001, 1);
+        await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0001);
+        Template.ƒS.Sound.play(Template.soundRex.s51t0001, 1);
+        await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0001);
         /**DECISIONS */
         /** INTRODUCE? */
         let sceneFive1Decision1Introduce = {
@@ -894,48 +896,48 @@ var TheSearch;
             iSayGetAngry: "Böse werden",
             iSayDoNotGetAngry: "Nicht böse werden"
         };
-        let dialogueElementS51D1Introduce = await TheSearch.ƒS.Menu.getInput(sceneFive1Decision1Introduce, "choicesCssClass");
+        let dialogueElementS51D1Introduce = await Template.ƒS.Menu.getInput(sceneFive1Decision1Introduce, "choicesCssClass");
         switch (dialogueElementS51D1Introduce) {
             case sceneFive1Decision1Introduce.iSayYes:
                 console.log("iSayYes");
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s51t0004, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0004);
-                TheSearch.ƒS.Sound.play(TheSearch.soundTilly.s51t0002, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.tilly, text.Tilly.T0002);
-                TheSearch.ƒS.Text.addClass("novelPageTilly");
-                await TheSearch.ƒS.Text.print("");
-                TheSearch.ƒS.Inventory.add(TheSearch.items.tilly);
-                TheSearch.ƒS.update();
-                let dialogueElementS51D2PlayOrAsk = await TheSearch.ƒS.Menu.getInput(sceneFive1Decision2PlayOrAsk, "choicesCssClass");
+                Template.ƒS.Sound.play(Template.soundRex.s51t0004, 1);
+                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0004);
+                Template.ƒS.Sound.play(Template.soundTilly.s51t0002, 1);
+                await Template.ƒS.Speech.tell(Template.characters.tilly, text.Tilly.T0002);
+                Template.ƒS.Text.addClass("novelPageTilly");
+                await Template.ƒS.Text.print("");
+                Template.ƒS.Inventory.add(Template.items.tilly);
+                Template.ƒS.update();
+                let dialogueElementS51D2PlayOrAsk = await Template.ƒS.Menu.getInput(sceneFive1Decision2PlayOrAsk, "choicesCssClass");
                 switch (dialogueElementS51D2PlayOrAsk) {
                     case sceneFive1Decision2PlayOrAsk.iSayJustPlay:
                         console.log("iSayJustPlay");
-                        TheSearch.ƒS.Sound.play(TheSearch.soundNarrator.s51t0002, 1);
-                        await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Narrator.T0002);
-                        await TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                        await TheSearch.ƒS.Character.animate(TheSearch.characters.rex, TheSearch.characters.rex.pose.happy, TheSearch.getAnimationRightMiddle());
-                        await TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                        await TheSearch.ƒS.Character.show(TheSearch.characters.rex, TheSearch.characters.rex.pose.happy, TheSearch.ƒS.positions.bottomcenter);
-                        TheSearch.ƒS.update();
-                        let dialogueElementS51D3GetAngry = await TheSearch.ƒS.Menu.getInput(sceneFive1Decision3GetAngry, "choicesCssClass");
+                        Template.ƒS.Sound.play(Template.soundNarrator.s51t0002, 1);
+                        await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0002);
+                        await Template.ƒS.Character.hide(Template.characters.rex);
+                        await Template.ƒS.Character.animate(Template.characters.rex, Template.characters.rex.pose.happy, Template.getAnimationRightMiddle());
+                        await Template.ƒS.Character.hide(Template.characters.rex);
+                        await Template.ƒS.Character.show(Template.characters.rex, Template.characters.rex.pose.happy, Template.ƒS.positions.bottomcenter);
+                        Template.ƒS.update();
+                        let dialogueElementS51D3GetAngry = await Template.ƒS.Menu.getInput(sceneFive1Decision3GetAngry, "choicesCssClass");
                         switch (dialogueElementS51D3GetAngry) {
                             case sceneFive1Decision3GetAngry.iSayGetAngry:
                                 console.log("iSayGetAngry");
-                                TheSearch.dataForSave.friendshipScore -= 1;
-                                await TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                                await TheSearch.ƒS.Character.show(TheSearch.characters.rex, TheSearch.characters.rex.pose.angry, TheSearch.ƒS.positions.bottomcenter);
-                                TheSearch.ƒS.update();
-                                await TheSearch.ƒS.Character.hide(TheSearch.characters.tilly);
-                                await TheSearch.ƒS.Character.show(TheSearch.characters.tilly, TheSearch.characters.tilly.pose.angry, TheSearch.ƒS.positions.bottomleft);
-                                TheSearch.ƒS.update();
-                                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s51t0005, 1);
-                                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0005);
-                                TheSearch.ƒS.Sound.play(TheSearch.soundTilly.s51t0003, 1);
-                                await TheSearch.ƒS.Speech.tell(TheSearch.characters.tilly, text.Tilly.T0003);
-                                TheSearch.ƒS.Sound.play(TheSearch.soundTillysDad.s51t0001, 1);
-                                await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Narrator.T0008);
-                                TheSearch.ƒS.Sound.play(TheSearch.soundNarrator.s51Game3, 1);
-                                await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Narrator.T0004);
+                                Template.dataForSave.friendshipScore -= 1;
+                                await Template.ƒS.Character.hide(Template.characters.rex);
+                                await Template.ƒS.Character.show(Template.characters.rex, Template.characters.rex.pose.angry, Template.ƒS.positions.bottomcenter);
+                                Template.ƒS.update();
+                                await Template.ƒS.Character.hide(Template.characters.tilly);
+                                await Template.ƒS.Character.show(Template.characters.tilly, Template.characters.tilly.pose.angry, Template.ƒS.positions.bottomleft);
+                                Template.ƒS.update();
+                                Template.ƒS.Sound.play(Template.soundRex.s51t0005, 1);
+                                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0005);
+                                Template.ƒS.Sound.play(Template.soundTilly.s51t0003, 1);
+                                await Template.ƒS.Speech.tell(Template.characters.tilly, text.Tilly.T0003);
+                                Template.ƒS.Sound.play(Template.soundTillysDad.s51t0001, 1);
+                                await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0008);
+                                Template.ƒS.Sound.play(Template.soundNarrator.s51Game3, 1);
+                                await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0004);
                                 /**MINI GAME 3 */
                                 let gameField = document.createElement("div");
                                 gameField.setAttribute("id", "gameField");
@@ -1018,18 +1020,18 @@ var TheSearch;
                                             inventory.classList.remove("hide");
                                             document.getElementsByName("friendshipScore").forEach(meterStuff => meterStuff.hidden = false);
                                             document.getElementById("scoreForFriendshipRex").classList.remove("hide");
-                                            TheSearch.dataForSave.friendshipScore -= 5;
-                                            await TheSearch.ƒS.Character.hide(TheSearch.characters.tilly);
-                                            await TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                                            TheSearch.ƒS.update();
-                                            await TheSearch.ƒS.Character.show(TheSearch.characters.rex, TheSearch.characters.rex.pose.sad, TheSearch.ƒS.positions.bottomright);
-                                            TheSearch.ƒS.Sound.play(TheSearch.soundNarrator.s51t0006, 1);
-                                            await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Narrator.T0006);
-                                            TheSearch.ƒS.Character.hide(TheSearch.characters.tilly);
-                                            TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                                            TheSearch.ƒS.Speech.clear();
-                                            TheSearch.ƒS.Speech.hide();
-                                            return TheSearch.SceneSix();
+                                            Template.dataForSave.friendshipScore -= 5;
+                                            await Template.ƒS.Character.hide(Template.characters.tilly);
+                                            await Template.ƒS.Character.hide(Template.characters.rex);
+                                            Template.ƒS.update();
+                                            await Template.ƒS.Character.show(Template.characters.rex, Template.characters.rex.pose.sad, Template.ƒS.positions.bottomright);
+                                            Template.ƒS.Sound.play(Template.soundNarrator.s51t0006, 1);
+                                            await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0006);
+                                            Template.ƒS.Character.hide(Template.characters.tilly);
+                                            Template.ƒS.Character.hide(Template.characters.rex);
+                                            Template.ƒS.Speech.clear();
+                                            Template.ƒS.Speech.hide();
+                                            return Template.SceneSix();
                                         }
                                         if (score == 5) {
                                             clearInterval(stoneInterval);
@@ -1045,24 +1047,24 @@ var TheSearch;
                                             inventory.classList.remove("hide");
                                             document.getElementsByName("friendshipScore").forEach(meterStuff => meterStuff.hidden = false);
                                             document.getElementById("scoreForFriendshipRex").classList.remove("hide");
-                                            TheSearch.dataForSave.friendshipScore += 5;
-                                            await TheSearch.ƒS.Character.hide(TheSearch.characters.tilly);
-                                            await TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                                            await TheSearch.ƒS.Character.show(TheSearch.characters.rex, TheSearch.characters.rex.pose.happy, TheSearch.ƒS.positions.bottomright);
-                                            TheSearch.ƒS.update();
-                                            await TheSearch.ƒS.Sound.play(TheSearch.soundNarrator.s51t0007, 1);
-                                            await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Narrator.T0007);
-                                            await TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                                            TheSearch.ƒS.Speech.clear();
-                                            TheSearch.ƒS.Speech.hide();
-                                            return TheSearch.SceneSix();
+                                            Template.dataForSave.friendshipScore += 5;
+                                            await Template.ƒS.Character.hide(Template.characters.tilly);
+                                            await Template.ƒS.Character.hide(Template.characters.rex);
+                                            await Template.ƒS.Character.show(Template.characters.rex, Template.characters.rex.pose.happy, Template.ƒS.positions.bottomright);
+                                            Template.ƒS.update();
+                                            await Template.ƒS.Sound.play(Template.soundNarrator.s51t0007, 1);
+                                            await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0007);
+                                            await Template.ƒS.Character.hide(Template.characters.rex);
+                                            Template.ƒS.Speech.clear();
+                                            Template.ƒS.Speech.hide();
+                                            return Template.SceneSix();
                                         }
                                     }
                                 }
                                 generateStones();
                                 function control(_e) {
                                     if (_e.key == "ArrowUp" || _e.key == " ") {
-                                        TheSearch.ƒS.Sound.play(TheSearch.soundSFX.jump, 1);
+                                        Template.ƒS.Sound.play(Template.soundSFX.jump, 1);
                                         jump();
                                         score++;
                                     }
@@ -1071,56 +1073,56 @@ var TheSearch;
                                 break;
                             case sceneFive1Decision3GetAngry.iSayDoNotGetAngry:
                                 console.log("iSayDoNotGetAngry");
-                                TheSearch.dataForSave.friendshipScore += 1;
-                                TheSearch.ƒS.Character.hide(TheSearch.characters.tilly);
-                                TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                                TheSearch.ƒS.Speech.clear();
-                                TheSearch.ƒS.Speech.hide();
-                                let sceneSix = TheSearch.SceneSix();
+                                Template.dataForSave.friendshipScore += 1;
+                                Template.ƒS.Character.hide(Template.characters.tilly);
+                                Template.ƒS.Character.hide(Template.characters.rex);
+                                Template.ƒS.Speech.clear();
+                                Template.ƒS.Speech.hide();
+                                let sceneSix = Template.SceneSix();
                                 return sceneSix;
                                 break;
                         }
                         break;
                     case sceneFive1Decision2PlayOrAsk.iSayAskAgain:
                         console.log("iSayAskAgain");
-                        await TheSearch.ƒS.Character.hide(TheSearch.characters.tilly);
-                        await TheSearch.ƒS.Character.show(TheSearch.characters.tilly, TheSearch.characters.tilly.pose.angry, TheSearch.ƒS.positions.bottomleft);
-                        TheSearch.ƒS.update();
-                        TheSearch.ƒS.Sound.play(TheSearch.soundTilly.s51t0001, 1);
-                        await TheSearch.ƒS.Speech.tell(TheSearch.characters.tilly, text.Tilly.T0001);
-                        await TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                        TheSearch.ƒS.update();
-                        await TheSearch.ƒS.Character.animate(TheSearch.characters.rex, TheSearch.characters.rex.pose.sad, TheSearch.getAnimation());
-                        TheSearch.ƒS.Character.hide(TheSearch.characters.tilly);
-                        TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                        TheSearch.ƒS.Speech.clear();
-                        TheSearch.ƒS.Speech.hide();
-                        return TheSearch.SceneSix();
+                        await Template.ƒS.Character.hide(Template.characters.tilly);
+                        await Template.ƒS.Character.show(Template.characters.tilly, Template.characters.tilly.pose.angry, Template.ƒS.positions.bottomleft);
+                        Template.ƒS.update();
+                        Template.ƒS.Sound.play(Template.soundTilly.s51t0001, 1);
+                        await Template.ƒS.Speech.tell(Template.characters.tilly, text.Tilly.T0001);
+                        await Template.ƒS.Character.hide(Template.characters.rex);
+                        Template.ƒS.update();
+                        await Template.ƒS.Character.animate(Template.characters.rex, Template.characters.rex.pose.sad, Template.getAnimation());
+                        Template.ƒS.Character.hide(Template.characters.tilly);
+                        Template.ƒS.Character.hide(Template.characters.rex);
+                        Template.ƒS.Speech.clear();
+                        Template.ƒS.Speech.hide();
+                        return Template.SceneSix();
                         break;
                 }
                 break;
             case sceneFive1Decision1Introduce.iSayNo:
                 console.log("iSayNo");
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s51t0002, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0002);
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s51t0003, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0003);
-                TheSearch.ƒS.Sound.play(TheSearch.soundTilly.s51t0001, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.tilly, text.Tilly.T0001);
-                TheSearch.ƒS.Character.hide(TheSearch.characters.tilly);
-                TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                TheSearch.ƒS.Speech.clear();
-                TheSearch.ƒS.Speech.hide();
-                return TheSearch.SceneSix();
+                Template.ƒS.Sound.play(Template.soundRex.s51t0002, 1);
+                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0002);
+                Template.ƒS.Sound.play(Template.soundRex.s51t0003, 1);
+                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0003);
+                Template.ƒS.Sound.play(Template.soundTilly.s51t0001, 1);
+                await Template.ƒS.Speech.tell(Template.characters.tilly, text.Tilly.T0001);
+                Template.ƒS.Character.hide(Template.characters.tilly);
+                Template.ƒS.Character.hide(Template.characters.rex);
+                Template.ƒS.Speech.clear();
+                Template.ƒS.Speech.hide();
+                return Template.SceneSix();
                 break;
         }
     }
-    TheSearch.SceneFive1 = SceneFive1;
-})(TheSearch || (TheSearch = {}));
-var TheSearch;
-(function (TheSearch) {
+    Template.SceneFive1 = SceneFive1;
+})(Template || (Template = {}));
+var Template;
+(function (Template) {
     async function SceneFiveA() {
-        console.log("SceneOne starting");
+        console.log("SceneFiveA starting");
         let text = {
             Narrator: {
                 T0001: "Am Ende der Schlucht sieht Rex einen großen Fluss...",
@@ -1131,7 +1133,7 @@ var TheSearch;
                 T0006: "Rex steigt auf den Rücken von Lenny's Papa und die beiden heben gemeinsam ab. Sie fliegen einige Zeit, bis sich die Spuren verlaufen..."
             },
             Rex: {
-                T0001: TheSearch.dataForSave.nameProtagonist + ", was soll ich tun?",
+                T0001: Template.dataForSave.nameProtagonist + ", was soll ich tun?",
                 T0002: "Hahaha das war nur Spaß! So ein Angsthase!",
                 T0003: "Ich bin Rex.",
                 T0004: "Ich suche meine Mama, hast du sie gesehen? Ihre Spuren führen hier lang.",
@@ -1163,191 +1165,191 @@ var TheSearch;
                 T0006: "Pf, dann mach doch dein eigenes Ding! Muss ich schon nicht auf eine Nervensäge aufpassen."
             }
         };
-        await TheSearch.ƒS.Location.show(TheSearch.locations.L_Ptero);
-        await TheSearch.ƒS.Character.show(TheSearch.characters.lenny, TheSearch.characters.lenny.pose.small, TheSearch.ƒS.positionPercent(18, 29));
-        await TheSearch.ƒS.update(TheSearch.transition.steps.duration, TheSearch.transition.steps.alpha, TheSearch.transition.steps.edge);
-        TheSearch.ƒS.Sound.play(TheSearch.soundNarrator.s5At0001, 1);
-        await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Narrator.T0001);
-        TheSearch.ƒS.Sound.play(TheSearch.soundNarrator.s5At0002, 1);
-        await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Narrator.T0002);
-        await TheSearch.ƒS.Character.show(TheSearch.characters.rex, TheSearch.characters.rex.pose.happy, TheSearch.ƒS.positions.bottomright);
+        await Template.ƒS.Location.show(Template.locations.L_Ptero);
+        await Template.ƒS.Character.show(Template.characters.lenny, Template.characters.lenny.pose.small, Template.ƒS.positionPercent(18, 29));
+        await Template.ƒS.update(Template.transition.steps.duration, Template.transition.steps.alpha, Template.transition.steps.edge);
+        Template.ƒS.Sound.play(Template.soundNarrator.s5At0001, 1);
+        await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0001);
+        Template.ƒS.Sound.play(Template.soundNarrator.s5At0002, 1);
+        await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0002);
+        await Template.ƒS.Character.show(Template.characters.rex, Template.characters.rex.pose.happy, Template.ƒS.positions.bottomright);
         //await ƒS.Character.show(characters.lenny, characters.lenny.pose.happy, ƒS.positions.bottomleft);
-        TheSearch.ƒS.update();
-        TheSearch.ƒS.Sound.play(TheSearch.soundRex.s5At0001, 1);
-        await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0001);
+        Template.ƒS.update();
+        Template.ƒS.Sound.play(Template.soundRex.s5At0001, 1);
+        await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0001);
         /** DECISION */
         let sceneFiveADecision1WhatToDo = {
             iSayScare: "Erschrecken",
             iSayAskForHelp: "Um Hilfe fragen"
         };
-        let dialogueElementS5AD1WhatToDo = await TheSearch.ƒS.Menu.getInput(sceneFiveADecision1WhatToDo, "choicesCssClass");
+        let dialogueElementS5AD1WhatToDo = await Template.ƒS.Menu.getInput(sceneFiveADecision1WhatToDo, "choicesCssClass");
         switch (dialogueElementS5AD1WhatToDo) {
             case sceneFiveADecision1WhatToDo.iSayScare:
                 console.log("Scare him");
-                TheSearch.dataForSave.friendshipScore--;
-                TheSearch.ƒS.Character.hide(TheSearch.characters.lenny);
-                await TheSearch.ƒS.Character.show(TheSearch.characters.lenny, TheSearch.characters.lenny.pose.scared, TheSearch.ƒS.positions.bottomleft);
-                TheSearch.ƒS.update();
-                TheSearch.ƒS.Sound.play(TheSearch.soundLenny.s5At0001, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.lenny, text.Lenny.T0001);
-                TheSearch.ƒS.Character.hide(TheSearch.characters.lenny);
-                TheSearch.ƒS.update();
-                await TheSearch.ƒS.Character.animate(TheSearch.characters.lenny, TheSearch.characters.lenny.pose.happy, TheSearch.getAnimationFlyAway());
-                TheSearch.ƒS.Character.hide(TheSearch.characters.lenny);
-                TheSearch.ƒS.update();
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s5At0002, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0002);
-                TheSearch.ƒS.Sound.play(TheSearch.soundNarrator.s5At0003, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Narrator.T0003);
-                await TheSearch.ƒS.Character.animate(TheSearch.characters.lennysDad, TheSearch.characters.lennysDad.pose.happy, TheSearch.getAnimationFlyTowards());
-                await TheSearch.ƒS.Character.hide(TheSearch.characters.lennysDad);
-                TheSearch.ƒS.update();
-                await TheSearch.ƒS.Character.show(TheSearch.characters.lennysDad, TheSearch.characters.lennysDad.pose.angry, TheSearch.ƒS.positions.bottomleft);
-                TheSearch.ƒS.update();
-                TheSearch.ƒS.Sound.play(TheSearch.soundLennysDad.s5At0001, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.lennysDad, text.Papa.T0001);
-                TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                await TheSearch.ƒS.Character.show(TheSearch.characters.rex, TheSearch.characters.rex.pose.sad, TheSearch.ƒS.positions.bottomright);
-                TheSearch.ƒS.update();
-                TheSearch.ƒS.Character.hide(TheSearch.characters.lennysDad);
-                TheSearch.ƒS.update();
-                await TheSearch.ƒS.Character.animate(TheSearch.characters.lennysDad, TheSearch.characters.lennysDad.pose.happyRight, TheSearch.getAnimationFlyAway());
-                TheSearch.ƒS.Character.hide(TheSearch.characters.lennysDad);
-                TheSearch.ƒS.update();
-                TheSearch.ƒS.Sound.play(TheSearch.soundNarrator.s5At0004, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Narrator.T0004);
-                TheSearch.ƒS.Sound.play(TheSearch.soundNarrator.s5At0005, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Narrator.T0005);
-                await TheSearch.ƒS.Character.show(TheSearch.characters.archie, TheSearch.characters.archie.pose.happy, TheSearch.ƒS.positions.bottomleft);
-                TheSearch.ƒS.update();
-                TheSearch.ƒS.Sound.play(TheSearch.soundArchie.s5At0001, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.archie, text.Archie.T0001);
-                TheSearch.ƒS.Sound.play(TheSearch.soundArchie.s5At0002, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.archie, text.Archie.T0002);
-                TheSearch.ƒS.Text.addClass("novelPageArchie");
-                await TheSearch.ƒS.Text.print("");
-                TheSearch.ƒS.Inventory.add(TheSearch.items.archie);
-                TheSearch.ƒS.update();
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s5At0003, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0003);
-                TheSearch.ƒS.Sound.play(TheSearch.soundArchie.s5At0003, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.archie, text.Archie.T0003);
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s5At0004, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0004);
-                TheSearch.ƒS.Sound.play(TheSearch.soundArchie.s5At0004, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.archie, text.Archie.T0004);
+                Template.dataForSave.friendshipScore--;
+                Template.ƒS.Character.hide(Template.characters.lenny);
+                await Template.ƒS.Character.show(Template.characters.lenny, Template.characters.lenny.pose.scared, Template.ƒS.positions.bottomleft);
+                Template.ƒS.update();
+                Template.ƒS.Sound.play(Template.soundLenny.s5At0001, 1);
+                await Template.ƒS.Speech.tell(Template.characters.lenny, text.Lenny.T0001);
+                Template.ƒS.Character.hide(Template.characters.lenny);
+                Template.ƒS.update();
+                await Template.ƒS.Character.animate(Template.characters.lenny, Template.characters.lenny.pose.happy, Template.getAnimationFlyAway());
+                Template.ƒS.Character.hide(Template.characters.lenny);
+                Template.ƒS.update();
+                Template.ƒS.Sound.play(Template.soundRex.s5At0002, 1);
+                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0002);
+                Template.ƒS.Sound.play(Template.soundNarrator.s5At0003, 1);
+                await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0003);
+                await Template.ƒS.Character.animate(Template.characters.lennysDad, Template.characters.lennysDad.pose.happy, Template.getAnimationFlyTowards());
+                await Template.ƒS.Character.hide(Template.characters.lennysDad);
+                Template.ƒS.update();
+                await Template.ƒS.Character.show(Template.characters.lennysDad, Template.characters.lennysDad.pose.angry, Template.ƒS.positions.bottomleft);
+                Template.ƒS.update();
+                Template.ƒS.Sound.play(Template.soundLennysDad.s5At0001, 1);
+                await Template.ƒS.Speech.tell(Template.characters.lennysDad, text.Papa.T0001);
+                Template.ƒS.Character.hide(Template.characters.rex);
+                await Template.ƒS.Character.show(Template.characters.rex, Template.characters.rex.pose.sad, Template.ƒS.positions.bottomright);
+                Template.ƒS.update();
+                Template.ƒS.Character.hide(Template.characters.lennysDad);
+                Template.ƒS.update();
+                await Template.ƒS.Character.animate(Template.characters.lennysDad, Template.characters.lennysDad.pose.happyRight, Template.getAnimationFlyAway());
+                Template.ƒS.Character.hide(Template.characters.lennysDad);
+                Template.ƒS.update();
+                Template.ƒS.Sound.play(Template.soundNarrator.s5At0004, 1);
+                await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0004);
+                Template.ƒS.Sound.play(Template.soundNarrator.s5At0005, 1);
+                await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0005);
+                await Template.ƒS.Character.show(Template.characters.archie, Template.characters.archie.pose.happy, Template.ƒS.positions.bottomleft);
+                Template.ƒS.update();
+                Template.ƒS.Sound.play(Template.soundArchie.s5At0001, 1);
+                await Template.ƒS.Speech.tell(Template.characters.archie, text.Archie.T0001);
+                Template.ƒS.Sound.play(Template.soundArchie.s5At0002, 1);
+                await Template.ƒS.Speech.tell(Template.characters.archie, text.Archie.T0002);
+                Template.ƒS.Text.addClass("novelPageArchie");
+                await Template.ƒS.Text.print("");
+                Template.ƒS.Inventory.add(Template.items.archie);
+                Template.ƒS.update();
+                Template.ƒS.Sound.play(Template.soundRex.s5At0003, 1);
+                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0003);
+                Template.ƒS.Sound.play(Template.soundArchie.s5At0003, 1);
+                await Template.ƒS.Speech.tell(Template.characters.archie, text.Archie.T0003);
+                Template.ƒS.Sound.play(Template.soundRex.s5At0004, 1);
+                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0004);
+                Template.ƒS.Sound.play(Template.soundArchie.s5At0004, 1);
+                await Template.ƒS.Speech.tell(Template.characters.archie, text.Archie.T0004);
                 /** DECISION */
                 let sceneFiveADecision2GoWithArchie = {
                     iSayIGo: "Mit Archie gehen",
                     iSayNo: "Alleine weiter gehen"
                 };
-                let dialogueElementS5AD2GoWithArchie = await TheSearch.ƒS.Menu.getInput(sceneFiveADecision2GoWithArchie, "choicesCssClass");
+                let dialogueElementS5AD2GoWithArchie = await Template.ƒS.Menu.getInput(sceneFiveADecision2GoWithArchie, "choicesCssClass");
                 switch (dialogueElementS5AD2GoWithArchie) {
                     case sceneFiveADecision2GoWithArchie.iSayIGo:
                         console.log("Go With Archie");
-                        TheSearch.dataForSave.friendshipScore -= 1;
-                        TheSearch.ƒS.Sound.play(TheSearch.soundArchie.s5At0005, 1);
-                        await TheSearch.ƒS.Speech.tell(TheSearch.characters.archie, text.Archie.T0005);
-                        TheSearch.ƒS.Speech.hide();
-                        TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                        TheSearch.ƒS.Character.hide(TheSearch.characters.archie);
-                        TheSearch.ƒS.Speech.clear();
-                        TheSearch.ƒS.update();
-                        return TheSearch.SceneFiveB();
+                        Template.dataForSave.friendshipScore -= 1;
+                        Template.ƒS.Sound.play(Template.soundArchie.s5At0005, 1);
+                        await Template.ƒS.Speech.tell(Template.characters.archie, text.Archie.T0005);
+                        Template.ƒS.Speech.hide();
+                        Template.ƒS.Character.hide(Template.characters.rex);
+                        Template.ƒS.Character.hide(Template.characters.archie);
+                        Template.ƒS.Speech.clear();
+                        Template.ƒS.update();
+                        return Template.SceneFiveB();
                         break;
                     case sceneFiveADecision2GoWithArchie.iSayNo:
                         console.log("Go Alone");
-                        TheSearch.ƒS.Character.hide(TheSearch.characters.archie);
-                        await TheSearch.ƒS.Character.show(TheSearch.characters.archie, TheSearch.characters.archie.pose.angry, TheSearch.ƒS.positions.bottomleft);
-                        TheSearch.ƒS.update();
-                        TheSearch.ƒS.Sound.play(TheSearch.soundArchie.s5At0006, 1);
-                        await TheSearch.ƒS.Speech.tell(TheSearch.characters.archie, text.Archie.T0006);
-                        TheSearch.ƒS.Speech.hide();
-                        TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                        TheSearch.ƒS.Character.hide(TheSearch.characters.archie);
-                        TheSearch.ƒS.Speech.clear();
-                        TheSearch.ƒS.update();
-                        return TheSearch.SceneSix();
+                        Template.ƒS.Character.hide(Template.characters.archie);
+                        await Template.ƒS.Character.show(Template.characters.archie, Template.characters.archie.pose.angry, Template.ƒS.positions.bottomleft);
+                        Template.ƒS.update();
+                        Template.ƒS.Sound.play(Template.soundArchie.s5At0006, 1);
+                        await Template.ƒS.Speech.tell(Template.characters.archie, text.Archie.T0006);
+                        Template.ƒS.Speech.hide();
+                        Template.ƒS.Character.hide(Template.characters.rex);
+                        Template.ƒS.Character.hide(Template.characters.archie);
+                        Template.ƒS.Speech.clear();
+                        Template.ƒS.update();
+                        return Template.SceneSix();
                         break;
                 }
                 break;
             case sceneFiveADecision1WhatToDo.iSayAskForHelp:
                 console.log("Ask for help");
-                TheSearch.dataForSave.friendshipScore++;
-                await TheSearch.ƒS.Character.hide(TheSearch.characters.lenny);
-                await TheSearch.ƒS.Character.show(TheSearch.characters.lenny, TheSearch.characters.lenny.pose.happy, TheSearch.ƒS.positions.bottomleft);
-                TheSearch.ƒS.update();
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s5At0005, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0005);
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s5At0006, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0006);
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s5At0007, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0007);
-                TheSearch.ƒS.Sound.play(TheSearch.soundLenny.s5At0002, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.lenny, text.Lenny.T0002);
-                TheSearch.ƒS.Text.addClass("novelPageLenny");
-                await TheSearch.ƒS.Text.print("");
-                TheSearch.ƒS.Inventory.add(TheSearch.items.lenny);
-                TheSearch.ƒS.update();
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s5At0008, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0008);
-                TheSearch.ƒS.Sound.play(TheSearch.soundLenny.s5At0003, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.lenny, text.Lenny.T0003);
-                TheSearch.ƒS.Character.hide(TheSearch.characters.lenny);
-                TheSearch.ƒS.update();
-                await TheSearch.ƒS.Character.animate(TheSearch.characters.lenny, TheSearch.characters.lenny.pose.happy, TheSearch.getAnimationFlyAway());
-                TheSearch.ƒS.Character.hide(TheSearch.characters.lenny);
-                TheSearch.ƒS.update();
-                await TheSearch.ƒS.Character.animate(TheSearch.characters.lennysDad, TheSearch.characters.lennysDad.pose.happy, TheSearch.getAnimationFlyTowards());
-                await TheSearch.ƒS.Character.hide(TheSearch.characters.lennysDad);
-                await TheSearch.ƒS.Character.show(TheSearch.characters.lennysDad, TheSearch.characters.lennysDad.pose.angry, TheSearch.ƒS.positions.bottomleft);
-                TheSearch.ƒS.update();
-                TheSearch.ƒS.Sound.play(TheSearch.soundLennysDad.s5At0002, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.lennysDad, text.Papa.T0002);
-                TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                await TheSearch.ƒS.Character.show(TheSearch.characters.rex, TheSearch.characters.rex.pose.sad, TheSearch.ƒS.positions.bottomright);
-                TheSearch.ƒS.update();
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s5AtWein, 1);
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s5At0009, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0009);
-                TheSearch.ƒS.Character.hide(TheSearch.characters.lennysDad);
-                TheSearch.ƒS.Character.show(TheSearch.characters.lennysDad, TheSearch.characters.lennysDad.pose.happyRight, TheSearch.ƒS.positions.bottomleft);
-                TheSearch.ƒS.update();
-                TheSearch.ƒS.Sound.play(TheSearch.soundLennysDad.s5At0003, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.lennysDad, text.Papa.T0003);
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s5At0010, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0010);
-                TheSearch.ƒS.Sound.play(TheSearch.soundNarrator.s5At0006, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Narrator.T0006);
-                TheSearch.ƒS.Speech.hide();
-                TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                TheSearch.ƒS.Character.hide(TheSearch.characters.lennysDad);
-                TheSearch.ƒS.Speech.clear();
-                TheSearch.ƒS.update();
-                await TheSearch.ƒS.Location.show(TheSearch.locations.L_Velo);
-                await TheSearch.ƒS.Character.show(TheSearch.characters.rex, TheSearch.characters.rex.pose.happy, TheSearch.ƒS.positions.bottomright);
-                await TheSearch.ƒS.Character.show(TheSearch.characters.lennysDad, TheSearch.characters.lennysDad.pose.happyRight, TheSearch.ƒS.positions.bottomleft);
-                TheSearch.ƒS.update(TheSearch.transition.fly.duration, TheSearch.transition.fly.alpha, TheSearch.transition.fly.edge);
-                TheSearch.ƒS.Sound.play(TheSearch.soundLennysDad.s5At0004, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.lennysDad, text.Papa.T0004);
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s5At0011, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0011);
-                await TheSearch.ƒS.Character.animate(TheSearch.characters.lennysDad, TheSearch.characters.lennysDad.pose.happyRight, TheSearch.getAnimationFlyAway());
-                TheSearch.ƒS.Character.hide(TheSearch.characters.lennysDad);
-                TheSearch.ƒS.update();
-                TheSearch.ƒS.Speech.hide();
-                TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                TheSearch.ƒS.Character.hide(TheSearch.characters.lennysDad);
-                TheSearch.ƒS.Speech.clear();
-                TheSearch.ƒS.update();
-                return TheSearch.SceneSix();
+                Template.dataForSave.friendshipScore++;
+                await Template.ƒS.Character.hide(Template.characters.lenny);
+                await Template.ƒS.Character.show(Template.characters.lenny, Template.characters.lenny.pose.happy, Template.ƒS.positions.bottomleft);
+                Template.ƒS.update();
+                Template.ƒS.Sound.play(Template.soundRex.s5At0005, 1);
+                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0005);
+                Template.ƒS.Sound.play(Template.soundRex.s5At0006, 1);
+                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0006);
+                Template.ƒS.Sound.play(Template.soundRex.s5At0007, 1);
+                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0007);
+                Template.ƒS.Sound.play(Template.soundLenny.s5At0002, 1);
+                await Template.ƒS.Speech.tell(Template.characters.lenny, text.Lenny.T0002);
+                Template.ƒS.Text.addClass("novelPageLenny");
+                await Template.ƒS.Text.print("");
+                Template.ƒS.Inventory.add(Template.items.lenny);
+                Template.ƒS.update();
+                Template.ƒS.Sound.play(Template.soundRex.s5At0008, 1);
+                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0008);
+                Template.ƒS.Sound.play(Template.soundLenny.s5At0003, 1);
+                await Template.ƒS.Speech.tell(Template.characters.lenny, text.Lenny.T0003);
+                Template.ƒS.Character.hide(Template.characters.lenny);
+                Template.ƒS.update();
+                await Template.ƒS.Character.animate(Template.characters.lenny, Template.characters.lenny.pose.happy, Template.getAnimationFlyAway());
+                Template.ƒS.Character.hide(Template.characters.lenny);
+                Template.ƒS.update();
+                await Template.ƒS.Character.animate(Template.characters.lennysDad, Template.characters.lennysDad.pose.happy, Template.getAnimationFlyTowards());
+                Template.ƒS.Character.hide(Template.characters.lennysDad);
+                await Template.ƒS.Character.show(Template.characters.lennysDad, Template.characters.lennysDad.pose.angry, Template.ƒS.positions.bottomleft);
+                Template.ƒS.update();
+                Template.ƒS.Sound.play(Template.soundLennysDad.s5At0002, 1);
+                await Template.ƒS.Speech.tell(Template.characters.lennysDad, text.Papa.T0002);
+                Template.ƒS.Character.hide(Template.characters.rex);
+                await Template.ƒS.Character.show(Template.characters.rex, Template.characters.rex.pose.sad, Template.ƒS.positions.bottomright);
+                Template.ƒS.update();
+                Template.ƒS.Sound.play(Template.soundRex.s5AtWein, 1);
+                Template.ƒS.Sound.play(Template.soundRex.s5At0009, 1);
+                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0009);
+                Template.ƒS.Character.hide(Template.characters.lennysDad);
+                await Template.ƒS.Character.show(Template.characters.lennysDad, Template.characters.lennysDad.pose.happyRight, Template.ƒS.positions.bottomleft);
+                Template.ƒS.update();
+                Template.ƒS.Sound.play(Template.soundLennysDad.s5At0003, 1);
+                await Template.ƒS.Speech.tell(Template.characters.lennysDad, text.Papa.T0003);
+                Template.ƒS.Sound.play(Template.soundRex.s5At0010, 1);
+                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0010);
+                Template.ƒS.Sound.play(Template.soundNarrator.s5At0006, 1);
+                await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0006);
+                Template.ƒS.Speech.hide();
+                Template.ƒS.Character.hide(Template.characters.rex);
+                Template.ƒS.Character.hide(Template.characters.lennysDad);
+                Template.ƒS.Speech.clear();
+                Template.ƒS.update();
+                await Template.ƒS.Location.show(Template.locations.L_Velo);
+                await Template.ƒS.Character.show(Template.characters.rex, Template.characters.rex.pose.happy, Template.ƒS.positions.bottomright);
+                await Template.ƒS.Character.show(Template.characters.lennysDad, Template.characters.lennysDad.pose.happyRight, Template.ƒS.positions.bottomleft);
+                Template.ƒS.update(Template.transition.fly.duration, Template.transition.fly.alpha, Template.transition.fly.edge);
+                Template.ƒS.Sound.play(Template.soundLennysDad.s5At0004, 1);
+                await Template.ƒS.Speech.tell(Template.characters.lennysDad, text.Papa.T0004);
+                Template.ƒS.Sound.play(Template.soundRex.s5At0011, 1);
+                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0011);
+                await Template.ƒS.Character.animate(Template.characters.lennysDad, Template.characters.lennysDad.pose.happyRight, Template.getAnimationFlyAway());
+                //ƒS.Character.hide(characters.lennysDad);
+                Template.ƒS.update();
+                Template.ƒS.Speech.hide();
+                Template.ƒS.Character.hide(Template.characters.rex);
+                //ƒS.Character.hide(characters.lennysDad);
+                Template.ƒS.Speech.clear();
+                Template.ƒS.update();
+                return Template.SceneSix();
                 break;
         }
     }
-    TheSearch.SceneFiveA = SceneFiveA;
-})(TheSearch || (TheSearch = {}));
-var TheSearch;
-(function (TheSearch) {
+    Template.SceneFiveA = SceneFiveA;
+})(Template || (Template = {}));
+var Template;
+(function (Template) {
     async function SceneFiveB() {
         console.log("SceneThree starting");
         let text = {
@@ -1362,65 +1364,65 @@ var TheSearch;
                 T0005: "So, jetzt siehst du auch aus wie ein richtiger Schurke Rex!"
             }
         };
-        await TheSearch.ƒS.Location.show(TheSearch.locations.L_Archae);
-        await TheSearch.ƒS.Character.show(TheSearch.characters.rex, TheSearch.characters.rex.pose.happy, TheSearch.ƒS.positions.bottomright);
-        await TheSearch.ƒS.Character.show(TheSearch.characters.archie, TheSearch.characters.archie.pose.happy, TheSearch.ƒS.positions.bottomleft);
-        await TheSearch.ƒS.update(TheSearch.transition.wArchie.duration, TheSearch.transition.wArchie.alpha, TheSearch.transition.wArchie.edge);
-        TheSearch.ƒS.Sound.play(TheSearch.soundNarrator.s5Bt0001, 1);
-        await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Narrator.T0001);
-        TheSearch.ƒS.Sound.play(TheSearch.soundArchie.s5Bt0001, 1);
-        await TheSearch.ƒS.Speech.tell(TheSearch.characters.archie, text.Archie.T0001);
-        TheSearch.ƒS.Sound.play(TheSearch.soundArchie.s5Bt0002, 1);
-        await TheSearch.ƒS.Speech.tell(TheSearch.characters.archie, text.Archie.T0002);
+        await Template.ƒS.Location.show(Template.locations.L_Archae);
+        await Template.ƒS.Character.show(Template.characters.rex, Template.characters.rex.pose.happy, Template.ƒS.positions.bottomright);
+        await Template.ƒS.Character.show(Template.characters.archie, Template.characters.archie.pose.happy, Template.ƒS.positions.bottomleft);
+        await Template.ƒS.update(Template.transition.wArchie.duration, Template.transition.wArchie.alpha, Template.transition.wArchie.edge);
+        Template.ƒS.Sound.play(Template.soundNarrator.s5Bt0001, 1);
+        await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0001);
+        Template.ƒS.Sound.play(Template.soundArchie.s5Bt0001, 1);
+        await Template.ƒS.Speech.tell(Template.characters.archie, text.Archie.T0001);
+        Template.ƒS.Sound.play(Template.soundArchie.s5Bt0002, 1);
+        await Template.ƒS.Speech.tell(Template.characters.archie, text.Archie.T0002);
         /**DECISION */
         let sceneFiveBDecision1Stay = {
             iSayStay: "Bei Archie bleiben",
             iSayGo: "Gehen"
         };
-        let dialogueElementS5BD1Stay = await TheSearch.ƒS.Menu.getInput(sceneFiveBDecision1Stay, "choicesCssClass");
+        let dialogueElementS5BD1Stay = await Template.ƒS.Menu.getInput(sceneFiveBDecision1Stay, "choicesCssClass");
         switch (dialogueElementS5BD1Stay) {
             case sceneFiveBDecision1Stay.iSayStay:
                 console.log("iSayStay");
-                TheSearch.dataForSave.friendshipScore -= 1;
-                TheSearch.ƒS.Sound.play(TheSearch.soundArchie.s5Bt0004, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.archie, text.Archie.T0004);
-                TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                await TheSearch.ƒS.Character.show(TheSearch.characters.rex, TheSearch.characters.rex.pose.bad, TheSearch.ƒS.positions.bottomright);
-                TheSearch.ƒS.update();
-                TheSearch.ƒS.Sound.play(TheSearch.soundArchie.s5Bt0005, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.archie, text.Archie.T0005);
-                TheSearch.ƒS.Speech.hide();
-                TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                TheSearch.ƒS.Character.hide(TheSearch.characters.archie);
-                TheSearch.ƒS.Speech.clear();
-                TheSearch.ƒS.update();
-                if (TheSearch.dataForSave.friendshipScore >= 1) {
-                    return TheSearch.SpecialScene();
+                Template.dataForSave.friendshipScore -= 1;
+                Template.ƒS.Sound.play(Template.soundArchie.s5Bt0004, 1);
+                await Template.ƒS.Speech.tell(Template.characters.archie, text.Archie.T0004);
+                Template.ƒS.Character.hide(Template.characters.rex);
+                await Template.ƒS.Character.show(Template.characters.rex, Template.characters.rex.pose.bad, Template.ƒS.positions.bottomright);
+                Template.ƒS.update();
+                Template.ƒS.Sound.play(Template.soundArchie.s5Bt0005, 1);
+                await Template.ƒS.Speech.tell(Template.characters.archie, text.Archie.T0005);
+                Template.ƒS.Speech.hide();
+                Template.ƒS.Character.hide(Template.characters.rex);
+                Template.ƒS.Character.hide(Template.characters.archie);
+                Template.ƒS.Speech.clear();
+                Template.ƒS.update();
+                if (Template.dataForSave.friendshipScore >= 1) {
+                    return Template.SpecialScene();
                 }
                 else {
-                    return TheSearch.End();
+                    return Template.End();
                 }
                 break;
             case sceneFiveBDecision1Stay.iSayGo:
                 console.log("iSayGo");
-                TheSearch.ƒS.Character.hide(TheSearch.characters.archie);
-                await TheSearch.ƒS.Character.show(TheSearch.characters.archie, TheSearch.characters.archie.pose.angry, TheSearch.ƒS.positions.bottomleft);
-                TheSearch.ƒS.update();
-                TheSearch.ƒS.Sound.play(TheSearch.soundArchie.s5Bt0003, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.archie, text.Archie.T0003);
-                TheSearch.ƒS.Speech.hide();
-                TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                TheSearch.ƒS.Character.hide(TheSearch.characters.archie);
-                TheSearch.ƒS.Speech.clear();
-                TheSearch.ƒS.update();
-                return TheSearch.SceneSix();
+                Template.ƒS.Character.hide(Template.characters.archie);
+                await Template.ƒS.Character.show(Template.characters.archie, Template.characters.archie.pose.angry, Template.ƒS.positions.bottomleft);
+                Template.ƒS.update();
+                Template.ƒS.Sound.play(Template.soundArchie.s5Bt0003, 1);
+                await Template.ƒS.Speech.tell(Template.characters.archie, text.Archie.T0003);
+                Template.ƒS.Speech.hide();
+                Template.ƒS.Character.hide(Template.characters.rex);
+                Template.ƒS.Character.hide(Template.characters.archie);
+                Template.ƒS.Speech.clear();
+                Template.ƒS.update();
+                return Template.SceneSix();
                 break;
         }
     }
-    TheSearch.SceneFiveB = SceneFiveB;
-})(TheSearch || (TheSearch = {}));
-var TheSearch;
-(function (TheSearch) {
+    Template.SceneFiveB = SceneFiveB;
+})(Template || (Template = {}));
+var Template;
+(function (Template) {
     async function SceneFour() {
         console.log("SceneThree starting");
         let text = {
@@ -1432,67 +1434,67 @@ var TheSearch;
                 T0005: "Geknickt und von der dunklen, großen Schlucht eingeschüchtert geht der kleine Dinosaurier an der Schlucht vorbei."
             },
             Rex: {
-                T0001: TheSearch.dataForSave.nameProtagonist + ", was ist das?",
-                T0002: "Denen gehen wir jetzt nach, komm mit " + TheSearch.dataForSave.nameProtagonist,
+                T0001: Template.dataForSave.nameProtagonist + ", was ist das?",
+                T0002: "Denen gehen wir jetzt nach, komm mit " + Template.dataForSave.nameProtagonist,
                 T0003: "Schade..."
             }
         };
-        await TheSearch.ƒS.Location.show(TheSearch.locations.L_Steps);
-        TheSearch.ƒS.Character.hide(TheSearch.characters.elena);
-        await TheSearch.ƒS.Character.show(TheSearch.characters.rex, TheSearch.characters.rex.pose.happy, TheSearch.ƒS.positions.bottomright);
-        await TheSearch.ƒS.update(TheSearch.transition.steps.duration, TheSearch.transition.steps.alpha, TheSearch.transition.steps.edge);
-        TheSearch.ƒS.Sound.play(TheSearch.soundNarrator.s4t0001, 1);
-        await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Narrator.T0001);
-        TheSearch.ƒS.Sound.play(TheSearch.soundNarrator.s4t0002, 1);
-        await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Narrator.T0002);
-        TheSearch.ƒS.Sound.play(TheSearch.soundNarrator.s4t0003, 1);
-        await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Narrator.T0003);
-        await TheSearch.ƒS.Location.show(TheSearch.locations.L_Steps_Zoom);
-        await TheSearch.ƒS.update(TheSearch.transition.mom.duration, TheSearch.transition.mom.alpha, TheSearch.transition.mom.edge);
-        TheSearch.ƒS.Sound.play(TheSearch.soundRex.s4t0001, 1);
-        await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0001);
+        await Template.ƒS.Location.show(Template.locations.L_Steps);
+        Template.ƒS.Character.hide(Template.characters.elena);
+        await Template.ƒS.Character.show(Template.characters.rex, Template.characters.rex.pose.happy, Template.ƒS.positions.bottomright);
+        await Template.ƒS.update(Template.transition.steps.duration, Template.transition.steps.alpha, Template.transition.steps.edge);
+        Template.ƒS.Sound.play(Template.soundNarrator.s4t0001, 1);
+        await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0001);
+        Template.ƒS.Sound.play(Template.soundNarrator.s4t0002, 1);
+        await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0002);
+        Template.ƒS.Sound.play(Template.soundNarrator.s4t0003, 1);
+        await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0003);
+        await Template.ƒS.Location.show(Template.locations.L_Steps_Zoom);
+        await Template.ƒS.update(Template.transition.mom.duration, Template.transition.mom.alpha, Template.transition.mom.edge);
+        Template.ƒS.Sound.play(Template.soundRex.s4t0001, 1);
+        await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0001);
         /**DECISION */
         let sceneFourDecision1WhatIsThat = {
             iSaySteps: "Sieht aus wie Dinospuren",
             iSayDirt: "Nur Dreck"
         };
-        let dialogueElementS4D1WhatIsThat = await TheSearch.ƒS.Menu.getInput(sceneFourDecision1WhatIsThat, "choicesCssClass");
+        let dialogueElementS4D1WhatIsThat = await Template.ƒS.Menu.getInput(sceneFourDecision1WhatIsThat, "choicesCssClass");
         switch (dialogueElementS4D1WhatIsThat) {
             case sceneFourDecision1WhatIsThat.iSaySteps:
                 console.log("iSaySteps");
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s4t0002, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0002);
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s4tPfeifen, 1);
-                TheSearch.ƒS.Sound.play(TheSearch.soundNarrator.s4t0004, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Narrator.T0004);
-                TheSearch.ƒS.Speech.hide();
-                TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                TheSearch.ƒS.Character.hide(TheSearch.characters.elena);
-                TheSearch.ƒS.Speech.clear();
-                TheSearch.ƒS.update();
-                let sceneFiveA = TheSearch.SceneFiveA();
-                return sceneFiveA;
+                Template.ƒS.Sound.play(Template.soundRex.s4t0002, 1);
+                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0002);
+                Template.ƒS.Sound.play(Template.soundRex.s4tPfeifen, 1);
+                Template.ƒS.Sound.play(Template.soundNarrator.s4t0004, 1);
+                await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0004);
+                Template.ƒS.Speech.hide();
+                Template.ƒS.Character.hide(Template.characters.rex);
+                //ƒS.Character.hide(characters.elena);
+                Template.ƒS.Speech.clear();
+                Template.ƒS.update();
+                //let sceneFiveA: ƒS.SceneReturn = SceneFiveA();
+                return Template.SceneFiveA();
                 break;
             case sceneFourDecision1WhatIsThat.iSayDirt:
                 console.log("iSayDirt");
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s4t0003, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0003);
-                TheSearch.ƒS.Sound.play(TheSearch.soundNarrator.s4t0005, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Narrator.T0005);
-                TheSearch.ƒS.Speech.hide();
-                TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                TheSearch.ƒS.Character.hide(TheSearch.characters.elena);
-                TheSearch.ƒS.Speech.clear();
-                TheSearch.ƒS.update();
-                let sceneFive1 = TheSearch.SceneFive1();
-                return sceneFive1;
+                Template.ƒS.Sound.play(Template.soundRex.s4t0003, 1);
+                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0003);
+                Template.ƒS.Sound.play(Template.soundNarrator.s4t0005, 1);
+                await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0005);
+                Template.ƒS.Speech.hide();
+                Template.ƒS.Character.hide(Template.characters.rex);
+                //ƒS.Character.hide(characters.elena);
+                Template.ƒS.Speech.clear();
+                Template.ƒS.update();
+                //let sceneFive1: ƒS.SceneReturn = SceneFive1();
+                return Template.SceneFive1();
                 break;
         }
     }
-    TheSearch.SceneFour = SceneFour;
-})(TheSearch || (TheSearch = {}));
-var TheSearch;
-(function (TheSearch) {
+    Template.SceneFour = SceneFour;
+})(Template || (Template = {}));
+var Template;
+(function (Template) {
     async function SceneOne() {
         console.log("SceneOne starting");
         let text = {
@@ -1520,49 +1522,49 @@ var TheSearch;
             }
         };
         document.getElementsByName("friendshipScore").forEach(meterStuff => meterStuff.hidden = true);
-        TheSearch.showStart();
-        await TheSearch.ƒS.Location.show(TheSearch.locations.Home);
-        await TheSearch.ƒS.update(TheSearch.transition.start.duration, TheSearch.transition.start.alpha, TheSearch.transition.start.edge);
+        Template.showStart();
+        await Template.ƒS.Location.show(Template.locations.Home);
+        await Template.ƒS.update(Template.transition.start.duration, Template.transition.start.alpha, Template.transition.start.edge);
         document.getElementById("save").classList.remove("hide");
         document.getElementById("load").classList.remove("hide");
         document.getElementById("close").classList.remove("hide");
         document.getElementById("inventory").classList.remove("hide");
-        TheSearch.ƒS.Sound.play(TheSearch.soundNarrator.s1t0001, 1);
-        await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Narrator.T0001);
-        TheSearch.ƒS.Sound.play(TheSearch.soundNarrator.s1t0002, 1);
-        await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Narrator.T0002);
-        TheSearch.ƒS.Sound.play(TheSearch.soundNarrator.s1t0003, 1);
-        await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Narrator.T0003);
-        TheSearch.ƒS.Sound.play(TheSearch.soundNarrator.s1t0004, 1);
-        await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Narrator.T0004);
-        TheSearch.ƒS.Sound.play(TheSearch.soundNarrator.s1t0005, 1);
-        await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Narrator.T0005);
-        TheSearch.ƒS.Sound.play(TheSearch.soundNarrator.s1t0006, 1);
-        await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Narrator.T0006);
-        TheSearch.ƒS.Sound.play(TheSearch.soundNarrator.s1t0007, 1);
-        await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Narrator.T0007);
-        TheSearch.jitter();
-        TheSearch.ƒS.Sound.play(TheSearch.soundNarrator.s1t0008, 1);
-        await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Narrator.T0008);
-        TheSearch.ƒS.Sound.play(TheSearch.soundNarrator.s1t0009, 1);
-        await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Narrator.T0009);
+        Template.ƒS.Sound.play(Template.soundNarrator.s1t0001, 1);
+        await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0001);
+        Template.ƒS.Sound.play(Template.soundNarrator.s1t0002, 1);
+        await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0002);
+        Template.ƒS.Sound.play(Template.soundNarrator.s1t0003, 1);
+        await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0003);
+        Template.ƒS.Sound.play(Template.soundNarrator.s1t0004, 1);
+        await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0004);
+        Template.ƒS.Sound.play(Template.soundNarrator.s1t0005, 1);
+        await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0005);
+        Template.ƒS.Sound.play(Template.soundNarrator.s1t0006, 1);
+        await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0006);
+        Template.ƒS.Sound.play(Template.soundNarrator.s1t0007, 1);
+        await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0007);
+        Template.jitter();
+        Template.ƒS.Sound.play(Template.soundNarrator.s1t0008, 1);
+        await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0008);
+        Template.ƒS.Sound.play(Template.soundNarrator.s1t0009, 1);
+        await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0009);
         /**DECISION HELP REX? */
         let sceneOneDecision1 = {
             iSayYes: "Ja",
             iSayNo: "Nein"
         };
         //playSounds();
-        let dialogueElementS1D1 = await TheSearch.ƒS.Menu.getInput(sceneOneDecision1, "choicesCssClass");
+        let dialogueElementS1D1 = await Template.ƒS.Menu.getInput(sceneOneDecision1, "choicesCssClass");
         switch (dialogueElementS1D1) {
             case sceneOneDecision1.iSayYes:
                 console.log("S1D1 Yes");
-                TheSearch.dataForSave.friendshipScore += 1;
-                TheSearch.dataForSave.random = TheSearch.getRandom(2, 30);
+                Template.dataForSave.friendshipScore += 1;
+                Template.dataForSave.random = Template.getRandom(2, 30);
                 helpRex();
                 break;
             case sceneOneDecision1.iSayNo:
                 console.log("S1D1 No");
-                TheSearch.dataForSave.friendshipScore -= 1;
+                Template.dataForSave.friendshipScore -= 1;
                 hatched();
                 break;
         }
@@ -1575,63 +1577,63 @@ var TheSearch;
             };
             let scene = document.querySelector("scene");
             scene.addEventListener("pointerdown", counting);
-            TheSearch.ƒS.Sound.play(TheSearch.soundNarrator.s1Game1Intro, 1);
-            await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Instruction.T0001);
+            Template.ƒS.Sound.play(Template.soundNarrator.s1Game1Intro, 1);
+            await Template.ƒS.Speech.tell(Template.characters.narrator, text.Instruction.T0001);
         }
         async function counting() {
             console.log("counting");
-            TheSearch.ƒS.Sound.play(TheSearch.soundSFX.eggs, 1);
-            TheSearch.dataForSave.count++;
-            if (TheSearch.dataForSave.count >= TheSearch.dataForSave.random) {
+            Template.ƒS.Sound.play(Template.soundSFX.eggs, 1);
+            Template.dataForSave.count++;
+            if (Template.dataForSave.count >= Template.dataForSave.random) {
                 console.log("Rex is here!");
-                TheSearch.dataForSave.count = 0;
+                Template.dataForSave.count = 0;
                 let scene = document.querySelector("scene");
                 scene.removeEventListener("pointerdown", counting);
-                TheSearch.dataForSave.bool = true;
+                Template.dataForSave.bool = true;
                 hatched();
             }
         }
         async function hatched() {
-            await TheSearch.ƒS.Location.show(TheSearch.locations.Home_Hatched),
-                await TheSearch.ƒS.update(TheSearch.transition.start.duration, TheSearch.transition.start.alpha, TheSearch.transition.start.edge);
-            await TheSearch.ƒS.Character.show(TheSearch.characters.rex, TheSearch.characters.rex.pose.happy, TheSearch.ƒS.positions.bottomcenter);
-            TheSearch.ƒS.update();
-            if (TheSearch.dataForSave.bool == true) {
+            await Template.ƒS.Location.show(Template.locations.Home_Hatched),
+                await Template.ƒS.update(Template.transition.start.duration, Template.transition.start.alpha, Template.transition.start.edge);
+            await Template.ƒS.Character.show(Template.characters.rex, Template.characters.rex.pose.happy, Template.ƒS.positions.bottomcenter);
+            Template.ƒS.update();
+            if (Template.dataForSave.bool == true) {
                 document.getElementsByName("friendshipScore").forEach(meterStuff => meterStuff.hidden = false);
                 document.getElementById("scoreForFriendshipRex").classList.remove("hide");
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.t0001Rex, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0001);
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.t0002Rex, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0002);
-                TheSearch.dataForSave.bool = false;
+                Template.ƒS.Sound.play(Template.soundRex.t0001Rex, 1);
+                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0001);
+                Template.ƒS.Sound.play(Template.soundRex.t0002Rex, 1);
+                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0002);
+                Template.dataForSave.bool = false;
             }
             else {
                 document.getElementsByName("friendshipScore").forEach(meterStuff => meterStuff.hidden = false);
                 document.getElementById("scoreForFriendshipRex").classList.remove("hide");
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.t0001_1Rex, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0001_1);
+                Template.ƒS.Sound.play(Template.soundRex.t0001_1Rex, 1);
+                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0001_1);
             }
-            TheSearch.ƒS.Sound.play(TheSearch.soundRex.t0003Rex, 1);
-            await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0003);
-            TheSearch.ƒS.Inventory.add(TheSearch.items.rex);
-            TheSearch.ƒS.update();
-            TheSearch.ƒS.Text.addClass("novelPageRex");
-            await TheSearch.ƒS.Text.print("");
-            TheSearch.ƒS.Sound.play(TheSearch.soundRex.t0004Rex, 1);
-            await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0004);
-            TheSearch.dataForSave.nameProtagonist = await TheSearch.ƒS.Speech.getInput();
-            TheSearch.ƒS.Sound.play(TheSearch.soundRex.t0005Rex, 1);
-            await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0005);
-            TheSearch.ƒS.Speech.clear();
-            TheSearch.ƒS.Speech.hide();
-            TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-            return TheSearch.SceneTwo();
+            Template.ƒS.Sound.play(Template.soundRex.t0003Rex, 1);
+            await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0003);
+            Template.ƒS.Inventory.add(Template.items.rex);
+            Template.ƒS.update();
+            Template.ƒS.Text.addClass("novelPageRex");
+            await Template.ƒS.Text.print("");
+            Template.ƒS.Sound.play(Template.soundRex.t0004Rex, 1);
+            await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0004);
+            Template.dataForSave.nameProtagonist = await Template.ƒS.Speech.getInput();
+            Template.ƒS.Sound.play(Template.soundRex.t0005Rex, 1);
+            await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0005);
+            Template.ƒS.Speech.clear();
+            Template.ƒS.Speech.hide();
+            Template.ƒS.Character.hide(Template.characters.rex);
+            return Template.SceneTwo();
         }
     }
-    TheSearch.SceneOne = SceneOne;
-})(TheSearch || (TheSearch = {}));
-var TheSearch;
-(function (TheSearch) {
+    Template.SceneOne = SceneOne;
+})(Template || (Template = {}));
+var Template;
+(function (Template) {
     async function SceneSeven() {
         console.log("SceneSeven starting");
         let text = {
@@ -1655,78 +1657,78 @@ var TheSearch;
                 T0006: "Bei mir zuhause, bei den gelben Bergen."
             }
         };
-        await TheSearch.ƒS.Location.show(TheSearch.locations.L_DiplodoNight);
-        await TheSearch.ƒS.Character.show(TheSearch.characters.rex, TheSearch.characters.rex.pose.happy, TheSearch.ƒS.positions.bottomright);
-        await TheSearch.ƒS.Character.show(TheSearch.characters.lucy, TheSearch.characters.lucy.pose.happy, TheSearch.ƒS.positions.bottomleft);
-        await TheSearch.ƒS.update(TheSearch.transition.dayNight.duration, TheSearch.transition.dayNight.alpha, TheSearch.transition.dayNight.edge);
-        TheSearch.ƒS.Sound.play(TheSearch.soundLucy.s7t0001, 1);
-        await TheSearch.ƒS.Speech.tell(TheSearch.characters.lucy, text.Lucy.T0001);
+        await Template.ƒS.Location.show(Template.locations.L_DiplodoNight);
+        await Template.ƒS.Character.show(Template.characters.rex, Template.characters.rex.pose.happy, Template.ƒS.positions.bottomright);
+        await Template.ƒS.Character.show(Template.characters.lucy, Template.characters.lucy.pose.happy, Template.ƒS.positions.bottomleft);
+        await Template.ƒS.update(Template.transition.dayNight.duration, Template.transition.dayNight.alpha, Template.transition.dayNight.edge);
+        Template.ƒS.Sound.play(Template.soundLucy.s7t0001, 1);
+        await Template.ƒS.Speech.tell(Template.characters.lucy, text.Lucy.T0001);
         /** DECISION */
         let sceneSevenDecision1Tasty = {
             iSayTasty: "Lecker",
             iSayBah: "Nicht gut"
         };
-        let dialogueElementS7D1Tasty = await TheSearch.ƒS.Menu.getInput(sceneSevenDecision1Tasty, "choicesCssClass");
+        let dialogueElementS7D1Tasty = await Template.ƒS.Menu.getInput(sceneSevenDecision1Tasty, "choicesCssClass");
         switch (dialogueElementS7D1Tasty) {
             case sceneSevenDecision1Tasty.iSayTasty:
                 console.log("Delicious");
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s7t0001, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0001);
-                TheSearch.ƒS.Sound.play(TheSearch.soundLucy.s7t0002, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.lucy, text.Lucy.T0002);
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s7t0002, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0002);
-                TheSearch.ƒS.Sound.play(TheSearch.soundLucy.s7t0003, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.lucy, text.Lucy.T0003);
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s7t0003, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0003);
-                TheSearch.ƒS.Speech.clear();
-                TheSearch.ƒS.Speech.hide();
-                TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                TheSearch.ƒS.Character.hide(TheSearch.characters.lucy);
-                if (TheSearch.dataForSave.friendshipScore >= 1) {
-                    console.log(TheSearch.dataForSave.friendshipScore);
-                    return TheSearch.SpecialScene();
+                Template.ƒS.Sound.play(Template.soundRex.s7t0001, 1);
+                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0001);
+                Template.ƒS.Sound.play(Template.soundLucy.s7t0002, 1);
+                await Template.ƒS.Speech.tell(Template.characters.lucy, text.Lucy.T0002);
+                Template.ƒS.Sound.play(Template.soundRex.s7t0002, 1);
+                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0002);
+                Template.ƒS.Sound.play(Template.soundLucy.s7t0003, 1);
+                await Template.ƒS.Speech.tell(Template.characters.lucy, text.Lucy.T0003);
+                Template.ƒS.Sound.play(Template.soundRex.s7t0003, 1);
+                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0003);
+                Template.ƒS.Speech.clear();
+                Template.ƒS.Speech.hide();
+                Template.ƒS.Character.hide(Template.characters.rex);
+                Template.ƒS.Character.hide(Template.characters.lucy);
+                if (Template.dataForSave.friendshipScore >= 1) {
+                    console.log(Template.dataForSave.friendshipScore);
+                    return Template.SpecialScene();
                 }
                 else {
-                    console.log(TheSearch.dataForSave.friendshipScore);
-                    return TheSearch.End();
+                    console.log(Template.dataForSave.friendshipScore);
+                    return Template.End();
                 }
                 break;
             case sceneSevenDecision1Tasty.iSayBah:
                 console.log("Bäh!");
-                await TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                await TheSearch.ƒS.Character.show(TheSearch.characters.rex, TheSearch.characters.rex.pose.disgusted, TheSearch.ƒS.positions.bottomright);
-                TheSearch.ƒS.update();
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s7t0004, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0004);
-                TheSearch.ƒS.Sound.play(TheSearch.soundLucy.s7t0004, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.lucy, text.Lucy.T0004);
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s7t0005, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0005);
-                TheSearch.ƒS.Sound.play(TheSearch.soundLucy.s7t0005, 1);
-                await TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                await TheSearch.ƒS.Character.show(TheSearch.characters.rex, TheSearch.characters.rex.pose.sad, TheSearch.ƒS.positions.bottomright);
-                TheSearch.ƒS.Sound.play(TheSearch.soundLucy.s7t0005_2, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.lucy, text.Lucy.T0005);
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s7t0006, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0006);
-                TheSearch.ƒS.Sound.play(TheSearch.soundLucy.s7t0006, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.lucy, text.Lucy.T0006);
-                TheSearch.ƒS.Sound.play(TheSearch.soundNarrator.s7t0001, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Narrator.T0001);
-                TheSearch.ƒS.Speech.clear();
-                TheSearch.ƒS.Speech.hide();
-                TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                TheSearch.ƒS.Character.hide(TheSearch.characters.lucy);
-                return TheSearch.SceneEight();
+                await Template.ƒS.Character.hide(Template.characters.rex);
+                await Template.ƒS.Character.show(Template.characters.rex, Template.characters.rex.pose.disgusted, Template.ƒS.positions.bottomright);
+                Template.ƒS.update();
+                Template.ƒS.Sound.play(Template.soundRex.s7t0004, 1);
+                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0004);
+                Template.ƒS.Sound.play(Template.soundLucy.s7t0004, 1);
+                await Template.ƒS.Speech.tell(Template.characters.lucy, text.Lucy.T0004);
+                Template.ƒS.Sound.play(Template.soundRex.s7t0005, 1);
+                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0005);
+                Template.ƒS.Sound.play(Template.soundLucy.s7t0005, 1);
+                await Template.ƒS.Character.hide(Template.characters.rex);
+                await Template.ƒS.Character.show(Template.characters.rex, Template.characters.rex.pose.sad, Template.ƒS.positions.bottomright);
+                Template.ƒS.Sound.play(Template.soundLucy.s7t0005_2, 1);
+                await Template.ƒS.Speech.tell(Template.characters.lucy, text.Lucy.T0005);
+                Template.ƒS.Sound.play(Template.soundRex.s7t0006, 1);
+                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0006);
+                Template.ƒS.Sound.play(Template.soundLucy.s7t0006, 1);
+                await Template.ƒS.Speech.tell(Template.characters.lucy, text.Lucy.T0006);
+                Template.ƒS.Sound.play(Template.soundNarrator.s7t0001, 1);
+                await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0001);
+                Template.ƒS.Speech.clear();
+                Template.ƒS.Speech.hide();
+                Template.ƒS.Character.hide(Template.characters.rex);
+                Template.ƒS.Character.hide(Template.characters.lucy);
+                return Template.SceneEight();
                 break;
         }
     }
-    TheSearch.SceneSeven = SceneSeven;
-})(TheSearch || (TheSearch = {}));
-var TheSearch;
-(function (TheSearch) {
+    Template.SceneSeven = SceneSeven;
+})(Template || (Template = {}));
+var Template;
+(function (Template) {
     async function SceneSix() {
         console.log("SceneSix starting");
         let text = {
@@ -1739,7 +1741,7 @@ var TheSearch;
                 T0006: "Gebe die Zutaten in der richtigen Reihenfolge in den Topf, indem du sie anklickst. Du hast einen Versuch."
             },
             Rex: {
-                T0001: "Man, habe ich einen Hunger. Ich brauche unbedingt was zum Essen! " + TheSearch.dataForSave.nameProtagonist + " soll ich etwas jagen oder essen klauen?",
+                T0001: "Man, habe ich einen Hunger. Ich brauche unbedingt was zum Essen! " + Template.dataForSave.nameProtagonist + " soll ich etwas jagen oder essen klauen?",
                 T0002: "Da hinten sind irgendwelche Dinos, vielleicht kann ich davon ja einen Essen... Mal versuchen...",
                 T0003: "Ahhhhh!",
                 T0004: "Hier riecht es nach Futter!",
@@ -1772,16 +1774,16 @@ var TheSearch;
                 T0007: "Ich bin Lucy. Ich bin ein Diplodocus und lebe in der Oberjura-Zeit. Am liebsten esse ich Pflanzen und Blätter wie du schon festgestellt hast. Ich kann bis zu 27 m lang und 4 m hoch werden. Deshalb wiege ich auch so viel. 10 - 16 Tonnen. Mein bis zu sechs Meter langer Hals ist super praktisch. So kann ich bis zu zehn Meter über dem Boden weiden. Du darst gerne was von meinem Essen abhaben. Hier, bediene dich!"
             }
         };
-        await TheSearch.ƒS.Location.show(TheSearch.locations.L_Velo);
-        await TheSearch.ƒS.Character.show(TheSearch.characters.velo, TheSearch.characters.velo.pose.small, TheSearch.ƒS.positionPercent(68, 55));
-        await TheSearch.ƒS.Character.show(TheSearch.characters.rex, TheSearch.characters.rex.pose.happy, TheSearch.ƒS.positions.bottomright);
-        await TheSearch.ƒS.update(TheSearch.transition.steps.duration, TheSearch.transition.steps.alpha, TheSearch.transition.steps.edge);
-        TheSearch.ƒS.Sound.play(TheSearch.soundRex.hungry, 1);
-        TheSearch.ƒS.Sound.play(TheSearch.soundNarrator.s6t0001, 1);
-        await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Narrator.T0001);
+        await Template.ƒS.Location.show(Template.locations.L_Velo);
+        await Template.ƒS.Character.show(Template.characters.velo, Template.characters.velo.pose.small, Template.ƒS.positionPercent(68, 55));
+        await Template.ƒS.Character.show(Template.characters.rex, Template.characters.rex.pose.happy, Template.ƒS.positions.bottomright);
+        await Template.ƒS.update(Template.transition.steps.duration, Template.transition.steps.alpha, Template.transition.steps.edge);
+        Template.ƒS.Sound.play(Template.soundRex.hungry, 1);
+        Template.ƒS.Sound.play(Template.soundNarrator.s6t0001, 1);
+        await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0001);
         //REX Magenknurren
-        TheSearch.ƒS.Sound.play(TheSearch.soundRex.s6t0001, 1);
-        await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0001);
+        Template.ƒS.Sound.play(Template.soundRex.s6t0001, 1);
+        await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0001);
         /** DECISIONS */
         /**HUNT OR STEAL? */
         let sceneSixDecision1Hungry = {
@@ -1793,111 +1795,111 @@ var TheSearch;
             iSayYes: "Ja",
             iSayNo: "Nein"
         };
-        let dialogueElementS6D1Hungry = await TheSearch.ƒS.Menu.getInput(sceneSixDecision1Hungry, "choicesCssClass");
+        let dialogueElementS6D1Hungry = await Template.ƒS.Menu.getInput(sceneSixDecision1Hungry, "choicesCssClass");
         switch (dialogueElementS6D1Hungry) {
             case sceneSixDecision1Hungry.iSayHunt:
                 console.log("iSayHunt");
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s6t0002, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0002);
-                TheSearch.ƒS.Sound.play(TheSearch.soundNarrator.s6t0002, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Narrator.T0002);
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s6tRoaw, 1);
-                await TheSearch.ƒS.Character.hide(TheSearch.characters.velo);
-                await TheSearch.ƒS.Character.show(TheSearch.characters.velo, TheSearch.characters.velo.pose.happy, TheSearch.ƒS.positions.bottomleft);
-                TheSearch.ƒS.update();
-                TheSearch.ƒS.Sound.play(TheSearch.soundNarrator.s6t0003, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Narrator.T0003);
-                await TheSearch.ƒS.Character.show(TheSearch.characters.velo, TheSearch.characters.velo.pose.happy, TheSearch.ƒS.positions.bottomleft);
-                TheSearch.ƒS.update();
-                TheSearch.ƒS.Sound.play(TheSearch.soundVelo.s6t0001, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.velo, text.Velo.T0001);
-                TheSearch.ƒS.Sound.play(TheSearch.soundVelo.s6t0002, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.velo, text.Velo.T0002);
-                TheSearch.ƒS.Text.addClass("novelPageVelo");
-                await TheSearch.ƒS.Text.print("");
-                TheSearch.ƒS.Inventory.add(TheSearch.items.velo);
-                TheSearch.ƒS.update();
-                TheSearch.ƒS.Sound.play(TheSearch.soundVelo.s6t0003, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.velo, text.Velo.T0003);
-                TheSearch.ƒS.Sound.play(TheSearch.soundNarrator.s6t0004, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Narrator.T0004);
-                TheSearch.ƒS.Sound.play(TheSearch.soundVelo.s6t0004, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.velo, text.Velo.T0004);
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s6t0003, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0003);
-                await TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                TheSearch.ƒS.update();
-                await TheSearch.ƒS.Character.animate(TheSearch.characters.rex, TheSearch.characters.rex.pose.sad, TheSearch.getAnimationRexRun());
-                await TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                TheSearch.ƒS.update();
-                await TheSearch.ƒS.Character.animate(TheSearch.characters.lucy, TheSearch.characters.lucy.pose.angry, TheSearch.getAnimationLucy());
-                await TheSearch.ƒS.Character.show(TheSearch.characters.lucy, TheSearch.characters.lucy.pose.angry, TheSearch.ƒS.positionPercent(80, 102));
-                await TheSearch.ƒS.Character.show(TheSearch.characters.rex, TheSearch.characters.rex.pose.sad, TheSearch.ƒS.positions.bottomright);
-                TheSearch.ƒS.update();
-                TheSearch.ƒS.Sound.play(TheSearch.soundLucy.s6t0001, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.lucy, text.Lucy.T0001);
-                await TheSearch.ƒS.Character.hide(TheSearch.characters.velo);
-                await TheSearch.ƒS.Character.show(TheSearch.characters.velo, TheSearch.characters.velo.pose.scared, TheSearch.ƒS.positions.bottomleft);
-                TheSearch.ƒS.Sound.play(TheSearch.soundVelo.s6t0005, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.velo, text.Velo.T0005);
-                TheSearch.ƒS.Sound.play(TheSearch.soundLucy.s6t0002, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.lucy, text.Lucy.T0002);
-                TheSearch.ƒS.Sound.play(TheSearch.soundVelo.s6t0006, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.velo, text.Velo.T0006);
-                await TheSearch.ƒS.Character.hide(TheSearch.characters.velo);
-                await TheSearch.ƒS.Character.hide(TheSearch.characters.lucy);
-                await TheSearch.ƒS.Character.show(TheSearch.characters.lucy, TheSearch.characters.lucy.pose.happy, TheSearch.ƒS.positions.bottomleft);
-                TheSearch.ƒS.update();
-                TheSearch.ƒS.Sound.play(TheSearch.soundLucy.s6t0006, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.lucy, text.Lucy.T0006);
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s6t0012, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0012);
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s6t0013, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0013);
-                TheSearch.ƒS.Sound.play(TheSearch.soundLucy.s6t0007, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.lucy, text.Lucy.T0007);
-                TheSearch.ƒS.Text.addClass("novelPageLucy");
-                await TheSearch.ƒS.Text.print("");
-                TheSearch.ƒS.Inventory.add(TheSearch.items.lucy);
-                TheSearch.ƒS.update();
-                await TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                await TheSearch.ƒS.Character.show(TheSearch.characters.rex, TheSearch.characters.rex.pose.happy, TheSearch.ƒS.positions.bottomright);
-                TheSearch.ƒS.update();
-                TheSearch.ƒS.Speech.clear();
-                TheSearch.ƒS.Speech.hide();
-                await TheSearch.ƒS.Character.hide(TheSearch.characters.velo);
-                await TheSearch.ƒS.Character.hide(TheSearch.characters.lucy);
-                await TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                TheSearch.ƒS.update();
-                return TheSearch.SceneSeven();
+                Template.ƒS.Sound.play(Template.soundRex.s6t0002, 1);
+                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0002);
+                Template.ƒS.Sound.play(Template.soundNarrator.s6t0002, 1);
+                await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0002);
+                Template.ƒS.Sound.play(Template.soundRex.s6tRoaw, 1);
+                await Template.ƒS.Character.hide(Template.characters.velo);
+                await Template.ƒS.Character.show(Template.characters.velo, Template.characters.velo.pose.happy, Template.ƒS.positions.bottomleft);
+                Template.ƒS.update();
+                Template.ƒS.Sound.play(Template.soundNarrator.s6t0003, 1);
+                await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0003);
+                await Template.ƒS.Character.show(Template.characters.velo, Template.characters.velo.pose.happy, Template.ƒS.positions.bottomleft);
+                Template.ƒS.update();
+                Template.ƒS.Sound.play(Template.soundVelo.s6t0001, 1);
+                await Template.ƒS.Speech.tell(Template.characters.velo, text.Velo.T0001);
+                Template.ƒS.Sound.play(Template.soundVelo.s6t0002, 1);
+                await Template.ƒS.Speech.tell(Template.characters.velo, text.Velo.T0002);
+                Template.ƒS.Text.addClass("novelPageVelo");
+                await Template.ƒS.Text.print("");
+                Template.ƒS.Inventory.add(Template.items.velo);
+                Template.ƒS.update();
+                Template.ƒS.Sound.play(Template.soundVelo.s6t0003, 1);
+                await Template.ƒS.Speech.tell(Template.characters.velo, text.Velo.T0003);
+                Template.ƒS.Sound.play(Template.soundNarrator.s6t0004, 1);
+                await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0004);
+                Template.ƒS.Sound.play(Template.soundVelo.s6t0004, 1);
+                await Template.ƒS.Speech.tell(Template.characters.velo, text.Velo.T0004);
+                Template.ƒS.Sound.play(Template.soundRex.s6t0003, 1);
+                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0003);
+                await Template.ƒS.Character.hide(Template.characters.rex);
+                Template.ƒS.update();
+                await Template.ƒS.Character.animate(Template.characters.rex, Template.characters.rex.pose.sad, Template.getAnimationRexRun());
+                await Template.ƒS.Character.hide(Template.characters.rex);
+                Template.ƒS.update();
+                await Template.ƒS.Character.animate(Template.characters.lucy, Template.characters.lucy.pose.angry, Template.getAnimationLucy());
+                await Template.ƒS.Character.show(Template.characters.lucy, Template.characters.lucy.pose.angry, Template.ƒS.positionPercent(80, 102));
+                await Template.ƒS.Character.show(Template.characters.rex, Template.characters.rex.pose.sad, Template.ƒS.positions.bottomright);
+                Template.ƒS.update();
+                Template.ƒS.Sound.play(Template.soundLucy.s6t0001, 1);
+                await Template.ƒS.Speech.tell(Template.characters.lucy, text.Lucy.T0001);
+                await Template.ƒS.Character.hide(Template.characters.velo);
+                await Template.ƒS.Character.show(Template.characters.velo, Template.characters.velo.pose.scared, Template.ƒS.positions.bottomleft);
+                Template.ƒS.Sound.play(Template.soundVelo.s6t0005, 1);
+                await Template.ƒS.Speech.tell(Template.characters.velo, text.Velo.T0005);
+                Template.ƒS.Sound.play(Template.soundLucy.s6t0002, 1);
+                await Template.ƒS.Speech.tell(Template.characters.lucy, text.Lucy.T0002);
+                Template.ƒS.Sound.play(Template.soundVelo.s6t0006, 1);
+                await Template.ƒS.Speech.tell(Template.characters.velo, text.Velo.T0006);
+                await Template.ƒS.Character.hide(Template.characters.velo);
+                await Template.ƒS.Character.hide(Template.characters.lucy);
+                await Template.ƒS.Character.show(Template.characters.lucy, Template.characters.lucy.pose.happy, Template.ƒS.positions.bottomleft);
+                Template.ƒS.update();
+                Template.ƒS.Sound.play(Template.soundLucy.s6t0006, 1);
+                await Template.ƒS.Speech.tell(Template.characters.lucy, text.Lucy.T0006);
+                Template.ƒS.Sound.play(Template.soundRex.s6t0012, 1);
+                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0012);
+                Template.ƒS.Sound.play(Template.soundRex.s6t0013, 1);
+                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0013);
+                Template.ƒS.Sound.play(Template.soundLucy.s6t0007, 1);
+                await Template.ƒS.Speech.tell(Template.characters.lucy, text.Lucy.T0007);
+                Template.ƒS.Text.addClass("novelPageLucy");
+                await Template.ƒS.Text.print("");
+                Template.ƒS.Inventory.add(Template.items.lucy);
+                Template.ƒS.update();
+                await Template.ƒS.Character.hide(Template.characters.rex);
+                await Template.ƒS.Character.show(Template.characters.rex, Template.characters.rex.pose.happy, Template.ƒS.positions.bottomright);
+                Template.ƒS.update();
+                Template.ƒS.Speech.clear();
+                Template.ƒS.Speech.hide();
+                await Template.ƒS.Character.hide(Template.characters.velo);
+                await Template.ƒS.Character.hide(Template.characters.lucy);
+                await Template.ƒS.Character.hide(Template.characters.rex);
+                Template.ƒS.update();
+                return Template.SceneSeven();
                 break;
             case sceneSixDecision1Hungry.iSaySteal:
                 console.log("iSaySteal");
-                TheSearch.dataForSave.friendshipScore -= 1;
-                await TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                await TheSearch.ƒS.Character.hide(TheSearch.characters.velo);
-                await TheSearch.ƒS.Character.show(TheSearch.characters.rex, TheSearch.characters.rex.pose.sniff, TheSearch.ƒS.positions.bottomright);
-                TheSearch.ƒS.update();
-                await TheSearch.ƒS.Location.show(TheSearch.locations.L_DiplodoDay);
-                await TheSearch.ƒS.update(TheSearch.transition.steps.duration, TheSearch.transition.steps.alpha, TheSearch.transition.steps.edge);
+                Template.dataForSave.friendshipScore -= 1;
+                await Template.ƒS.Character.hide(Template.characters.rex);
+                await Template.ƒS.Character.hide(Template.characters.velo);
+                await Template.ƒS.Character.show(Template.characters.rex, Template.characters.rex.pose.sniff, Template.ƒS.positions.bottomright);
+                Template.ƒS.update();
+                await Template.ƒS.Location.show(Template.locations.L_DiplodoDay);
+                await Template.ƒS.update(Template.transition.steps.duration, Template.transition.steps.alpha, Template.transition.steps.edge);
                 let fireplace = document.createElement("div");
                 fireplace.setAttribute("class", "fireplace");
                 document.body.appendChild(fireplace);
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s6t0004, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0004);
-                TheSearch.ƒS.Sound.play(TheSearch.soundNarrator.s6t0005, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Narrator.T0005);
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s6t0011, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0011);
-                let dialogeElementS6D2Cook = await TheSearch.ƒS.Menu.getInput(sceneSixDecision2Cook, "choicesCssClass");
+                Template.ƒS.Sound.play(Template.soundRex.s6t0004, 1);
+                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0004);
+                Template.ƒS.Sound.play(Template.soundNarrator.s6t0005, 1);
+                await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0005);
+                Template.ƒS.Sound.play(Template.soundRex.s6t0011, 1);
+                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0011);
+                let dialogeElementS6D2Cook = await Template.ƒS.Menu.getInput(sceneSixDecision2Cook, "choicesCssClass");
                 switch (dialogeElementS6D2Cook) {
                     case sceneSixDecision2Cook.iSayYes:
                         console.log("iSayYes");
-                        TheSearch.dataForSave.friendshipScore += 1;
-                        TheSearch.ƒS.Sound.play(TheSearch.soundNarrator.s6Game4, 1);
-                        await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Narrator.T0006);
-                        TheSearch.ƒS.Text.addClass("book");
-                        await TheSearch.ƒS.Text.print("");
+                        Template.dataForSave.friendshipScore += 1;
+                        Template.ƒS.Sound.play(Template.soundNarrator.s6Game4, 1);
+                        await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0006);
+                        Template.ƒS.Text.addClass("book");
+                        await Template.ƒS.Text.print("");
                         /**GAME 4 */
                         let background = document.createElement("div");
                         background.setAttribute("class", "bgGame2");
@@ -1934,7 +1936,7 @@ var TheSearch;
                         document.getElementById("scoreForFriendshipRex").setAttribute("class", "hide");
                         let stew = [];
                         function addVegetable(_event) {
-                            TheSearch.ƒS.Sound.play(TheSearch.soundSFX.catchCook, 1);
+                            Template.ƒS.Sound.play(Template.soundSFX.catchCook, 1);
                             let target = _event.target;
                             let vegetable = target.className;
                             console.log(vegetable);
@@ -1964,42 +1966,42 @@ var TheSearch;
                                 close.classList.remove("hide");
                                 inventory.classList.remove("hide");
                                 speech.classList.remove("hide");
-                                document.body.removeChild(fireplace);
+                                //document.body.removeChild(fireplace);
                                 document.getElementsByName("friendshipScore").forEach(meterStuff => meterStuff.hidden = false);
                                 document.getElementById("scoreForFriendshipRex").classList.remove("hide");
-                                TheSearch.dataForSave.friendshipScore += 5;
-                                await TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                                TheSearch.ƒS.update();
-                                await TheSearch.ƒS.Character.show(TheSearch.characters.rex, TheSearch.characters.rex.pose.happy, TheSearch.ƒS.positions.bottomright);
-                                TheSearch.ƒS.update();
-                                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s6t0005, 1);
-                                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0005);
-                                await TheSearch.ƒS.Character.show(TheSearch.characters.lucy, TheSearch.characters.lucy.pose.happy, TheSearch.ƒS.positions.bottomleft);
-                                TheSearch.ƒS.update();
-                                TheSearch.ƒS.Sound.play(TheSearch.soundLucy.s6t0003, 1);
-                                await TheSearch.ƒS.Speech.tell(TheSearch.characters.lucy, text.Lucy.T0003);
-                                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s6t0007, 1);
-                                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0007);
-                                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s6t0008, 1);
-                                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0008);
-                                TheSearch.ƒS.Sound.play(TheSearch.soundLucy.s6t0004, 1);
-                                await TheSearch.ƒS.Speech.tell(TheSearch.characters.lucy, text.Lucy.T0004);
-                                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s6t0009, 1);
-                                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0009);
-                                TheSearch.ƒS.Sound.play(TheSearch.soundLucy.s6t0005, 1);
-                                await TheSearch.ƒS.Speech.tell(TheSearch.characters.lucy, text.Lucy.T0005);
-                                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s6t0014, 1);
-                                TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0014);
-                                TheSearch.ƒS.Text.setClass("novelPageLucy");
-                                await TheSearch.ƒS.Text.print("");
-                                TheSearch.ƒS.Inventory.add(TheSearch.items.lucy);
-                                TheSearch.ƒS.update();
-                                TheSearch.ƒS.Speech.hide();
-                                TheSearch.ƒS.Speech.clear();
-                                TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                                TheSearch.ƒS.Character.hide(TheSearch.characters.lucy);
-                                TheSearch.ƒS.update();
-                                return TheSearch.SceneSeven();
+                                Template.dataForSave.friendshipScore += 5;
+                                await Template.ƒS.Character.hide(Template.characters.rex);
+                                Template.ƒS.update();
+                                await Template.ƒS.Character.show(Template.characters.rex, Template.characters.rex.pose.happy, Template.ƒS.positions.bottomright);
+                                Template.ƒS.update();
+                                Template.ƒS.Sound.play(Template.soundRex.s6t0005, 1);
+                                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0005);
+                                await Template.ƒS.Character.show(Template.characters.lucy, Template.characters.lucy.pose.happy, Template.ƒS.positions.bottomleft);
+                                Template.ƒS.update();
+                                Template.ƒS.Sound.play(Template.soundLucy.s6t0003, 1);
+                                await Template.ƒS.Speech.tell(Template.characters.lucy, text.Lucy.T0003);
+                                Template.ƒS.Sound.play(Template.soundRex.s6t0007, 1);
+                                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0007);
+                                Template.ƒS.Sound.play(Template.soundRex.s6t0008, 1);
+                                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0008);
+                                Template.ƒS.Sound.play(Template.soundLucy.s6t0004, 1);
+                                await Template.ƒS.Speech.tell(Template.characters.lucy, text.Lucy.T0004);
+                                Template.ƒS.Sound.play(Template.soundRex.s6t0009, 1);
+                                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0009);
+                                Template.ƒS.Sound.play(Template.soundLucy.s6t0005, 1);
+                                await Template.ƒS.Speech.tell(Template.characters.lucy, text.Lucy.T0005);
+                                Template.ƒS.Sound.play(Template.soundRex.s6t0014, 1);
+                                Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0014);
+                                Template.ƒS.Text.setClass("novelPageLucy");
+                                await Template.ƒS.Text.print("");
+                                Template.ƒS.Inventory.add(Template.items.lucy);
+                                Template.ƒS.update();
+                                Template.ƒS.Speech.hide();
+                                Template.ƒS.Speech.clear();
+                                Template.ƒS.Character.hide(Template.characters.rex);
+                                Template.ƒS.Character.hide(Template.characters.lucy);
+                                Template.ƒS.update();
+                                return Template.SceneSeven();
                             }
                             else {
                                 console.log("YouLost");
@@ -2013,78 +2015,78 @@ var TheSearch;
                                 document.body.removeChild(fireplace);
                                 document.getElementsByName("friendshipScore").forEach(meterStuff => meterStuff.hidden = false);
                                 document.getElementById("scoreForFriendshipRex").classList.remove("hide");
-                                TheSearch.dataForSave.friendshipScore -= 5;
-                                await TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                                TheSearch.ƒS.update();
-                                await TheSearch.ƒS.Character.show(TheSearch.characters.rex, TheSearch.characters.rex.pose.sad, TheSearch.ƒS.positions.bottomright);
-                                TheSearch.ƒS.update();
-                                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s6t0006, 1);
-                                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0006);
-                                await TheSearch.ƒS.Character.show(TheSearch.characters.lucy, TheSearch.characters.lucy.pose.happy, TheSearch.ƒS.positions.bottomleft);
-                                TheSearch.ƒS.update();
-                                TheSearch.ƒS.Sound.play(TheSearch.soundLucy.s6t0003, 1);
-                                await TheSearch.ƒS.Speech.tell(TheSearch.characters.lucy, text.Lucy.T0003);
-                                await TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                                await TheSearch.ƒS.Character.show(TheSearch.characters.rex, TheSearch.characters.rex.pose.happy, TheSearch.ƒS.positions.bottomright);
-                                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s6t0007, 1);
-                                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0007);
-                                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s6t0008, 1);
-                                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0008);
-                                TheSearch.ƒS.Sound.play(TheSearch.soundLucy.s6t0004, 1);
-                                await TheSearch.ƒS.Speech.tell(TheSearch.characters.lucy, text.Lucy.T0004);
-                                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s6t0009, 1);
-                                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0009);
-                                TheSearch.ƒS.Sound.play(TheSearch.soundLucy.s6t0005, 1);
-                                await TheSearch.ƒS.Speech.tell(TheSearch.characters.lucy, text.Lucy.T0005);
-                                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s6t0014, 1);
-                                TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0014);
-                                TheSearch.ƒS.update();
-                                TheSearch.ƒS.Text.addClass("novelPageLucy");
-                                await TheSearch.ƒS.Text.print("");
-                                TheSearch.ƒS.Inventory.add(TheSearch.items.lucy);
-                                TheSearch.ƒS.update();
-                                TheSearch.ƒS.Speech.hide();
-                                TheSearch.ƒS.Speech.clear();
-                                TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                                TheSearch.ƒS.Character.hide(TheSearch.characters.lucy);
-                                TheSearch.ƒS.update();
-                                return TheSearch.SceneSeven();
+                                Template.dataForSave.friendshipScore -= 5;
+                                await Template.ƒS.Character.hide(Template.characters.rex);
+                                Template.ƒS.update();
+                                await Template.ƒS.Character.show(Template.characters.rex, Template.characters.rex.pose.sad, Template.ƒS.positions.bottomright);
+                                Template.ƒS.update();
+                                Template.ƒS.Sound.play(Template.soundRex.s6t0006, 1);
+                                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0006);
+                                await Template.ƒS.Character.show(Template.characters.lucy, Template.characters.lucy.pose.happy, Template.ƒS.positions.bottomleft);
+                                Template.ƒS.update();
+                                Template.ƒS.Sound.play(Template.soundLucy.s6t0003, 1);
+                                await Template.ƒS.Speech.tell(Template.characters.lucy, text.Lucy.T0003);
+                                await Template.ƒS.Character.hide(Template.characters.rex);
+                                await Template.ƒS.Character.show(Template.characters.rex, Template.characters.rex.pose.happy, Template.ƒS.positions.bottomright);
+                                Template.ƒS.Sound.play(Template.soundRex.s6t0007, 1);
+                                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0007);
+                                Template.ƒS.Sound.play(Template.soundRex.s6t0008, 1);
+                                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0008);
+                                Template.ƒS.Sound.play(Template.soundLucy.s6t0004, 1);
+                                await Template.ƒS.Speech.tell(Template.characters.lucy, text.Lucy.T0004);
+                                Template.ƒS.Sound.play(Template.soundRex.s6t0009, 1);
+                                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0009);
+                                Template.ƒS.Sound.play(Template.soundLucy.s6t0005, 1);
+                                await Template.ƒS.Speech.tell(Template.characters.lucy, text.Lucy.T0005);
+                                Template.ƒS.Sound.play(Template.soundRex.s6t0014, 1);
+                                Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0014);
+                                Template.ƒS.update();
+                                Template.ƒS.Text.addClass("novelPageLucy");
+                                await Template.ƒS.Text.print("");
+                                Template.ƒS.Inventory.add(Template.items.lucy);
+                                Template.ƒS.update();
+                                Template.ƒS.Speech.hide();
+                                Template.ƒS.Speech.clear();
+                                Template.ƒS.Character.hide(Template.characters.rex);
+                                Template.ƒS.Character.hide(Template.characters.lucy);
+                                Template.ƒS.update();
+                                return Template.SceneSeven();
                             }
                         }
                         break;
                     case sceneSixDecision2Cook.iSayNo:
                         console.log("iSayNo");
-                        await TheSearch.ƒS.Character.show(TheSearch.characters.lucy, TheSearch.characters.lucy.pose.happy, TheSearch.ƒS.positions.bottomleft);
-                        TheSearch.ƒS.update();
-                        TheSearch.ƒS.Sound.play(TheSearch.soundLucy.s6t0006, 1);
-                        await TheSearch.ƒS.Speech.tell(TheSearch.characters.lucy, text.Lucy.T0006);
-                        TheSearch.ƒS.Sound.play(TheSearch.soundRex.s6t0012, 1);
-                        await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0012);
-                        TheSearch.ƒS.Sound.play(TheSearch.soundRex.s6t0013, 1);
-                        await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0013);
-                        TheSearch.ƒS.Sound.play(TheSearch.soundLucy.s6t0005, 1);
-                        await TheSearch.ƒS.Speech.tell(TheSearch.characters.lucy, text.Lucy.T0005);
-                        TheSearch.ƒS.Text.addClass("novelPageLucy");
-                        await TheSearch.ƒS.Text.print("");
-                        TheSearch.ƒS.Inventory.add(TheSearch.items.lucy);
-                        TheSearch.ƒS.update();
-                        TheSearch.ƒS.Sound.play(TheSearch.soundRex.s6t0014, 1);
-                        await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0014);
+                        await Template.ƒS.Character.show(Template.characters.lucy, Template.characters.lucy.pose.happy, Template.ƒS.positions.bottomleft);
+                        Template.ƒS.update();
+                        Template.ƒS.Sound.play(Template.soundLucy.s6t0006, 1);
+                        await Template.ƒS.Speech.tell(Template.characters.lucy, text.Lucy.T0006);
+                        Template.ƒS.Sound.play(Template.soundRex.s6t0012, 1);
+                        await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0012);
+                        Template.ƒS.Sound.play(Template.soundRex.s6t0013, 1);
+                        await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0013);
+                        Template.ƒS.Sound.play(Template.soundLucy.s6t0005, 1);
+                        await Template.ƒS.Speech.tell(Template.characters.lucy, text.Lucy.T0005);
+                        Template.ƒS.Text.addClass("novelPageLucy");
+                        await Template.ƒS.Text.print("");
+                        Template.ƒS.Inventory.add(Template.items.lucy);
+                        Template.ƒS.update();
+                        Template.ƒS.Sound.play(Template.soundRex.s6t0014, 1);
+                        await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0014);
                         document.body.removeChild(fireplace);
-                        TheSearch.ƒS.Speech.clear();
-                        TheSearch.ƒS.Speech.hide();
-                        TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                        TheSearch.ƒS.update();
-                        return TheSearch.SceneSeven();
+                        Template.ƒS.Speech.clear();
+                        Template.ƒS.Speech.hide();
+                        Template.ƒS.Character.hide(Template.characters.rex);
+                        Template.ƒS.update();
+                        return Template.SceneSeven();
                         break;
                 }
                 break;
         }
     }
-    TheSearch.SceneSix = SceneSix;
-})(TheSearch || (TheSearch = {}));
-var TheSearch;
-(function (TheSearch) {
+    Template.SceneSix = SceneSix;
+})(Template || (Template = {}));
+var Template;
+(function (Template) {
     async function SceneThree() {
         console.log("SceneThree starting");
         let text = {
@@ -2096,7 +2098,7 @@ var TheSearch;
                 T0005: "..."
             },
             Rex: {
-                T0001: TheSearch.dataForSave.nameProtagonist + ", soll ich fragen ob ich mitspielen darf?",
+                T0001: Template.dataForSave.nameProtagonist + ", soll ich fragen ob ich mitspielen darf?",
                 T0002: "Oh ja, gerne!",
                 T0003: "Ne danke, ich suche jemanden...",
                 T0004: "Hallo... darf ich vielleicht auch mitspielen?",
@@ -2115,17 +2117,17 @@ var TheSearch;
                 T0009: "Ahhhh Hilfe!!!"
             }
         };
-        await TheSearch.ƒS.Location.show(TheSearch.locations.L_Dilo);
-        await TheSearch.ƒS.Character.show(TheSearch.characters.rex, TheSearch.characters.rex.pose.happy, TheSearch.ƒS.positions.bottomright);
-        await TheSearch.ƒS.update(TheSearch.transition.steps.duration, TheSearch.transition.steps.alpha, TheSearch.transition.steps.edge);
-        TheSearch.ƒS.Sound.play(TheSearch.soundNarrator.s3t0001, 1);
-        await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Narrator.T0001);
-        TheSearch.ƒS.Sound.play(TheSearch.soundNarrator.s3t0002, 1);
-        await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Narrator.T0002);
-        TheSearch.ƒS.Sound.play(TheSearch.soundNarrator.s3t0003, 1);
-        await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Narrator.T0003);
-        TheSearch.ƒS.Sound.play(TheSearch.soundRex.s3t0001, 1);
-        await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0001);
+        await Template.ƒS.Location.show(Template.locations.L_Dilo);
+        await Template.ƒS.Character.show(Template.characters.rex, Template.characters.rex.pose.happy, Template.ƒS.positions.bottomright);
+        await Template.ƒS.update(Template.transition.steps.duration, Template.transition.steps.alpha, Template.transition.steps.edge);
+        Template.ƒS.Sound.play(Template.soundNarrator.s3t0001, 1);
+        await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0001);
+        Template.ƒS.Sound.play(Template.soundNarrator.s3t0002, 1);
+        await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0002);
+        Template.ƒS.Sound.play(Template.soundNarrator.s3t0003, 1);
+        await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0003);
+        Template.ƒS.Sound.play(Template.soundRex.s3t0001, 1);
+        await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0001);
         /** DECISION */
         /** DO YOU PLAY WITH DINOS? */
         let sceneThreeDecision1PlayRex = {
@@ -2133,30 +2135,30 @@ var TheSearch;
             iSayYes: "Ja",
             iSayJustPlay: "Einfach mitspielen"
         };
-        let dialogueElementS3D1Play = await TheSearch.ƒS.Menu.getInput(sceneThreeDecision1PlayRex, "choicesCssClass");
+        let dialogueElementS3D1Play = await Template.ƒS.Menu.getInput(sceneThreeDecision1PlayRex, "choicesCssClass");
         switch (dialogueElementS3D1Play) {
             case sceneThreeDecision1PlayRex.iSayNo:
                 console.log("iSayNo");
-                await TheSearch.ƒS.Character.show(TheSearch.characters.elena, TheSearch.characters.elena.pose.happy, TheSearch.ƒS.positions.bottomleft);
-                TheSearch.ƒS.update();
-                TheSearch.ƒS.Sound.play(TheSearch.soundElena.s3t0001, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.elena, text.Elena.T0001);
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s3t0003, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0003);
-                TheSearch.ƒS.Sound.play(TheSearch.soundElena.s3t0002, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.elena, text.Elena.T0002);
-                TheSearch.ƒS.Speech.hide();
-                TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                TheSearch.ƒS.Character.hide(TheSearch.characters.elena);
-                TheSearch.ƒS.Speech.clear();
-                TheSearch.ƒS.update();
-                let nextScene = TheSearch.SceneFour();
+                await Template.ƒS.Character.show(Template.characters.elena, Template.characters.elena.pose.happy, Template.ƒS.positions.bottomleft);
+                Template.ƒS.update();
+                Template.ƒS.Sound.play(Template.soundElena.s3t0001, 1);
+                await Template.ƒS.Speech.tell(Template.characters.elena, text.Elena.T0001);
+                Template.ƒS.Sound.play(Template.soundRex.s3t0003, 1);
+                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0003);
+                Template.ƒS.Sound.play(Template.soundElena.s3t0002, 1);
+                await Template.ƒS.Speech.tell(Template.characters.elena, text.Elena.T0002);
+                Template.ƒS.Speech.hide();
+                Template.ƒS.Character.hide(Template.characters.rex);
+                Template.ƒS.Character.hide(Template.characters.elena);
+                Template.ƒS.Speech.clear();
+                Template.ƒS.update();
+                let nextScene = Template.SceneFour();
                 return nextScene;
                 break;
             case sceneThreeDecision1PlayRex.iSayYes:
                 console.log("iSayYes");
-                await TheSearch.ƒS.Character.show(TheSearch.characters.elena, TheSearch.characters.elena.pose.happy, TheSearch.ƒS.positions.bottomleft);
-                TheSearch.ƒS.update();
+                await Template.ƒS.Character.show(Template.characters.elena, Template.characters.elena.pose.happy, Template.ƒS.positions.bottomleft);
+                Template.ƒS.update();
                 /** MINI GAME 2 */
                 //Create Divs with Dino png as Background
                 let divSibling1 = document.createElement("div");
@@ -2180,25 +2182,25 @@ var TheSearch;
                 let positionYSibling3 = -40;
                 divSibling3.style.left = positionXSibling3 + "%";
                 divSibling3.style.top = positionYSibling3 + "%";
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s3t0004, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0004);
-                TheSearch.ƒS.Sound.play(TheSearch.soundElena.s3t0003, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.elena, text.Elena.T0003);
-                TheSearch.ƒS.Sound.play(TheSearch.soundElena.s3t0004, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.elena, text.Elena.T0004);
-                TheSearch.ƒS.Inventory.add(TheSearch.items.elena);
-                TheSearch.ƒS.update();
-                TheSearch.ƒS.Text.addClass("novelPageElena");
-                await TheSearch.ƒS.Text.print("");
-                TheSearch.ƒS.Sound.play(TheSearch.soundElena.s3t0005, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.elena, text.Elena.T0005);
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s3t0005, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0005);
-                TheSearch.ƒS.Sound.play(TheSearch.soundNarrator.s3Game2Intro, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Narrator.T0004);
-                TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                TheSearch.ƒS.Character.hide(TheSearch.characters.elena);
-                TheSearch.ƒS.update();
+                Template.ƒS.Sound.play(Template.soundRex.s3t0004, 1);
+                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0004);
+                Template.ƒS.Sound.play(Template.soundElena.s3t0003, 1);
+                await Template.ƒS.Speech.tell(Template.characters.elena, text.Elena.T0003);
+                Template.ƒS.Sound.play(Template.soundElena.s3t0004, 1);
+                await Template.ƒS.Speech.tell(Template.characters.elena, text.Elena.T0004);
+                Template.ƒS.Inventory.add(Template.items.elena);
+                Template.ƒS.update();
+                Template.ƒS.Text.addClass("novelPageElena");
+                await Template.ƒS.Text.print("");
+                Template.ƒS.Sound.play(Template.soundElena.s3t0005, 1);
+                await Template.ƒS.Speech.tell(Template.characters.elena, text.Elena.T0005);
+                Template.ƒS.Sound.play(Template.soundRex.s3t0005, 1);
+                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0005);
+                Template.ƒS.Sound.play(Template.soundNarrator.s3Game2Intro, 1);
+                await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0004);
+                Template.ƒS.Character.hide(Template.characters.rex);
+                Template.ƒS.Character.hide(Template.characters.elena);
+                Template.ƒS.update();
                 let speech = document.querySelector("speech");
                 speech.setAttribute("class", "hide");
                 let save = document.querySelector("#save");
@@ -2218,14 +2220,14 @@ var TheSearch;
                 //Move Dinos
                 let interval = setInterval(timer, 500);
                 function timer() {
-                    divSibling1.style.left = TheSearch.getRandom(5, 95) + "%";
-                    divSibling2.style.left = TheSearch.getRandom(5, 95) + "%";
-                    divSibling3.style.left = TheSearch.getRandom(5, 95) + "%";
+                    divSibling1.style.left = Template.getRandom(5, 95) + "%";
+                    divSibling2.style.left = Template.getRandom(5, 95) + "%";
+                    divSibling3.style.left = Template.getRandom(5, 95) + "%";
                 }
                 let caught = [];
                 async function handleClick(_event) {
                     console.log("clickedMe");
-                    TheSearch.ƒS.Sound.play(TheSearch.soundSFX.catchCook, 1);
+                    Template.ƒS.Sound.play(Template.soundSFX.catchCook, 1);
                     let target = _event.target;
                     target.removeEventListener("pointerdown", handleClick);
                     //target.removeEventListener("pointerdown", handleClick);
@@ -2243,25 +2245,25 @@ var TheSearch;
                         inventory.classList.remove("hide");
                         document.getElementsByName("friendshipScore").forEach(meterStuff => meterStuff.hidden = false);
                         document.getElementById("scoreForFriendshipRex").classList.remove("hide");
-                        TheSearch.dataForSave.friendshipScore += 5;
-                        await TheSearch.ƒS.Character.show(TheSearch.characters.elena, TheSearch.characters.elena.pose.happy, TheSearch.ƒS.positions.bottomleft);
-                        await TheSearch.ƒS.Character.show(TheSearch.characters.rex, TheSearch.characters.rex.pose.happy, TheSearch.ƒS.positions.bottomright);
-                        TheSearch.ƒS.update();
-                        TheSearch.ƒS.Sound.play(TheSearch.soundElena.s3t0006, 1);
-                        await TheSearch.ƒS.Speech.tell(TheSearch.characters.elena, text.Elena.T0006);
+                        Template.dataForSave.friendshipScore += 5;
+                        await Template.ƒS.Character.show(Template.characters.elena, Template.characters.elena.pose.happy, Template.ƒS.positions.bottomleft);
+                        await Template.ƒS.Character.show(Template.characters.rex, Template.characters.rex.pose.happy, Template.ƒS.positions.bottomright);
+                        Template.ƒS.update();
+                        Template.ƒS.Sound.play(Template.soundElena.s3t0006, 1);
+                        await Template.ƒS.Speech.tell(Template.characters.elena, text.Elena.T0006);
                         //Sound plays Elenas Mom calls kids
-                        TheSearch.ƒS.Sound.play(TheSearch.soundElenasMom.s3t0001, 1);
-                        await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Narrator.T0005);
-                        TheSearch.ƒS.Sound.play(TheSearch.soundElena.s3t0008, 1);
-                        await TheSearch.ƒS.Speech.tell(TheSearch.characters.elena, text.Elena.T0008);
-                        TheSearch.ƒS.Sound.play(TheSearch.soundRex.s3t0006, 1);
-                        await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0006);
-                        TheSearch.ƒS.Speech.hide();
-                        TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                        TheSearch.ƒS.Character.hide(TheSearch.characters.elena);
-                        TheSearch.ƒS.Speech.clear();
-                        TheSearch.ƒS.update();
-                        return TheSearch.SceneFour();
+                        Template.ƒS.Sound.play(Template.soundElenasMom.s3t0001, 1);
+                        await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0005);
+                        Template.ƒS.Sound.play(Template.soundElena.s3t0008, 1);
+                        await Template.ƒS.Speech.tell(Template.characters.elena, text.Elena.T0008);
+                        Template.ƒS.Sound.play(Template.soundRex.s3t0006, 1);
+                        await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0006);
+                        Template.ƒS.Speech.hide();
+                        Template.ƒS.Character.hide(Template.characters.rex);
+                        Template.ƒS.Character.hide(Template.characters.elena);
+                        Template.ƒS.Speech.clear();
+                        Template.ƒS.update();
+                        return Template.SceneFour();
                     }
                 }
                 async function timeIsUp() {
@@ -2276,50 +2278,50 @@ var TheSearch;
                     inventory.classList.remove("hide");
                     document.getElementsByName("friendshipScore").forEach(meterStuff => meterStuff.hidden = false);
                     document.getElementById("scoreForFriendshipRex").classList.remove("hide");
-                    await TheSearch.ƒS.Character.show(TheSearch.characters.elena, TheSearch.characters.elena.pose.happy, TheSearch.ƒS.positions.bottomleft);
-                    await TheSearch.ƒS.Character.show(TheSearch.characters.rex, TheSearch.characters.rex.pose.happy, TheSearch.ƒS.positions.bottomright);
-                    TheSearch.ƒS.update();
-                    TheSearch.ƒS.Sound.play(TheSearch.soundElena.s3t0007, 1);
-                    await TheSearch.ƒS.Speech.tell(TheSearch.characters.elena, text.Elena.T0007);
+                    await Template.ƒS.Character.show(Template.characters.elena, Template.characters.elena.pose.happy, Template.ƒS.positions.bottomleft);
+                    await Template.ƒS.Character.show(Template.characters.rex, Template.characters.rex.pose.happy, Template.ƒS.positions.bottomright);
+                    Template.ƒS.update();
+                    Template.ƒS.Sound.play(Template.soundElena.s3t0007, 1);
+                    await Template.ƒS.Speech.tell(Template.characters.elena, text.Elena.T0007);
                     //Sound plays Elenas Mom calls kids
-                    TheSearch.ƒS.Sound.play(TheSearch.soundElenasMom.s3t0001, 1);
-                    await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Narrator.T0005);
-                    TheSearch.ƒS.Sound.play(TheSearch.soundElena.s3t0008, 1);
-                    await TheSearch.ƒS.Speech.tell(TheSearch.characters.elena, text.Elena.T0008);
-                    TheSearch.ƒS.Sound.play(TheSearch.soundRex.s3t0006, 1);
-                    await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0006);
-                    TheSearch.dataForSave.friendshipScore -= 5;
-                    TheSearch.ƒS.Speech.hide();
-                    TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                    TheSearch.ƒS.Character.hide(TheSearch.characters.elena);
-                    TheSearch.ƒS.Speech.clear();
-                    TheSearch.ƒS.update();
-                    return TheSearch.SceneFour();
+                    Template.ƒS.Sound.play(Template.soundElenasMom.s3t0001, 1);
+                    await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0005);
+                    Template.ƒS.Sound.play(Template.soundElena.s3t0008, 1);
+                    await Template.ƒS.Speech.tell(Template.characters.elena, text.Elena.T0008);
+                    Template.ƒS.Sound.play(Template.soundRex.s3t0006, 1);
+                    await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0006);
+                    Template.dataForSave.friendshipScore -= 5;
+                    Template.ƒS.Speech.hide();
+                    Template.ƒS.Character.hide(Template.characters.rex);
+                    Template.ƒS.Character.hide(Template.characters.elena);
+                    Template.ƒS.Speech.clear();
+                    Template.ƒS.update();
+                    return Template.SceneFour();
                 }
                 break;
             case sceneThreeDecision1PlayRex.iSayJustPlay:
                 console.log("iSayJustPlay");
-                TheSearch.dataForSave.friendshipScore -= 1;
-                await TheSearch.ƒS.Character.show(TheSearch.characters.elena, TheSearch.characters.elena.pose.scared, TheSearch.ƒS.positions.bottomleft);
-                TheSearch.ƒS.update();
-                TheSearch.ƒS.Sound.play(TheSearch.soundElena.s3t0009, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.elena, text.Elena.T0009);
-                await TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                await TheSearch.ƒS.Character.show(TheSearch.characters.rex, TheSearch.characters.rex.pose.sad, TheSearch.ƒS.positions.bottomright);
-                TheSearch.ƒS.update();
-                await TheSearch.ƒS.Character.animate(TheSearch.characters.elena, TheSearch.characters.elena.pose.scared, TheSearch.getAnimationElena());
-                TheSearch.ƒS.Speech.hide();
-                TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                TheSearch.ƒS.Speech.clear();
-                let sceneFour = TheSearch.SceneFour();
+                Template.dataForSave.friendshipScore -= 1;
+                await Template.ƒS.Character.show(Template.characters.elena, Template.characters.elena.pose.scared, Template.ƒS.positions.bottomleft);
+                Template.ƒS.update();
+                Template.ƒS.Sound.play(Template.soundElena.s3t0009, 1);
+                await Template.ƒS.Speech.tell(Template.characters.elena, text.Elena.T0009);
+                await Template.ƒS.Character.hide(Template.characters.rex);
+                await Template.ƒS.Character.show(Template.characters.rex, Template.characters.rex.pose.sad, Template.ƒS.positions.bottomright);
+                Template.ƒS.update();
+                await Template.ƒS.Character.animate(Template.characters.elena, Template.characters.elena.pose.scared, Template.getAnimationElena());
+                Template.ƒS.Speech.hide();
+                Template.ƒS.Character.hide(Template.characters.rex);
+                Template.ƒS.Speech.clear();
+                let sceneFour = Template.SceneFour();
                 return sceneFour;
                 break;
         }
     }
-    TheSearch.SceneThree = SceneThree;
-})(TheSearch || (TheSearch = {}));
-var TheSearch;
-(function (TheSearch) {
+    Template.SceneThree = SceneThree;
+})(Template || (Template = {}));
+var Template;
+(function (Template) {
     async function SceneTwo() {
         console.log("SceneTwo starting");
         let text = {
@@ -2328,7 +2330,7 @@ var TheSearch;
                 T0002: "..."
             },
             Rex: {
-                T0001: TheSearch.dataForSave.nameProtagonist + ", hast du meine Mama gesehen?",
+                T0001: Template.dataForSave.nameProtagonist + ", hast du meine Mama gesehen?",
                 T0002: "Das ist gemein!",
                 T0003: "Ist schon ok",
                 T0004: "Oh schade, dann muss ich sie suchen!",
@@ -2338,14 +2340,14 @@ var TheSearch;
                 T0008: "Dann mache ich das halt alleine!"
             }
         };
-        await TheSearch.ƒS.Location.show(TheSearch.locations.Home_Hatched);
-        await TheSearch.ƒS.Character.show(TheSearch.characters.rex, TheSearch.characters.rex.pose.sad, TheSearch.ƒS.positions.bottomcenter);
-        await TheSearch.ƒS.update(TheSearch.transition.lookAround.duration, TheSearch.transition.lookAround.alpha, TheSearch.transition.lookAround.edge);
-        TheSearch.ƒS.Sound.play(TheSearch.soundNarrator.s2t0001, 1);
-        await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Narrator.T0001);
+        await Template.ƒS.Location.show(Template.locations.Home_Hatched);
+        await Template.ƒS.Character.show(Template.characters.rex, Template.characters.rex.pose.sad, Template.ƒS.positions.bottomcenter);
+        await Template.ƒS.update(Template.transition.lookAround.duration, Template.transition.lookAround.alpha, Template.transition.lookAround.edge);
+        Template.ƒS.Sound.play(Template.soundNarrator.s2t0001, 1);
+        await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0001);
         //ƒS.Sound.play(soundRex.t0006Rex, 1);
-        TheSearch.ƒS.Sound.play(TheSearch.soundRex.s2t0001, 1);
-        await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0001);
+        Template.ƒS.Sound.play(Template.soundRex.s2t0001, 1);
+        await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0001);
         /** DECISIONS */
         /** HAVE YOU SEEN MY MOM? */
         let sceneTwoDecision1SeenMom = {
@@ -2368,102 +2370,102 @@ var TheSearch;
             iSayNo: "Nein, das behalte ich für mich",
             iSayImNotSure: "Ich bin mir nicht sicher"
         };
-        let dialogueElementS2D1SeenMom = await TheSearch.ƒS.Menu.getInput(sceneTwoDecision1SeenMom, "choicesCssClass");
+        let dialogueElementS2D1SeenMom = await Template.ƒS.Menu.getInput(sceneTwoDecision1SeenMom, "choicesCssClass");
         switch (dialogueElementS2D1SeenMom) {
             case sceneTwoDecision1SeenMom.iSayIDontTell:
                 console.log("S1D1 I dont tell");
-                TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                await TheSearch.ƒS.Character.show(TheSearch.characters.rex, TheSearch.characters.rex.pose.angry, TheSearch.ƒS.positions.bottomcenter);
-                TheSearch.ƒS.update();
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s2t0002, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0002);
-                let dialogueElementS2D2Apologize = await TheSearch.ƒS.Menu.getInput(sceneTwoDecision2Apologize, "choicesCssClass");
+                Template.ƒS.Character.hide(Template.characters.rex);
+                await Template.ƒS.Character.show(Template.characters.rex, Template.characters.rex.pose.angry, Template.ƒS.positions.bottomcenter);
+                Template.ƒS.update();
+                Template.ƒS.Sound.play(Template.soundRex.s2t0002, 1);
+                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0002);
+                let dialogueElementS2D2Apologize = await Template.ƒS.Menu.getInput(sceneTwoDecision2Apologize, "choicesCssClass");
                 switch (dialogueElementS2D2Apologize) {
                     case sceneTwoDecision2Apologize.iSaySorry:
                         console.log("Sorry");
-                        TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                        await TheSearch.ƒS.Character.show(TheSearch.characters.rex, TheSearch.characters.rex.pose.happy, TheSearch.ƒS.positions.bottomcenter);
-                        TheSearch.ƒS.update();
-                        TheSearch.dataForSave.friendshipScore++;
-                        TheSearch.ƒS.Sound.play(TheSearch.soundRex.s2t0003, 1);
-                        await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0003);
+                        Template.ƒS.Character.hide(Template.characters.rex);
+                        await Template.ƒS.Character.show(Template.characters.rex, Template.characters.rex.pose.happy, Template.ƒS.positions.bottomcenter);
+                        Template.ƒS.update();
+                        Template.dataForSave.friendshipScore++;
+                        Template.ƒS.Sound.play(Template.soundRex.s2t0003, 1);
+                        await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0003);
                         break;
                     case sceneTwoDecision2Apologize.iDontApologize:
                         console.log("Not Sorry");
-                        TheSearch.dataForSave.friendshipScore--;
+                        Template.dataForSave.friendshipScore--;
                 }
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s2t0006, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0006);
+                Template.ƒS.Sound.play(Template.soundRex.s2t0006, 1);
+                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0006);
                 break;
             case sceneTwoDecision1SeenMom.iSayNo:
                 console.log("S1D1 No");
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s2t0004, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0004);
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s2t0006, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0006);
+                Template.ƒS.Sound.play(Template.soundRex.s2t0004, 1);
+                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0004);
+                Template.ƒS.Sound.play(Template.soundRex.s2t0006, 1);
+                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0006);
                 break;
             case sceneTwoDecision1SeenMom.iSayMaybe:
                 console.log(("S2D1 Maybe"));
-                TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                await TheSearch.ƒS.Character.show(TheSearch.characters.rex, TheSearch.characters.rex.pose.happy, TheSearch.ƒS.positions.bottomcenter);
-                TheSearch.ƒS.update();
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s2t0005Yippie, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.narrator, text.Narrator.T0002);
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s2t0005, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0005);
-                let dialogueElementS2D4SayWhereMom = await TheSearch.ƒS.Menu.getInput(sceneTwoDecision4SayWhereMom, "choicesCssClass");
+                Template.ƒS.Character.hide(Template.characters.rex);
+                await Template.ƒS.Character.show(Template.characters.rex, Template.characters.rex.pose.happy, Template.ƒS.positions.bottomcenter);
+                Template.ƒS.update();
+                Template.ƒS.Sound.play(Template.soundRex.s2t0005Yippie, 1);
+                await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0002);
+                Template.ƒS.Sound.play(Template.soundRex.s2t0005, 1);
+                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0005);
+                let dialogueElementS2D4SayWhereMom = await Template.ƒS.Menu.getInput(sceneTwoDecision4SayWhereMom, "choicesCssClass");
                 switch (dialogueElementS2D4SayWhereMom) {
                     case sceneTwoDecision4SayWhereMom.iSayNo:
                         console.log("S2D4 No");
-                        TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                        await TheSearch.ƒS.Character.show(TheSearch.characters.rex, TheSearch.characters.rex.pose.angry, TheSearch.ƒS.positions.bottomcenter);
-                        TheSearch.ƒS.update();
-                        TheSearch.dataForSave.friendshipScore--;
-                        TheSearch.ƒS.Sound.play(TheSearch.soundRex.s2t0002, 1);
-                        await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0002);
-                        TheSearch.ƒS.Sound.play(TheSearch.soundRex.s2t0006, 1);
-                        await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0006);
+                        Template.ƒS.Character.hide(Template.characters.rex);
+                        await Template.ƒS.Character.show(Template.characters.rex, Template.characters.rex.pose.angry, Template.ƒS.positions.bottomcenter);
+                        Template.ƒS.update();
+                        Template.dataForSave.friendshipScore--;
+                        Template.ƒS.Sound.play(Template.soundRex.s2t0002, 1);
+                        await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0002);
+                        Template.ƒS.Sound.play(Template.soundRex.s2t0006, 1);
+                        await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0006);
                         break;
                     case sceneTwoDecision4SayWhereMom.iSayImNotSure:
                         console.log("S2D4 Not sure");
-                        TheSearch.dataForSave.friendshipScore++;
-                        TheSearch.ƒS.Sound.play(TheSearch.soundRex.s2t0006, 1);
-                        await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0006);
+                        Template.dataForSave.friendshipScore++;
+                        Template.ƒS.Sound.play(Template.soundRex.s2t0006, 1);
+                        await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0006);
                         break;
                 }
         }
-        let dialogueElementS2D3HelpRex = await TheSearch.ƒS.Menu.getInput(sceneTwoDecision3HelpRex, "choicesCssClass");
+        let dialogueElementS2D3HelpRex = await Template.ƒS.Menu.getInput(sceneTwoDecision3HelpRex, "choicesCssClass");
         switch (dialogueElementS2D3HelpRex) {
             case sceneTwoDecision3HelpRex.iHelp:
                 console.log("S2D3 iHelp");
-                TheSearch.dataForSave.friendshipScore++;
-                TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                await TheSearch.ƒS.Character.show(TheSearch.characters.rex, TheSearch.characters.rex.pose.happy, TheSearch.ƒS.positions.bottomcenter);
-                TheSearch.ƒS.update();
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s2t0007, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0007);
-                await TheSearch.ƒS.Character.animate(TheSearch.characters.rex, TheSearch.characters.rex.pose.happy, TheSearch.getAnimation());
+                Template.dataForSave.friendshipScore++;
+                Template.ƒS.Character.hide(Template.characters.rex);
+                await Template.ƒS.Character.show(Template.characters.rex, Template.characters.rex.pose.happy, Template.ƒS.positions.bottomcenter);
+                Template.ƒS.update();
+                Template.ƒS.Sound.play(Template.soundRex.s2t0007, 1);
+                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0007);
+                await Template.ƒS.Character.animate(Template.characters.rex, Template.characters.rex.pose.happy, Template.getAnimation());
                 break;
             case sceneTwoDecision3HelpRex.iDontHelp:
                 console.log("S2D3 iDontHelp");
-                TheSearch.dataForSave.friendshipScore--;
-                TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-                await TheSearch.ƒS.Character.show(TheSearch.characters.rex, TheSearch.characters.rex.pose.angry, TheSearch.ƒS.positions.bottomcenter);
-                TheSearch.ƒS.update();
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.s2t0008, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0008);
-                await TheSearch.ƒS.Character.animate(TheSearch.characters.rex, TheSearch.characters.rex.pose.angry, TheSearch.getAnimation());
+                Template.dataForSave.friendshipScore--;
+                Template.ƒS.Character.hide(Template.characters.rex);
+                await Template.ƒS.Character.show(Template.characters.rex, Template.characters.rex.pose.angry, Template.ƒS.positions.bottomcenter);
+                Template.ƒS.update();
+                Template.ƒS.Sound.play(Template.soundRex.s2t0008, 1);
+                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0008);
+                await Template.ƒS.Character.animate(Template.characters.rex, Template.characters.rex.pose.angry, Template.getAnimation());
                 break;
         }
-        TheSearch.ƒS.Speech.hide();
-        TheSearch.ƒS.Character.hide(TheSearch.characters.rex);
-        TheSearch.ƒS.Speech.clear();
-        return TheSearch.SceneThree();
+        Template.ƒS.Speech.hide();
+        Template.ƒS.Character.hide(Template.characters.rex);
+        Template.ƒS.Speech.clear();
+        return Template.SceneThree();
     }
-    TheSearch.SceneTwo = SceneTwo;
-})(TheSearch || (TheSearch = {}));
-var TheSearch;
-(function (TheSearch) {
+    Template.SceneTwo = SceneTwo;
+})(Template || (Template = {}));
+var Template;
+(function (Template) {
     async function SpecialScene() {
         console.log("SceneSeven starting");
         let text = {
@@ -2476,31 +2478,31 @@ var TheSearch;
                 T0003: "Schade... Machs gut."
             }
         };
-        TheSearch.ƒS.Sound.play(TheSearch.soundRex.specialT0001, 1);
-        await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0001);
+        Template.ƒS.Sound.play(Template.soundRex.specialT0001, 1);
+        await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0001);
         /** DECISION */
         let specialSceneDecision1Friends = {
             iSayYes: "Ja",
             iSayNo: "Nein"
         };
-        let dialogueElementSpecialD1Friends = await TheSearch.ƒS.Menu.getInput(specialSceneDecision1Friends, "choicesCssClass");
+        let dialogueElementSpecialD1Friends = await Template.ƒS.Menu.getInput(specialSceneDecision1Friends, "choicesCssClass");
         switch (dialogueElementSpecialD1Friends) {
             case specialSceneDecision1Friends.iSayYes:
                 console.log("Friends");
-                TheSearch.dataForSave.friendshipScore = 18;
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.specialT0002, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0002);
-                return TheSearch.End();
+                Template.dataForSave.friendshipScore = 18;
+                Template.ƒS.Sound.play(Template.soundRex.specialT0002, 1);
+                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0002);
+                return Template.End();
                 break;
             case specialSceneDecision1Friends.iSayNo:
                 console.log("noFriends");
-                TheSearch.dataForSave.friendshipScore = -18;
-                TheSearch.ƒS.Sound.play(TheSearch.soundRex.specialT0003, 1);
-                await TheSearch.ƒS.Speech.tell(TheSearch.characters.rex, text.Rex.T0003);
-                return TheSearch.End();
+                Template.dataForSave.friendshipScore = -18;
+                Template.ƒS.Sound.play(Template.soundRex.specialT0003, 1);
+                await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0003);
+                return Template.End();
                 break;
         }
     }
-    TheSearch.SpecialScene = SpecialScene;
-})(TheSearch || (TheSearch = {}));
+    Template.SpecialScene = SpecialScene;
+})(Template || (Template = {}));
 //# sourceMappingURL=Template.js.map

@@ -273,7 +273,7 @@ namespace Template {
          
             await ƒS.Character.animate(characters.lennysDad, characters.lennysDad.pose.happy, getAnimationFlyTowards());
 
-            //await ƒS.Character.hide(characters.lennysDad);
+            ƒS.Character.hide(characters.lennysDad);
 
             await ƒS.Character.show(characters.lennysDad, characters.lennysDad.pose.angry, ƒS.positions.bottomleft);
 
