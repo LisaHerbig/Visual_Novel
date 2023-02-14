@@ -520,7 +520,7 @@ namespace TheSearch {
                 ƒS.Sound.play(soundRex.s6t0014, 1);
                 await ƒS.Speech.tell(characters.rex, text.Rex.T0014);
 
-                document.body.removeChild(fireplace);
+                //document.body.removeChild(fireplace);
                 ƒS.Speech.clear();
                 ƒS.Speech.hide();
                 ƒS.Character.hide(characters.rex);
