@@ -11,16 +11,17 @@ namespace TheSearch {
                 T0001: "Und, wie schmeckt es?",
                 T0002: "Na klar, ich kann dir alles zeigen.",
                 T0003: "Aber natürlich, was ist das denn für eine Frage! Ich kümmere mich sehr gerne um dich Rex.", 
-                T0004: "Nein... Damit kann ich leider nciht dienen. Wieso bist du denn so ausgehungert und alleine unterwegs?",
-                T0005: "Oh nein Rex, das tut mir leid... Ich kenne deine Mama leider nicht, aber ich helfe dir sehr gerne. Es wird auch schon dunkel, da sollte ein kleiner Dino nicht alleine durch die Gegend laufen. Wo hast du sie denn das letzte mal gesehen? Am besten gehen wir dorthin zurück, wo ihr das letzte mal zusammen wart. Daran erinnert sich deine Mama bestimmt auch.",
-                T0006: "Ich glaube ich weiß wo. Komm mit, wir bringen dich nach Hause."
+                T0004: "Nein... Damit kann ich leider nicht dienen. Wieso bist du denn so ausgehungert und alleine unterwegs?",
+                T0005: "Oh nein Rex, das tut mir leid... Ich kenne deine Mama leider nicht, aber ich helfe dir sehr gerne. Es wird auch schon dunkel, da sollte ein kleiner Dino nicht alleine durch die Gegend laufen.",
+                T0006: "Ich glaube ich weiß wo. Komm mit, wir bringen dich nach Hause.",
+                T0007: "Wo hast du sie denn das letzte mal gesehen? Am besten gehen wir dorthin zurück, wo ihr das letzte mal zusammen wart. Daran erinnert sich deine Mama bestimmt auch."
             },
 
             Rex: {
                 T0001: "Mhm, das schmeckt super! Danke! Kannst du mir zeigen was da alles drin ist?",
                 T0002: "Super! Darf ich dann bei dir bleiben? Ich habe meine Mama verloren...",
                 T0003: "Danke! Und auch danke an dich, dass du mich so sehr bei meiner Suche unterstützt hast. Ich habe dank dir jetzt ein Zuhause gefunden!",
-                T0004: "Bäh! Das schmekct mir ja so gar nicht. Das ist mir zu viel Grünzeugs. Hast du auch ein saftiges Steak?",
+                T0004: "Bäh! Das schmeckt mir ja so gar nicht. Das ist mir zu viel Grünzeugs. Hast du auch ein saftiges Steak?",
                 T0005: "Ich habe meine Mama verloren und bin auf der Suche nach ihr. Weißt du wo sie sein könnte? Kannst du mir helfen?",
                 T0006: "Bei mir zuhause, bei den gelben Bergen."
             }
@@ -103,12 +104,13 @@ namespace TheSearch {
             await ƒS.Speech.tell(characters.rex, text.Rex.T0005);
             
             ƒS.Sound.play(soundLucy.s7t0005, 1);
+            await ƒS.Speech.tell(characters.lucy, text.Lucy.T0005);
             await ƒS.Character.hide(characters.rex);
 
             await ƒS.Character.show(characters.rex, characters.rex.pose.sad, ƒS.positions.bottomright);
 
             ƒS.Sound.play(soundLucy.s7t0005_2, 1);
-            await ƒS.Speech.tell(characters.lucy, text.Lucy.T0005);
+            await ƒS.Speech.tell(characters.lucy, text.Lucy.T0007);
 
             ƒS.Sound.play(soundRex.s7t0006, 1);
             await ƒS.Speech.tell(characters.rex, text.Rex.T0006);

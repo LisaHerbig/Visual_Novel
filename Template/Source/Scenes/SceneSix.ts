@@ -491,6 +491,8 @@ namespace TheSearch {
               case sceneSixDecision2Cook.iSayNo:
                 console.log("iSayNo");
 
+                document.body.removeChild(fireplace);
+
                 await ƒS.Character.show(characters.lucy, characters.lucy.pose.happy, ƒS.positions.bottomleft);
                 ƒS.Character.hide(characters.rex);
 
