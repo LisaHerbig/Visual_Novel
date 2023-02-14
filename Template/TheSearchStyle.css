@@ -403,6 +403,7 @@ dialog[type=splash]>img#FudgeStoryLogo {
 .Mama, #Mama {
   font-family: "SeptemberMornings";
   font-size: 200%;
+  line-height: 70%;
 }
 
 /*Game2*/
