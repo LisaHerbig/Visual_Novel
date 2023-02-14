@@ -13,7 +13,8 @@ namespace Template {
           T0006: "Hier sehen wir die Eier eines Tyrannosaurus Rex...",
           T0007: "Oh, da sind ja noch gar nicht alle geschlüpft...",
           T0008: "Der Kleine in der Mitte scheint wohl Schwierigkeiten zu haben... Wo ist denn seine Mama?",
-          T0009: "Magst du dem kleinen Dino helfen?"
+          T0009: "Magst du dem kleinen Dino helfen?",
+          T0010: "..."
           },
 
           Rex: {
@@ -46,6 +47,8 @@ namespace Template {
       document.getElementById("close").classList.remove("hide");
       document.getElementById("inventory").classList.remove("hide");
       
+      await ƒS.Speech.tell(characters.narrator, text.Narrator.T0010);
+
       ƒS.Sound.play(soundNarrator.s1t0001, 1);
       await ƒS.Speech.tell(characters.narrator, text.Narrator.T0001);
 

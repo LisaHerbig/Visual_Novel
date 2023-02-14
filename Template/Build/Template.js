@@ -713,6 +713,11 @@ var Template;
     async function End() {
         console.log("FudgeStory Template End starting");
         //await ƒS.Location.show(locations.Home_Hatched);
+        let text = {
+            Narrator: {
+                T0001: "Um die Novel neu zu starten, klicke auf den Bildschirm"
+            }
+        };
         Template.ƒS.Speech.hide();
         document.getElementsByName("friendshipScore").forEach(meterStuff => meterStuff.hidden = true);
         document.getElementById("scoreForFriendshipRex").setAttribute("class", "hide");
@@ -723,6 +728,8 @@ var Template;
         await Template.ƒS.Character.show(Template.characters.end, Template.characters.end.pose.end, Template.ƒS.positions.bottomcenter);
         Template.ƒS.update();
         Template.showCredits();
+        await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0001);
+        location.reload();
     }
     Template.End = End;
 })(Template || (Template = {}));
@@ -779,7 +786,7 @@ var Template;
         let text = {
             Narrator: {
                 T0001: "Am nächsten Morgen erzählt Rex seiner Mama von seinem Abenteuer. Sie verabschieden Lucy und vereinbaren ein neues Treffen mit ihr. Danke, dass du Rex so unterstützt hast!",
-                T0002: "Was ist denn Rex?",
+                //T0002: "Was ist denn Rex?",
                 T0003: "..."
             },
             Lucy: {
@@ -825,16 +832,14 @@ var Template;
         await Template.ƒS.Speech.tell(Template.characters.lucy, text.Lucy.T0003);
         Template.ƒS.Sound.play(Template.soundRexMom.s8t0003, 1);
         await Template.ƒS.Speech.tell(Template.characters.mama, text.Mama.T0003);
-        await Template.ƒS.Character.hide(Template.characters.mama);
-        await Template.ƒS.Character.hide(Template.characters.lucy);
+        Template.ƒS.Character.hide(Template.characters.mama);
+        Template.ƒS.Character.hide(Template.characters.lucy);
+        Template.ƒS.Character.hide(Template.characters.rex);
         await Template.ƒS.Location.show(Template.locations.Home_Hatched);
         await Template.ƒS.update(Template.transition.dayNight.duration, Template.transition.dayNight.alpha, Template.transition.dayNight.edge);
         Template.ƒS.Sound.play(Template.soundNarrator.s8t0001, 1);
         await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0001);
         if (Template.dataForSave.friendshipScore >= 1) {
-            await Template.ƒS.Character.animate(Template.characters.rex, Template.characters.rex.pose.happy, Template.special());
-            Template.ƒS.Sound.play(Template.soundNarrator.s8t0002, 1);
-            await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0002);
             return Template.SpecialScene();
         }
         else {
@@ -1505,7 +1510,8 @@ var Template;
                 T0006: "Hier sehen wir die Eier eines Tyrannosaurus Rex...",
                 T0007: "Oh, da sind ja noch gar nicht alle geschlüpft...",
                 T0008: "Der Kleine in der Mitte scheint wohl Schwierigkeiten zu haben... Wo ist denn seine Mama?",
-                T0009: "Magst du dem kleinen Dino helfen?"
+                T0009: "Magst du dem kleinen Dino helfen?",
+                T0010: "..."
             },
             Rex: {
                 T0001: "Danke!",
@@ -1527,6 +1533,7 @@ var Template;
         document.getElementById("load").classList.remove("hide");
         document.getElementById("close").classList.remove("hide");
         document.getElementById("inventory").classList.remove("hide");
+        await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0010);
         Template.ƒS.Sound.play(Template.soundNarrator.s1t0001, 1);
         await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0001);
         Template.ƒS.Sound.play(Template.soundNarrator.s1t0002, 1);
@@ -1867,7 +1874,7 @@ var Template;
                 Template.ƒS.update();
                 Template.ƒS.Speech.clear();
                 Template.ƒS.Speech.hide();
-                await Template.ƒS.Character.hide(Template.characters.velo);
+                //await ƒS.Character.hide(characters.velo);
                 await Template.ƒS.Character.hide(Template.characters.lucy);
                 await Template.ƒS.Character.hide(Template.characters.rex);
                 Template.ƒS.update();
@@ -2057,6 +2064,8 @@ var Template;
                     case sceneSixDecision2Cook.iSayNo:
                         console.log("iSayNo");
                         await Template.ƒS.Character.show(Template.characters.lucy, Template.characters.lucy.pose.happy, Template.ƒS.positions.bottomleft);
+                        Template.ƒS.Character.hide(Template.characters.rex);
+                        await Template.ƒS.Character.show(Template.characters.rex, Template.characters.rex.pose.happy, Template.ƒS.positions.bottomright);
                         Template.ƒS.update();
                         Template.ƒS.Sound.play(Template.soundLucy.s6t0006, 1);
                         await Template.ƒS.Speech.tell(Template.characters.lucy, text.Lucy.T0006);
@@ -2478,6 +2487,9 @@ var Template;
                 T0003: "Schade... Machs gut."
             }
         };
+        await Template.ƒS.Character.animate(Template.characters.rex, Template.characters.rex.pose.happy, Template.special());
+        Template.ƒS.Sound.play(Template.soundNarrator.s8t0002, 1);
+        await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0001);
         Template.ƒS.Sound.play(Template.soundRex.specialT0001, 1);
         await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0001);
         /** DECISION */
@@ -2492,6 +2504,7 @@ var Template;
                 Template.dataForSave.friendshipScore = 18;
                 Template.ƒS.Sound.play(Template.soundRex.specialT0002, 1);
                 await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0002);
+                Template.ƒS.Character.hide(Template.characters.rex);
                 return Template.End();
                 break;
             case specialSceneDecision1Friends.iSayNo:
@@ -2499,6 +2512,7 @@ var Template;
                 Template.dataForSave.friendshipScore = -18;
                 Template.ƒS.Sound.play(Template.soundRex.specialT0003, 1);
                 await Template.ƒS.Speech.tell(Template.characters.rex, text.Rex.T0003);
+                Template.ƒS.Character.hide(Template.characters.rex);
                 return Template.End();
                 break;
         }

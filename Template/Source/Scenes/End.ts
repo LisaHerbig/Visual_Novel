@@ -3,6 +3,11 @@ namespace Template {
       console.log("FudgeStory Template End starting");
 
       //await ƒS.Location.show(locations.Home_Hatched);
+      let text = {
+        Narrator: {
+          T0001: "Um die Novel neu zu starten, klicke auf den Bildschirm"
+        }
+      };
 
       ƒS.Speech.hide();
       document.getElementsByName("friendshipScore").forEach(meterStuff => meterStuff.hidden = true);
@@ -18,5 +23,10 @@ namespace Template {
 
 
       showCredits();
+
+      await ƒS.Speech.tell(characters.narrator, text.Narrator.T0001);
+      location.reload();
+
     }
+
   }

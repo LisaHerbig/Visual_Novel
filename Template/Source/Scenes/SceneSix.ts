@@ -202,7 +202,7 @@ namespace Template {
             ƒS.Speech.clear();
             ƒS.Speech.hide();
 
-            await ƒS.Character.hide(characters.velo);
+            //await ƒS.Character.hide(characters.velo);
             await ƒS.Character.hide(characters.lucy);
             await ƒS.Character.hide(characters.rex);
 
@@ -492,7 +492,10 @@ namespace Template {
                 console.log("iSayNo");
 
                 await ƒS.Character.show(characters.lucy, characters.lucy.pose.happy, ƒS.positions.bottomleft);
+                ƒS.Character.hide(characters.rex);
 
+                await ƒS.Character.show(characters.rex, characters.rex.pose.happy, ƒS.positions.bottomright);
+                
                 ƒS.update(); 
 
                 ƒS.Sound.play(soundLucy.s6t0006, 1);

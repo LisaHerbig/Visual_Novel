@@ -5,7 +5,7 @@ namespace Template {
       let text = {
             Narrator: {
                 T0001: "Am nächsten Morgen erzählt Rex seiner Mama von seinem Abenteuer. Sie verabschieden Lucy und vereinbaren ein neues Treffen mit ihr. Danke, dass du Rex so unterstützt hast!",
-                T0002: "Was ist denn Rex?",
+                //T0002: "Was ist denn Rex?",
                 T0003: "..."
             },
 
@@ -76,8 +76,9 @@ namespace Template {
       ƒS.Sound.play(soundRexMom.s8t0003, 1);
       await ƒS.Speech.tell(characters.mama, text.Mama.T0003);
 
-      await ƒS.Character.hide(characters.mama);
-      await ƒS.Character.hide(characters.lucy);
+      ƒS.Character.hide(characters.mama);
+      ƒS.Character.hide(characters.lucy);
+      ƒS.Character.hide(characters.rex);
 
       await ƒS.Location.show(locations.Home_Hatched);
 
@@ -87,12 +88,6 @@ namespace Template {
       await ƒS.Speech.tell(characters.narrator, text.Narrator.T0001);
 
       if (dataForSave.friendshipScore >= 1) {
-
-          await ƒS.Character.animate(characters.rex, characters.rex.pose.happy, special());
-
-          ƒS.Sound.play(soundNarrator.s8t0002, 1);
-
-          await ƒS.Speech.tell(characters.narrator, text.Narrator.T0002);
 
           return SpecialScene();
       }

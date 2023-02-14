@@ -14,6 +14,11 @@ namespace Template {
         }
       };
 
+      await ƒS.Character.animate(characters.rex, characters.rex.pose.happy, special());
+
+      ƒS.Sound.play(soundNarrator.s8t0002, 1);
+      await ƒS.Speech.tell(characters.narrator, text.Narrator.T0001);
+
       ƒS.Sound.play(soundRex.specialT0001, 1);
       await ƒS.Speech.tell(characters.rex, text.Rex.T0001);
 
@@ -35,6 +40,8 @@ namespace Template {
             ƒS.Sound.play(soundRex.specialT0002, 1);
             await ƒS.Speech.tell(characters.rex, text.Rex.T0002);
 
+            ƒS.Character.hide(characters.rex);
+
             return End();
             break; 
 
@@ -45,6 +52,8 @@ namespace Template {
 
             ƒS.Sound.play(soundRex.specialT0003, 1);
             await ƒS.Speech.tell(characters.rex, text.Rex.T0003);
+
+            ƒS.Character.hide(characters.rex);
 
             return End();
 
