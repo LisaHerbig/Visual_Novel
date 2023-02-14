@@ -9,11 +9,12 @@ namespace Template {
             T0003: "Der Dinosaurier dreht sich amüsiert um...",
             T0004: "Velo grinst Rex, dem plötzlich gar nicht mehr wohl ist, ganz böse an...",
             T0005: "Rex folgt dem Geruch in seiner Nase und findet verschiedene Zutaten und ein Kochbuch...",
-            T0006: "Gebe die Zutaten in der richtigen Reihenfolge in den Topf, indem du sie anklickst. Du hast einen Versuch."
+            T0006: "Gebe die Zutaten in der richtigen Reihenfolge in den Topf, indem du sie anklickst. Du hast einen Versuch.",
+            T0007: "..."
         },
 
         Rex: {
-            T0001: "Man, habe ich einen Hunger. Ich brauche unbedingt was zum Essen! " + dataForSave.nameProtagonist + " soll ich etwas jagen oder essen klauen?",
+            T0001: "Man, habe ich einen Hunger. Ich brauche unbedingt was zu essen! " + dataForSave.nameProtagonist + " soll ich etwas jagen oder essen klauen?",
             T0002: "Da hinten sind irgendwelche Dinos, vielleicht kann ich davon ja einen Essen... Mal versuchen...",
             T0003: "Ahhhhh!",
             T0004: "Hier riecht es nach Futter!",
@@ -93,9 +94,9 @@ namespace Template {
             ƒS.Sound.play(soundNarrator.s6t0002, 1);
             await ƒS.Speech.tell(characters.narrator, text.Narrator.T0002);
 
-            
-            
             ƒS.Sound.play(soundRex.s6tRoaw, 1);
+
+            await ƒS.Speech.tell(characters.narrator, text.Narrator.T0007);
             
             await ƒS.Character.hide(characters.velo);
             await ƒS.Character.show(characters.velo, characters.velo.pose.happy, ƒS.positions.bottomleft);

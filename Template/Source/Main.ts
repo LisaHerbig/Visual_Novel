@@ -337,10 +337,7 @@ namespace Template {
   };
 
  /**LOCATIONS */
- //TEST
- console.log("bla");
  
-
   export let locations = {
   
   Home_Hatched: {
@@ -564,7 +561,7 @@ namespace Template {
   export function showStart(): void {
     ƒS.Text.setClass("credits");
     //ƒS.Sound.play("soundNarrator.start");
-    ƒS.Text.print("Wilkommen bei 'Die Suche'. <br> <br> Deine Aufgabe ist es, den kleinen Dinosuarier Rex bei der Suche nach seiner Mama zu unterstüzten. <br> Mit 'm' kannst du das Menü anzeigen und verschwinden lassen. <br> Die Steckbriefe der gefundenen Dinos findest du unter 'Meine Dinos'. <br> Viel Spaß!");
+    ƒS.Text.print("Wilkommen bei 'Die Suche'. <br> <br> Deine Aufgabe ist es, den kleinen Dinosuarier Rex bei der Suche nach seiner Mama zu unterstüzten. <br> Auf der linken Seite des Bildschirms erscheint eine Anzeige, die den Freundschaftsstatus mit Rex wiederspiegelt. <br>  Mit 'm' kannst du das Menü anzeigen und verschwinden lassen. <br> Die Steckbriefe der gefundenen Dinos findest du unter 'Meine Dinos'. <br>  Viel Spaß!");
   }
 
   /** Animations */

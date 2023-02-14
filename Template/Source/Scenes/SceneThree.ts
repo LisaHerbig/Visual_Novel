@@ -6,7 +6,7 @@ namespace Template {
         Narrator: {
             T0001: "Und so macht sich Rex auf den Weg... ",
             T0002: "Über Stock und Stein, Sand und Wiese, und das ganz alleine... ",
-            T0003: "Auf einer Lichtung erkennt er drei Dino-Kinder die ausgelassen miteinander spielen... ",
+            T0003: "Auf einer Lichtung erkennt er drei Dino-Kinder, die ausgelassen miteinander spielen... ",
             T0004: "Klicke auf die Dinos um sie zu fangen, aber beeile dich, du hast nur 10 Sekunden Zeit!",
             T0005: "..."
         },

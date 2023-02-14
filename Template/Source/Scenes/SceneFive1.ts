@@ -6,7 +6,7 @@ namespace Template {
         Narrator: {
             T0001: "Nachdem Rex an der Schlucht vorbei gelaufen ist, hat er jetzt eine Lichtung mit aufeinander gestapelten Steinen erreicht. Oh, er ist ja gar nicht alleine. Wer ist denn das?",
             T0002: "Rex läuft weiter auf den Stein zu und versucht ihn Tilly abzunehmen. Sie lässt sich von ihm aber nicht beirren und dreht sich einfach um. Rex wird langsam böse...",
-            T0004: "Oh oh, das sieht nicht gut aus. Schnell, du musst Rex helfen vor Tillys Papa zu fliehen! Mit einem Klick auf die Pfeiltaste nach oben oder die Leertaste springt Rex über die Steine.",
+            T0004: "Oh oh, das sieht nicht gut aus. Schnell, du musst Rex helfen vor Tillys Papa zu fliehen! Mit einem kurzen Klick auf die Pfeiltaste nach oben oder die Leertaste springt Rex über die Steine.",
             T0005: "Tilly widmet ihre Aufmerksamkeit wieder einem Stein, mit dem sie spielt. Rex versucht ihr den Stein abzunehmen, sie wird sauer.",
             T0006: "Oh nein, jetzt gibt es Ärger...",
             T0007: "Geschafft!",

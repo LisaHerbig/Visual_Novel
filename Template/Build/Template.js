@@ -280,8 +280,6 @@ var Template;
         jump: "./Audio/SFX/SuctionPop_Epidemicsound_jump.mp3"
     };
     /**LOCATIONS */
-    //TEST
-    console.log("bla");
     Template.locations = {
         Home_Hatched: {
             name: "Home_Hatched",
@@ -449,7 +447,7 @@ var Template;
     function showStart() {
         Template.ƒS.Text.setClass("credits");
         //ƒS.Sound.play("soundNarrator.start");
-        Template.ƒS.Text.print("Wilkommen bei 'Die Suche'. <br> <br> Deine Aufgabe ist es, den kleinen Dinosuarier Rex bei der Suche nach seiner Mama zu unterstüzten. <br> Mit 'm' kannst du das Menü anzeigen und verschwinden lassen. <br> Die Steckbriefe der gefundenen Dinos findest du unter 'Meine Dinos'. <br> Viel Spaß!");
+        Template.ƒS.Text.print("Wilkommen bei 'Die Suche'. <br> <br> Deine Aufgabe ist es, den kleinen Dinosuarier Rex bei der Suche nach seiner Mama zu unterstüzten. <br> Auf der linken Seite des Bildschirms erscheint eine Anzeige, die den Freundschaftsstatus mit Rex wiederspiegelt. <br>  Mit 'm' kannst du das Menü anzeigen und verschwinden lassen. <br> Die Steckbriefe der gefundenen Dinos findest du unter 'Meine Dinos'. <br>  Viel Spaß!");
     }
     Template.showStart = showStart;
     /** Animations */
@@ -853,7 +851,7 @@ var Template;
             Narrator: {
                 T0001: "Nachdem Rex an der Schlucht vorbei gelaufen ist, hat er jetzt eine Lichtung mit aufeinander gestapelten Steinen erreicht. Oh, er ist ja gar nicht alleine. Wer ist denn das?",
                 T0002: "Rex läuft weiter auf den Stein zu und versucht ihn Tilly abzunehmen. Sie lässt sich von ihm aber nicht beirren und dreht sich einfach um. Rex wird langsam böse...",
-                T0004: "Oh oh, das sieht nicht gut aus. Schnell, du musst Rex helfen vor Tillys Papa zu fliehen! Mit einem Klick auf die Pfeiltaste nach oben oder die Leertaste springt Rex über die Steine.",
+                T0004: "Oh oh, das sieht nicht gut aus. Schnell, du musst Rex helfen vor Tillys Papa zu fliehen! Mit einem kurzen Klick auf die Pfeiltaste nach oben oder die Leertaste springt Rex über die Steine.",
                 T0005: "Tilly widmet ihre Aufmerksamkeit wieder einem Stein, mit dem sie spielt. Rex versucht ihr den Stein abzunehmen, sie wird sauer.",
                 T0006: "Oh nein, jetzt gibt es Ärger...",
                 T0007: "Geschafft!",
@@ -1738,10 +1736,11 @@ var Template;
                 T0003: "Der Dinosaurier dreht sich amüsiert um...",
                 T0004: "Velo grinst Rex, dem plötzlich gar nicht mehr wohl ist, ganz böse an...",
                 T0005: "Rex folgt dem Geruch in seiner Nase und findet verschiedene Zutaten und ein Kochbuch...",
-                T0006: "Gebe die Zutaten in der richtigen Reihenfolge in den Topf, indem du sie anklickst. Du hast einen Versuch."
+                T0006: "Gebe die Zutaten in der richtigen Reihenfolge in den Topf, indem du sie anklickst. Du hast einen Versuch.",
+                T0007: "..."
             },
             Rex: {
-                T0001: "Man, habe ich einen Hunger. Ich brauche unbedingt was zum Essen! " + Template.dataForSave.nameProtagonist + " soll ich etwas jagen oder essen klauen?",
+                T0001: "Man, habe ich einen Hunger. Ich brauche unbedingt was zu essen! " + Template.dataForSave.nameProtagonist + " soll ich etwas jagen oder essen klauen?",
                 T0002: "Da hinten sind irgendwelche Dinos, vielleicht kann ich davon ja einen Essen... Mal versuchen...",
                 T0003: "Ahhhhh!",
                 T0004: "Hier riecht es nach Futter!",
@@ -1804,6 +1803,7 @@ var Template;
                 Template.ƒS.Sound.play(Template.soundNarrator.s6t0002, 1);
                 await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0002);
                 Template.ƒS.Sound.play(Template.soundRex.s6tRoaw, 1);
+                await Template.ƒS.Speech.tell(Template.characters.narrator, text.Narrator.T0007);
                 await Template.ƒS.Character.hide(Template.characters.velo);
                 await Template.ƒS.Character.show(Template.characters.velo, Template.characters.velo.pose.happy, Template.ƒS.positions.bottomleft);
                 Template.ƒS.update();
@@ -2093,7 +2093,7 @@ var Template;
             Narrator: {
                 T0001: "Und so macht sich Rex auf den Weg... ",
                 T0002: "Über Stock und Stein, Sand und Wiese, und das ganz alleine... ",
-                T0003: "Auf einer Lichtung erkennt er drei Dino-Kinder die ausgelassen miteinander spielen... ",
+                T0003: "Auf einer Lichtung erkennt er drei Dino-Kinder, die ausgelassen miteinander spielen... ",
                 T0004: "Klicke auf die Dinos um sie zu fangen, aber beeile dich, du hast nur 10 Sekunden Zeit!",
                 T0005: "..."
             },

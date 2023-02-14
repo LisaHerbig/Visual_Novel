@@ -255,6 +255,7 @@ declare namespace Template {
         catchCook: string;
         jump: string;
     };
+    /**LOCATIONS */
     let locations: {
         Home_Hatched: {
             name: string;
