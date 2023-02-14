@@ -1,4 +1,4 @@
-namespace Template {
+namespace TheSearch {
     export async function SceneSix(): ƒS.SceneReturn {
       console.log("SceneSix starting");
 
@@ -495,7 +495,7 @@ namespace Template {
                 ƒS.Character.hide(characters.rex);
 
                 await ƒS.Character.show(characters.rex, characters.rex.pose.happy, ƒS.positions.bottomright);
-                
+
                 ƒS.update(); 
 
                 ƒS.Sound.play(soundLucy.s6t0006, 1);

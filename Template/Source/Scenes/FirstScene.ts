@@ -1,4 +1,4 @@
-namespace Template {
+namespace TheSearch {
     export async function FirstScene(): ƒS.SceneReturn {
       console.log("SceneOne starting");
   

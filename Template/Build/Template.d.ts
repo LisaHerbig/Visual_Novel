@@ -1,7 +1,7 @@
-declare namespace Template {
+declare namespace TheSearch {
     function playSounds(): void;
 }
-declare namespace Template {
+declare namespace TheSearch {
     export import ƒ = FudgeCore;
     export import ƒS = FudgeStory;
     /** TRANSITIONS **/
@@ -475,47 +475,47 @@ declare namespace Template {
     function getRandom(_min: number, _max: number): number;
     function start(_event: Event): void;
 }
-declare namespace Template {
+declare namespace TheSearch {
     function Empty(): ƒS.SceneReturn;
 }
-declare namespace Template {
+declare namespace TheSearch {
     function End(): ƒS.SceneReturn;
 }
-declare namespace Template {
+declare namespace TheSearch {
     function FirstScene(): ƒS.SceneReturn;
 }
 declare namespace TheSearch {
 }
-declare namespace Template {
+declare namespace TheSearch {
     function SceneEight(): ƒS.SceneReturn;
 }
-declare namespace Template {
+declare namespace TheSearch {
     function SceneFive1(): ƒS.SceneReturn;
 }
-declare namespace Template {
+declare namespace TheSearch {
     function SceneFiveA(): ƒS.SceneReturn;
 }
-declare namespace Template {
+declare namespace TheSearch {
     function SceneFiveB(): ƒS.SceneReturn;
 }
-declare namespace Template {
+declare namespace TheSearch {
     function SceneFour(): ƒS.SceneReturn;
 }
-declare namespace Template {
+declare namespace TheSearch {
     function SceneOne(): ƒS.SceneReturn;
 }
-declare namespace Template {
+declare namespace TheSearch {
     function SceneSeven(): ƒS.SceneReturn;
 }
-declare namespace Template {
+declare namespace TheSearch {
     function SceneSix(): ƒS.SceneReturn;
 }
-declare namespace Template {
+declare namespace TheSearch {
     function SceneThree(): ƒS.SceneReturn;
 }
-declare namespace Template {
+declare namespace TheSearch {
     function SceneTwo(): ƒS.SceneReturn;
 }
-declare namespace Template {
+declare namespace TheSearch {
     function SpecialScene(): ƒS.SceneReturn;
 }

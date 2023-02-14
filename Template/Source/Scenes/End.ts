@@ -1,4 +1,4 @@
-namespace Template {
+namespace TheSearch {
     export async function End(): ƒS.SceneReturn {
       console.log("FudgeStory Template End starting");
 
